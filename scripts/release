@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 'use strict';
+// ⚠ This script must be run using `npm run` and not `yarn run` otherwise it
+// will fail on the `npm publish` part
+// https://github.com/yarnpkg/yarn/issues/2935
 
 const prompt = require('prompt');
 const semver = require('semver');
