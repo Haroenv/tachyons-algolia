@@ -95,7 +95,7 @@ function bumpVersion(newVersion, cb) {
   shell.echo('./src/_version.scss');
 
   var versionFile = path.join(__dirname, '../src/_version.scss');
-  var newContent = `// tachyons-algolia.css v${newVersion}`
+  var newContent = `/*! tachyons-algolia.css v${newVersion} | MIT License | github.com/algolia/tachyons-algolia */`
   fs.writeFileSync(versionFile, newContent);
 
   shell.echo('./package.json');
