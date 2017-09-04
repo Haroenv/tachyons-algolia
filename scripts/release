@@ -48,12 +48,7 @@ function checkEnvironment() {
 }
 
 function mergeDevIntoMaster() {
-  shell.echo('Building new .css files')
-  shell.exec('npm run build');
-  shell.exec(`git commit -a -m "Building css as part of release"`, {silent: true});
-
   shell.echo('Merging develop into master');
-
   shell.exec('git fetch origin', {silent: true});
   shell.exec('git merge origin develop', {silent: true});
   shell.exec('git checkout master', {silent: true});
@@ -109,6 +104,9 @@ function bumpVersion(newVersion, cb) {
 }
 
 function commitNewFiles(version) {
+  shell.echo('Building new .css files')
+  shell.exec('npm run build');
+
   shell.echo('Commiting files');
   const changelog = shell.exec('conventional-changelog -u -n scripts/conventional-changelog/', {silent: true}).trim().split('\n');
   changelog.splice(1, 0, '');
