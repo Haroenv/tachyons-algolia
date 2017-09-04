@@ -122,7 +122,7 @@ function publish() {
   shell.exec('git push origin --tags', {silent: true});
 
   shell.echo('Publishing new version on NPM');
-  shell.exec('npm publish', {silent: true});
+  shell.exec('npm publish');
 }
 
 function goBackToDevelop() {
