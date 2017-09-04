@@ -1,0 +1,13 @@
+{
+  "name": "tachyons-algolia",
+  "version": "0.0.1",
+  "description": "CSS toolkit based on tachyons.css, for Algolia branded projects",
+  "main": "index.js",
+  "repository": "git@github.com:algolia/tachyons-algolia.git",
+  "author": "Pixelastic <tim@pixelastic.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "tachyons": "^4.8.1"
+  }
+}
