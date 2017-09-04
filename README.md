@@ -2,18 +2,7 @@
 
 CSS framework to build Algolia-branded projects.
 
-It is based on tachyons.css, but adds several new utility classes.
-
-- Algolia colors for foreground and background
-- Algolia gradients for text and background
-- Shorter classnames for flexbox layouts
-- Absolute positionning by 5% increment
-- Background image alignment
-- Customers logo as fonts
-- Fake browser windows UI to display screenshots
-- Rotating "building block"
-- Max/min width/height
-- Etc.
+__⚠ This is primarily made for Algolia employees__
 
 ## Why do I need it?
 
