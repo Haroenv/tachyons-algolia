@@ -1,0 +1,126 @@
+/**
+ * Code sample background, should replicate a code editor as much as possible
+ **/
+.code { 
+  font-family: DejaVu;
+  display: inline;
+  color: $bittersweet;
+  background-color: $deep-cove;
+  padding: .25rem;
+}
+
+/**
+ * Syntax highlighting.
+ *
+ * Note: This is following the naming convention of prism.js. It does not follow
+ * any specific known colorscheme (like Monokai or Solarized) but is based on
+ * Oroshi, a custom theme initially for vim
+ * https://github.com/pixelastic/oroshi/blob/master/config/vim/colors/oroshi.vim
+ **/
+$code-blue: #5F87AF;
+$code-dark-green: #008700;
+$code-gold: $gold;
+$code-gray: $mid-gray;
+$code-green: #00AF5F;
+$code-orange: $orange;
+$code-purple: #7F81FE;
+$code-red: $bittersweet;
+$code-white: $light-gray;
+$code-yellow: $yellow;
+
+
+/**
+ * Prism.js highlighting
+ *
+ * Note: Those classes are special in that you should not have to add them
+ * manually as they will be added by prism.js. They also follow some classical
+ * inheritance CSS properties
+ **/
+.token {
+  &.punctuation {
+    color: $code-white;
+  }
+  &.comment {
+    color: $code-gray;
+  }
+  &.string {
+    color: $code-blue;
+  }
+  &.number {
+    color: $code-blue;
+    font-weight: bold;
+  }
+}
+.language-html {
+  color: $code-white;
+  .token {
+    &.tag,
+    &.punctuation {
+      color: $code-dark-green;
+    }
+    &.attr-name {
+       color: $code-red;
+    }
+    &.attr-value {
+      color: $code-blue;
+      .punctuation ~ .punctuation {
+        color: $code-blue;
+      }
+    }
+  }
+}
+.language-scss {
+  // Value don't have a specific class, so we set it as the default value
+  color: $code-orange; 
+  .token {
+    &.selector {
+      color: $code-green;
+    }
+    &.property {
+      color: $code-red;
+    }
+  }
+}
+.language-js {
+  color: $code-white;
+  .token {
+    &.keyword {
+      color: $code-red;
+    }
+    &.function {
+      color: $code-green;
+    }
+  }
+}
+.language-ruby {
+  color: $code-orange;
+  .token {
+    &.constant {
+      color: $code-gold;
+    }
+    &.builtin {
+      color: $code-gold;
+    }
+    &.keyword {
+      color: $code-green;
+    }
+    &.function {
+      color: $code-white;
+    }
+    &.operator {
+      color: $code-white;
+    }
+  }
+}
+// This one does not really exists in Prism.js. We used it to display directory
+// listings, but one have to manually add the classes
+.language-shell {
+  color: $code-white;
+  line-height: 1.2;
+  .shell-directory {
+    color: $code-green;
+  }
+  .shell-file {
+    color: $code-purple;
+  }
+}

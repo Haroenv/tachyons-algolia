@@ -1,0 +1,35 @@
+/**
+ * Setting the height of an element to 0, basically hiding it
+ **/
+.h0 { height: 0; }
+
+/**
+ * Adding one more layer to the scale for those big elements
+ **/
+.h6 { height: $spacing-extra-extra-extra-extra-large; }
+
+
+/**
+ * Allow setting relative heights in increments of 5%
+ **/
+@for $i from 1 through 20 {
+  $height: $i * 5;
+  .h-#{$height} { height: $height + %; }
+}
+
+/**
+ * Adding max-height for the basic scale
+ **/
+.mh1 { max-height: $spacing-medium; }
+.mh2 { max-height: $spacing-large; }
+.mh3 { max-height: $spacing-extra-large; }
+.mh4 { max-height: $spacing-extra-extra-large; }
+.mh5 { max-height: $spacing-extra-extra-extra-large; }
+
+/**
+ * Allow setting max-height in percentage, by 5% increments.
+ **/
+@for $i from 1 through 20 {
+  $height: $i * 5;
+  .mh-#{$height} { max-height: $height + %; }
+}

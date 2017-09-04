@@ -1,0 +1,10 @@
+/**
+ * Setting line-height along the same scale as the rest. Default tachyons.css
+ * only allow line-height for typography, but being able to set it along the
+ * arbitrary scale can help in centering text.
+ **/
+.lh1 { line-height: $spacing-medium; }
+.lh2 { line-height: $spacing-large; }
+.lh3 { line-height: $spacing-extra-large; }
+.lh4 { line-height: $spacing-extra-extra-large; }
+.lh5 { line-height: $spacing-extra-extra-extra-large; }

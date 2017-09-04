@@ -1,0 +1,151 @@
+/**
+ * Algolia colors
+ *
+ * Source: https://brand.ai/algolia/ui-library/?key=r1GzFDuKg
+ **/
+$purple-heart:        rgb(142,67 ,231);
+$mulberry:            rgb(184,69 ,146);
+$radical-red:         rgb(255,79 ,129);
+$bittersweet:         rgb(255,108,95 );
+$koromiko:            rgb(255,193,104);
+$shamrock:            rgb(45 ,222,152);
+$java:                rgb(28 ,199,208);
+$algolia-blue:        rgb(0  ,174,255);
+$royal-blue:          rgb(51 ,105,231);
+$bunting:             rgb(62 ,57 ,107);
+$titan-white:         rgb(248,250,255);
+$logan:               rgb(157,157,189);
+$deep-cove:           rgb(5  ,15 ,44 );
+$port-gore:           rgb(58 ,69 ,112);
+$east-bay:            rgb(73 ,85 ,136);
+$portage:             rgb(137,148,198);
+$blue-bell:           rgb(166,176,216);
+$ghost:               rgb(196,200,216);
+$athens-gray:         rgb(238,240,247);
+$april-fools-purple:  #4B2E91;
+
+/**
+ * Each one of our 5 values has a specific color attached to it
+ *
+ * Note: The exact color attached to each value has not yet been totally
+ * defined, so this is a best effort attempt
+ **/
+$grit:      $royal-blue;
+$trust:     $algolia-blue;
+$candor:    $shamrock;
+$care:      $koromiko;
+$humility:  $mulberry;
+
+/**
+ * Common UI message colors should match our branded color
+ **/
+$success:  $shamrock;
+$warning:  $koromiko;
+$danger:   $radical-red;
+$info:     $algolia-blue;
+
+/**
+ * We also define a large array holding all the colors with their names and
+ * values, to be able to easily loop on them when needed
+ **/
+$colors:
+  algolia-blue        $algolia-blue,
+  april-fools-purple  $april-fools-purple,
+  athens-gray         $athens-gray,
+  bittersweet         $bittersweet,
+  blue-bell           $blue-bell,
+  bunting             $bunting,
+  candor              $candor,
+  care                $care,
+  deep-cove           $deep-cove,
+  east-bay            $east-bay,
+  ghost               $ghost,
+  grit                $grit,
+  humility            $humility,
+  java                $java,
+  koromiko            $koromiko,
+  logan               $logan,
+  mulberry            $mulberry,
+  portage             $portage,
+  port-gore           $port-gore,
+  purple-heart        $purple-heart,
+  radical-red         $radical-red,
+  royal-blue          $royal-blue,
+  shamrock            $shamrock,
+  titan-white         $titan-white,
+  trust               $trust
+;
+
+/**
+ * We're extending the base tachyons.css scale with one more level for those
+ * times when we need something really really really big
+ **/
+$spacing-extra-extra-extra-extra-large: 32rem;
+
+
+// Tachyons colors
+// $black: #000;
+// $near-black: #111;
+// $dark-gray:#333;
+// $mid-gray:#555;
+// $gray: #777;
+// $silver: #999;
+// $light-silver: #aaa;
+// $moon-gray: #ccc;
+// $light-gray: #eee;
+// $near-white: #f4f4f4;
+// $white: #fff;
+
+// $transparent: transparent;
+//
+// $black-90: rgba(0,0,0,.9);
+// $black-80: rgba(0,0,0,.8);
+// $black-70: rgba(0,0,0,.7);
+// $black-60: rgba(0,0,0,.6);
+// $black-50: rgba(0,0,0,.5);
+// $black-40: rgba(0,0,0,.4);
+// $black-30: rgba(0,0,0,.3);
+// $black-20: rgba(0,0,0,.2);
+// $black-10: rgba(0,0,0,.1);
+// $black-05: rgba(0,0,0,.05);
+// $black-025: rgba(0,0,0,.025);
+// $black-0125: rgba(0,0,0,.0125);
+//
+// $white-90: rgba(255,255,255,.9);
+// $white-80: rgba(255,255,255,.8);
+// $white-70: rgba(255,255,255,.7);
+// $white-60: rgba(255,255,255,.6);
+// $white-50: rgba(255,255,255,.5);
+// $white-40: rgba(255,255,255,.4);
+// $white-30: rgba(255,255,255,.3);
+// $white-20: rgba(255,255,255,.2);
+// $white-10: rgba(255,255,255,.1);
+// $white-05: rgba(255,255,255,.05);
+// $white-025: rgba(255,255,255,.025);
+// $white-0125: rgba(255,255,255,.0125);
+//
+// $dark-red: #e7040f;
+// $red: #ff4136;
+// $light-red: #ff725c;
+// $orange: #ff6300;
+// $gold: #ffb700;
+// $yellow: #ffd700;
+// $light-yellow: #fbf1a9;
+// $purple: #5e2ca5;
+// $light-purple: #a463f2;
+// $dark-pink: #d5008f;
+// $hot-pink: #ff41b4;
+// $pink: #ff80cc;
+// $light-pink: #ffa3d7;
+// $dark-green: #137752;
+// $green: #19a974;
+// $light-green: #9eebcf;
+// $navy: #001b44;
+// $dark-blue: #00449e;
+// $blue: #357edd;
+// $light-blue: #96ccff;
+// $lightest-blue: #cdecff;
+// $washed-blue: #f6fffe;
+// $washed-green: #e8fdf5;
+// $washed-yellow: #fffceb;
+// $washed-red: #ffdfdf;

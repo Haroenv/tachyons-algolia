@@ -1,0 +1,12 @@
+/**
+ * Add some light shadow to a text, which can help make it more legible when
+ * using light text on white background.
+ **/
+.text-shadow-1 {text-shadow: $near-black 4px 4px 3px; }
+
+/**
+ * Adds a light shadow to an element, to visually add an elevation to it
+ **/
+.shadow-1 {
+  box-shadow: 0 10px 40px 0 rgba($bunting, 0.07), 0 2px 9px 0 rgba($bunting, 0.06);
+}

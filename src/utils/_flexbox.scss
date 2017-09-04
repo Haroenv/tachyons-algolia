@@ -1,0 +1,147 @@
+/**
+ * Flexbox is an awesome way to work with layouts, as it as a large range of
+ * options. It also requires some work to really understand how it all fits
+ * together, and might also require some verbose declarations.
+ *
+ * Instead of relying on a grid system that does everything for you, without you
+ * understanding how flexbox works, this class naming will have you understand
+ * flexbox and use it at your advantage.
+ *
+ * Each class comes with two names. One is very explicit (like
+ * .flex-column-nowrap) and another is more cryptic (like .flcnw). The former is
+ * for you to train and learn flexbox, but once you're used to it, you'll get
+ * bored with writing long class names and will be able to move to the shorter
+ * classnames.
+ *
+ * Short version all follow a vim philosophy of using as few characters as
+ * possible, while still being expressive enough. All flexbox-related classes
+ * start with `.fl` and then the following characters are the first letter of
+ * each important part. 
+ *
+ * Building a layout with two columns, with text centered in the right column
+ * and three rows in the left one is done that way:
+ * .flcnw
+ *  .fla.flrnnw
+ *   .fln First box
+ *   .fla Second box, takes all the available space
+ *   .fln Third box
+ *  .fla.flc My vertically and horizontall centered text
+ **/
+
+/**
+ * .flex-(row/column)-(wrap/nowrap) / .fl(r/c)(w/nw)
+ *
+ * Those classes should be added to the wrapper element. They define the overall
+ * layout. 
+ *
+ * flex-row will place each internal element one below the other, similar to
+ * adding several display: block elements.
+ * flex-column will place each internal element side by side, similar to using
+ * float: left to stack them.
+ *
+ * The -wrap / -nowrap suffix defines the behavior when there is not enough room
+ * to place all the elements. With -nowrap, the elements will shrink as much as
+ * possible to make sure they all stay on the same column/line. With -wrap, they
+ * will create a new column/line if they don't have enough space to fit.
+ *
+ * The rule of thumb is: if you know exactly how many elements you'll fit in
+ * your layout, you should use a -nowrap and define width/height to the internal
+ * elements. If you don't know how many elements you'll fit, or if they have
+ * relative sizes, better go with a -wrap.
+ **/
+.flrnw, .flex-row-nowrap    { display: flex; flex-direction: row;    }
+.flrw,  .flex-row-wrap      { display: flex; flex-direction: row;    flex-wrap:  wrap;  }
+.flcnw, .flex-column-nowrap { display: flex; flex-direction: column; }
+.flcw,  .flex-column-wrap   { display: flex; flex-direction: column; flex-wrap:  wrap;  }
+
+/**
+ * .flex-(auto/none)
+ *
+ * Those classes should be added to elements inside a layout. They will define
+ * their behavior in regard to the space they occupy.
+ *
+ * Elements with .flex-none will take only as much space as they need, while
+ * elements with .flex-auto will try to expand to fill all the available space.
+ *
+ * If you have a line/column with several elements with .flex-auto, they will
+ * all expand to take as much place as possible. If you only have two elements,
+ * they will both take half the space for example. If you have one element with
+ * .flex-none and a defined dimension, and two with .flex-auto, the .flex-auto
+ * will both take half the remaining space.
+ *
+ * The rule of thumb is that you should use .flex-auto when you want an element
+ * to take all the available space. Use .flex-none if you want to define your
+ * own dimensions.
+ *
+ * Also note that you can (and should) use both a .flex-(none/auto) and
+ * a .flex-(column/row)-(wrap/nowrap) on the same element. The first one will
+ * define how this element will behave in its current layout context, and the
+ * second one will start a new layout context for other child of this element.
+ **/
+.fln, .flex-none { flex: none; }
+.fla, .flex-auto { flex:1 1 auto; min-width:0; min-height:0; }
+
+/**
+ * .flex-(row/column)-center-(vertical-horizontal) / .fl(r/c)c(v/h)
+ *
+ * Those classes are used on layout wrappers to define how their child should
+ * align in regard to the wrapper elements. 
+ *
+ * If you are in a row context (through .flex-row-wrap or .flex-row-nowrap), you
+ * can add .flex-row-center-vertically or .flex-row-center-horizontally to that
+ * element to tell the inner element how they should behave.
+
+ * They're is also a .flex-center class that will align both vertically and
+ * horizontall and works on every layout.
+ *
+ * Note that you should use the .flex-row-center-* classes only on
+ * .flex-row-* elements and the .flex-column-center-* classes only on
+ * .flex-column-* elements. If you apply the wrong class on the element, the
+ * items will not be correctly aligned (it might event do the opposition of what
+ * you're trying to achieve).
+ *
+ *
+ * Note that those classes work best if you only have to align one element. If
+ * you want to align several elements at once, your best bet would be to wrap
+ * those elements into an intermediate div and center that one.
+ **/
+.flrcv, .flex-row-center-vertical      { display: flex; align-items:     center }
+.flrch, .flex-row-center-horizontal    { display: flex; justify-content: center }
+.flccv, .flex-column-center-vertical   { display: flex; justify-content: center }
+.flcch, .flex-column-center-horizontal { display: flex; align-items:     center }
+.flc, .flex-center { display: flex; align-items: center; justify-content: center }
+
+/**
+ * .flex-space-(around/between) / .flsp(a/b)
+ *
+ * Those classes let you define how to handle white space in a list of elements. 
+ *
+ * If you have a row with 3 elements that each take 25% of the width, what
+ * should you do with the 25% of whitespace that is not used?
+ *
+ * If you don't specify anything, it will be rendered like this:
+ * [[Box 1][Box 2][Box 3][     ]]
+ *
+ * Using .flex-space-between, the available whitespace will be split
+ * between the elements, like this:
+ * [[Box 1]    [Box 2]    [Box 3]]
+ *
+ * Using .flex-space-around, the available whitespace will be split
+ * before, between and after the elements, like this:
+ * [  [Box 1]  [Box 2]  [Box 3]  ]
+ **/
+.flspa, .flex-space-around  { justify-content: space-around; }
+.flspb, .flex-space-between { justify-content: space-between; }
+
+/**
+ * .flex-column-align-(top/bottom) / .flca(t/b)
+ * .flex-row-align-(left/right) / .flca(l/r)
+ *
+ * Those classes let you define from which side the inside elements of a layout
+ * should be piled up. By default they stick at the top on column and on the
+ * left on rows, but you can change that.
+ **/
+.flral, .flex-row-align-left      { justify-content: flex-start; }
+.flrar, .flex-row-align-right     { justify-content: flex-end; }
+.flcat, .flex-column-align-top    { justify-content: flex-start; }
+.flcab, .flex-column-align-bottom { justify-content: flex-end; }

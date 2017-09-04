@@ -1,0 +1,7 @@
+// Handy method to remove units from values, to ease computation
+// @args value: Value in any unit
+// @returns: Value without unit
+@function _($value) {
+    @return $value / ($value * 0 + 1);
+}
+

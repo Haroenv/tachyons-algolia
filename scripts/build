@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+mkdir -p ./build
+
+# Building normal version
+node-sass ./src/main.scss ./build/tachyons-algolia.css
+
+# Building compressed version
+cleancss \
+  -O1 \
+  -o ./build/tachyons-algolia.min.css \
+  ./build/tachyons-algolia.css

@@ -1,0 +1,6 @@
+/**
+ * Display text content of the element by respecting the actual spacing and new
+ * lines inside. This will still wrap the content at the end of lines. Useful
+ * when displaying code.
+ **/
+.pre-wrap { white-space: pre-wrap; }

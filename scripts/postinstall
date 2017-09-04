@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+mkdir -p ./src/vendors/tachyons
+
+cp \
+  -r \
+ ./node_modules/tachyons-sass/tachyons.scss \
+ ./node_modules/tachyons-sass/scss/ \
+ ./src/vendors/tachyons
+

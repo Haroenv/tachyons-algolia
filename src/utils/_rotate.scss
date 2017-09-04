@@ -1,0 +1,16 @@
+/**
+ * Pseudo-random rotation angle. 
+ *
+ * It mostly find its use when displaying elements that should mimic real-life
+ * elements, like photos displayed on a table
+ **/
+.rotate-1  { transform: rotate(6deg);   }
+.rotate-2  { transform: rotate(12deg);  }
+.rotate-3  { transform: rotate(23deg);  }
+.rotate-4  { transform: rotate(46deg);  }
+.rotate-5  { transform: rotate(92deg);  }
+.rotate--1 { transform: rotate(-6deg);  }
+.rotate--2 { transform: rotate(-12deg); }
+.rotate--3 { transform: rotate(-23deg); }
+.rotate--4 { transform: rotate(-46deg); }
+.rotate--5 { transform: rotate(-92deg); }

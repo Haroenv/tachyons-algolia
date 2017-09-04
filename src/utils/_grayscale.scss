@@ -1,0 +1,7 @@
+/**
+ * This will display any child in black and white.
+ *
+ * Note: As it's using `filter`, it will not work with other classes also using
+ * `filter`.
+ **/
+ .grayscale { filter: grayscale(100%); }

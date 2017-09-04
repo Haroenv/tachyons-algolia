@@ -1,0 +1,97 @@
+.lego {
+  perspective: 1000px;
+}
+.lego__brick {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+}
+.lego__face {
+  position: absolute;
+  border:1px solid rgba($white, .5);;
+}
+
+@keyframes lego__spin--right {
+	from { transform: rotateX(-7deg) rotateY(15deg); }
+	to { transform: rotateX(-7deg) rotateY(345deg); }
+}
+.lego__brick--angle-right {
+  transform: rotateX(-7deg) rotateY(15deg);
+  &:hover {
+    animation: lego__spin--right 5s infinite linear;
+  }
+}
+
+@keyframes lego__spin--left {
+	from { transform: rotateX(-7deg) rotateY(-15deg); }
+	to { transform: rotateX(-7deg) rotateY(345deg); }
+}
+.lego__brick--angle-left {
+  transform: rotateX(-7deg) rotateY(-15deg);
+  &:hover {
+    animation: lego__spin--left 5s infinite linear;
+  }
+}
+
+@keyframes lego__spin--algolia {
+	from { transform: rotateX(-11deg) rotateY(45deg); }
+	to { transform: rotateX(-11deg) rotateY(405deg); }
+}
+.lego__brick--algolia {
+  transform: rotateX(-11deg) rotateY(45deg);
+  animation: lego__spin--algolia 10s infinite linear;
+}
+
+
+// Lego bricks dimensions are:
+// 9.6mm tall + 1.8 for knob
+// (width x 8 - 0.2mm) wide
+// (length x 8 - 0.2mm) long
+$lego-height: 96px;
+@for $width from 1 through 4 {
+  @for $length from 1 through 4 {
+    $lego-width: $width * 80 - 2px;
+    $lego-length: $length * 80 - 2px;
+    .lego--size-#{$length}x#{$width} {
+      width: $lego-length;
+      height: $lego-height;
+      .lego__face--front  { 
+        width: $lego-length; 
+        height: $lego-height; 
+        transform: rotateY(0deg) translateZ($lego-width / 2); 
+      }
+      .lego__face--back   { 
+        width: $lego-length; 
+        height: $lego-height; 
+        transform: translateZ(-$lego-width / 2) rotateY(180deg);
+      }
+      .lego__face--right  { 
+        width: $lego-width; 
+        height: $lego-height; 
+        left: ($lego-length - $lego-width) / 2;
+        transform: rotateY(90deg) translateZ($lego-length / 2);
+      }
+      .lego__face--left  { 
+        width: $lego-width; 
+        height: $lego-height; 
+        left: ($lego-length - $lego-width) / 2;
+        transform: rotateY(-90deg) translateZ($lego-length / 2);
+      }
+      .lego__face--top  { 
+        width: $lego-length; 
+        height: $lego-width; 
+        top: ($lego-height - $lego-width) / 2;
+        transform: rotateX(90deg) translateZ($lego-height / 2);
+      }
+      .lego__face--bottom  { 
+        width: $lego-length; 
+        height: $lego-width; 
+        top: ($lego-height - $lego-width) / 2;
+        transform: rotateX(-90deg) translateZ($lego-height / 2);
+      }
+    }
+
+  }
+}
+
