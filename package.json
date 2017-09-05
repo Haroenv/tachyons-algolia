@@ -3,6 +3,11 @@
   "version": "0.0.11",
   "description": "CSS toolkit based on tachyons.css, for Algolia branded projects",
   "main": "build/tachyons-algolia.css",
+  "style": "build/tachyons-algolia.css",
+  "files": [
+    "build",
+    "src"
+  ],
   "repository": "git@github.com:algolia/tachyons-algolia.git",
   "author": "Pixelastic <tim@pixelastic.com>",
   "license": "MIT",
