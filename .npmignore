@@ -1,1 +1,4 @@
 src/vendors
+scripts
+yarn.lock
+.npmignore
