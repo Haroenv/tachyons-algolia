@@ -1,8 +1,5 @@
 #!/usr/bin/env node
 'use strict';
-// ⚠ This script must be run using `npm run` and not `yarn run` otherwise it
-// will fail on the `npm publish` part
-// https://github.com/yarnpkg/yarn/issues/2935
 
 const prompt = require('prompt');
 const semver = require('semver');
@@ -23,6 +20,7 @@ const packageJson = require('../package.json');
 
 shell.echo(`tachyons-algolia release script`);
 
+checkRunWithNpm();
 checkEnvironment();
 mergeDevIntoMaster();
 showChangelog();
@@ -33,6 +31,17 @@ promptVersion(packageJson.version, (version) => {
     goBackToDevelop();
   });
 });
+
+function checkRunWithNpm() {
+  // ⚠ This script must be run using `npm run` and not `yarn run` otherwise it
+  // will fail on the `npm publish` part
+  // https://github.com/yarnpkg/yarn/issues/2935
+  if (!process.env._.match(/npm/)) {
+    shell.echo('This script must be run with "npm run release"'.error);
+    shell.echo('It will not correctly publish to NPM if used with yarn');
+    process.exit(1);
+  }
+}
 
 function checkEnvironment() {
   const currentBranch = shell.exec('git rev-parse --abbrev-ref HEAD', {silent: true}).toString().trim();
