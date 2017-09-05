@@ -10,10 +10,10 @@
   $value: nth($color, 2);
 
   .#{$name} { color: $value }
+  .hover-#{$name}:hover { color: $value }
   @for $opacity from 1 through 9 {
-    .#{$name}-#{$opacity}0 {
-      color: rgba($value, $opacity / 10); 
-    }
+    .#{$name}-#{$opacity}0 { color: rgba($value, $opacity / 10); }
+    .hover-#{$name}-#{$opacity}0:hover { color: rgba($value, $opacity / 10); }
   }
 }
 
@@ -26,12 +26,12 @@
   $value: nth($color, 2);
 
   .bg-#{$name} { background-color: $value }
+  .hover-bg-#{$name}:hover { background-color: $value }
 
   // Transparent background color
   @for $opacity from 1 through 9 {
-    .bg-#{$name}-#{$opacity}0 {
-      background-color: rgba($value, $opacity / 10); 
-    }
+    .bg-#{$name}-#{$opacity}0 { background-color: rgba($value, $opacity / 10); }
+    .hover-bg-#{$name}-#{$opacity}0:hover { background-color: rgba($value, $opacity / 10); }
   }
 }
 
@@ -44,4 +44,5 @@
 
   // Bullets
   .bullet-#{$name}:before { content: "> "; color: #{$value} }
+  .hover-bullet-#{$name}:hover:before { content: "> "; color: #{$value} }
 }
