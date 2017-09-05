@@ -1,6 +1,6 @@
 {
   "name": "tachyons-algolia",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "CSS toolkit based on tachyons.css, for Algolia branded projects",
   "main": "build/tachyons-algolia.css",
   "repository": "git@github.com:algolia/tachyons-algolia.git",
