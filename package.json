@@ -4,17 +4,13 @@
   "description": "CSS toolkit based on tachyons.css, for Algolia branded projects",
   "main": "build/tachyons-algolia.css",
   "style": "build/tachyons-algolia.css",
-  "files": [
-    "build",
-    "src"
-  ],
   "repository": "git@github.com:algolia/tachyons-algolia.git",
   "author": "Pixelastic <tim@pixelastic.com>",
   "license": "MIT",
   "scripts": {
     "build": "./scripts/build",
     "release": "./scripts/release",
-    "postinstall": "in-install && echo 'local install' || echo 'dependency install'"
+    "postinstall": "in-install && ./scripts/postinstall"
   },
   "devDependencies": {
     "clean-css-cli": "^4.1.9",
