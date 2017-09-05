@@ -8,31 +8,3 @@
 .mba { margin-bottom: auto; }
 .mla { margin-left:   auto; }
 .ma  { margin-top:    auto; margin-right: auto; margin-bottom: auto; margin-left: auto;  }
-
-/**
- * Defining negative margins, that can be used to slightly change the alignment
- * of a absolutely positionned element
- **/
-.mt--1 { margin-top: -$spacing-medium; }
-.mt--2 { margin-top: -$spacing-large; }
-.mt--3 { margin-top: -$spacing-extra-large; }
-.mt--4 { margin-top: -$spacing-extra-extra-large; }
-.mt--5 { margin-top: -$spacing-extra-extra-extra-large; }
-
-.mr--1 { margin-right: -$spacing-medium; }
-.mr--2 { margin-right: -$spacing-large; }
-.mr--3 { margin-right: -$spacing-extra-large; }
-.mr--4 { margin-right: -$spacing-extra-extra-large; }
-.mr--5 { margin-right: -$spacing-extra-extra-extra-large; }
-
-.mb--1 { margin-bottom: -$spacing-medium; }
-.mb--2 { margin-bottom: -$spacing-large; }
-.mb--3 { margin-bottom: -$spacing-extra-large; }
-.mb--4 { margin-bottom: -$spacing-extra-extra-large; }
-.mb--5 { margin-bottom: -$spacing-extra-extra-extra-large; }
-
-.ml--1 { margin-left: -$spacing-medium; }
-.ml--2 { margin-left: -$spacing-large; }
-.ml--3 { margin-left: -$spacing-extra-large; }
-.ml--4 { margin-left: -$spacing-extra-extra-large; }
-.ml--5 { margin-left: -$spacing-extra-extra-extra-large; }
