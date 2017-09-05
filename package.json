@@ -10,7 +10,7 @@
   "scripts": {
     "build": "./scripts/build",
     "release": "./scripts/release",
-    "postinstall": "test -f ./scripts/postinstall && ./scripts/postinstall"
+    "postinstall": "(test -f ./scripts/postinstall && ./scripts/postinstall) || true"
   },
   "devDependencies": {
     "clean-css-cli": "^4.1.9",
