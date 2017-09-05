@@ -1,4 +1,4 @@
-/*! tachyons-algolia.css v0.1.0 | MIT License | github.com/algolia/tachyons-algolia */
+/*! tachyons-algolia.css v0.1.1 | MIT License | github.com/algolia/tachyons-algolia */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -9475,36 +9475,36 @@ code, .code {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 100;
-  src: url("/fonts/Montserrat-Thin.otf"); }
+  src: url("./fonts/Montserrat-Thin.otf"); }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
-  src: url("/fonts/Montserrat-Light.otf"); }
+  src: url("./fonts/Montserrat-Light.otf"); }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/Montserrat-Regular.otf"); }
+  src: url("./fonts/Montserrat-Regular.otf"); }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  src: url("/fonts/Montserrat-Medium.otf"); }
+  src: url("./fonts/Montserrat-Medium.otf"); }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  src: url("/fonts/Montserrat-SemiBold.otf"); }
+  src: url("./fonts/Montserrat-SemiBold.otf"); }
 
 @font-face {
   font-family: 'DejaVu';
-  src: url("/fonts/DejaVuSansMono.eot");
-  src: url("/fonts/DejaVuSansMono.eot?#iefix") format("embedded-opentype"), url("/fonts/DejaVuSansMono.woff") format("woff"), url("/fonts/DejaVuSansMono.ttf") format("truetype"), url("/fonts/DejaVuSansMono.svg#dejavu_sans_monobook") format("svg");
+  src: url("./fonts/DejaVuSansMono.eot");
+  src: url("./fonts/DejaVuSansMono.eot?#iefix") format("embedded-opentype"), url("./fonts/DejaVuSansMono.woff") format("woff"), url("./fonts/DejaVuSansMono.ttf") format("truetype"), url("./fonts/DejaVuSansMono.svg#dejavu_sans_monobook") format("svg");
   font-weight: normal;
   font-style: normal; }
 
