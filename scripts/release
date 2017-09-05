@@ -36,7 +36,7 @@ function checkRunWithNpm() {
   // ⚠ This script must be run using `npm run` and not `yarn run` otherwise it
   // will fail on the `npm publish` part
   // https://github.com/yarnpkg/yarn/issues/2935
-  if (!process.env._.match(/npm/)) {
+  if (!process.env._.match(/npm$/)) {
     shell.echo('This script must be run with "npm run release"'.error);
     shell.echo('It will not correctly publish to NPM if used with yarn');
     process.exit(1);
