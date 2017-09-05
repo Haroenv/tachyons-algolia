@@ -8,8 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build": "./scripts/build",
-    "release": "npm run release:npm",
-    "release:npm": "./scripts/release",
+    "release": "./scripts/release",
     "postinstall": "./scripts/postinstall"
   },
   "devDependencies": {
