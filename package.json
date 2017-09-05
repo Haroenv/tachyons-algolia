@@ -1,6 +1,6 @@
 {
   "name": "tachyons-algolia",
-  "version": "0.0.16",
+  "version": "0.0.15",
   "description": "CSS toolkit based on tachyons.css, for Algolia branded projects",
   "main": "build/tachyons-algolia.css",
   "style": "build/tachyons-algolia.css",
@@ -10,10 +10,7 @@
   "scripts": {
     "build": "./scripts/build",
     "release": "./scripts/release",
-    "postinstall": "in-install && ./scripts/postinstall"
-  },
-  "dependencies": {
-    "in-publish": "^2.0.0"
+    "postinstall": "test -f ./scripts/postinstall && ./scripts/postinstall"
   },
   "devDependencies": {
     "clean-css-cli": "^4.1.9",
