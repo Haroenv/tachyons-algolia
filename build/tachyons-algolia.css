@@ -7645,11 +7645,25 @@ code, .code {
     color: #7F81FE; }
 
 /**
- * Coloring text using named Algolia values. Allow various opacity settings.
+ * Adding Algolia colors in addition to basic tachyons colors. It includes text,
+ * background and border colors. They all include various opacity levels and the
+ * :hover modifier.
  *
- * Example:
- *  .koromiko
- *  .bittersweet-50
+ * Examples with koromiko
+ * .koromiko:             Text color is Koromiko
+ * .koromiko-70:          Text color with 70% opacity
+ * .hover-koromiko:       Text color only on hover
+ * .hover-koromiko-70:    Text color with 70% opacity only on hover
+
+ * .bg-koromiko:          Background color 
+ * .bg-koromiko-30:       Background color with 30% opacity
+ * .hover-bg-koromiko:    Background color 
+ * .hover-bg-koromiko-30: Background color with 30% opacity
+
+ * .b--koromiko:          Border color
+ * .b--koromiko-50:       Border color with 50% opacity
+ * .hover-b--koromiko:    Border color
+ * .hover-b--koromiko-50: Border color with 50% opacity
  **/
 .algolia-blue {
   color: #00aeff; }
@@ -7657,1509 +7671,23 @@ code, .code {
 .hover-algolia-blue:hover {
   color: #00aeff; }
 
-.algolia-blue-10 {
-  color: rgba(0, 174, 255, 0.1); }
-
-.hover-algolia-blue-10:hover {
-  color: rgba(0, 174, 255, 0.1); }
-
-.algolia-blue-20 {
-  color: rgba(0, 174, 255, 0.2); }
-
-.hover-algolia-blue-20:hover {
-  color: rgba(0, 174, 255, 0.2); }
-
-.algolia-blue-30 {
-  color: rgba(0, 174, 255, 0.3); }
-
-.hover-algolia-blue-30:hover {
-  color: rgba(0, 174, 255, 0.3); }
-
-.algolia-blue-40 {
-  color: rgba(0, 174, 255, 0.4); }
-
-.hover-algolia-blue-40:hover {
-  color: rgba(0, 174, 255, 0.4); }
-
-.algolia-blue-50 {
-  color: rgba(0, 174, 255, 0.5); }
-
-.hover-algolia-blue-50:hover {
-  color: rgba(0, 174, 255, 0.5); }
-
-.algolia-blue-60 {
-  color: rgba(0, 174, 255, 0.6); }
-
-.hover-algolia-blue-60:hover {
-  color: rgba(0, 174, 255, 0.6); }
-
-.algolia-blue-70 {
-  color: rgba(0, 174, 255, 0.7); }
-
-.hover-algolia-blue-70:hover {
-  color: rgba(0, 174, 255, 0.7); }
-
-.algolia-blue-80 {
-  color: rgba(0, 174, 255, 0.8); }
-
-.hover-algolia-blue-80:hover {
-  color: rgba(0, 174, 255, 0.8); }
-
-.algolia-blue-90 {
-  color: rgba(0, 174, 255, 0.9); }
-
-.hover-algolia-blue-90:hover {
-  color: rgba(0, 174, 255, 0.9); }
-
-.april-fools-purple {
-  color: #4B2E91; }
-
-.hover-april-fools-purple:hover {
-  color: #4B2E91; }
-
-.april-fools-purple-10 {
-  color: rgba(75, 46, 145, 0.1); }
-
-.hover-april-fools-purple-10:hover {
-  color: rgba(75, 46, 145, 0.1); }
-
-.april-fools-purple-20 {
-  color: rgba(75, 46, 145, 0.2); }
-
-.hover-april-fools-purple-20:hover {
-  color: rgba(75, 46, 145, 0.2); }
-
-.april-fools-purple-30 {
-  color: rgba(75, 46, 145, 0.3); }
-
-.hover-april-fools-purple-30:hover {
-  color: rgba(75, 46, 145, 0.3); }
-
-.april-fools-purple-40 {
-  color: rgba(75, 46, 145, 0.4); }
-
-.hover-april-fools-purple-40:hover {
-  color: rgba(75, 46, 145, 0.4); }
-
-.april-fools-purple-50 {
-  color: rgba(75, 46, 145, 0.5); }
-
-.hover-april-fools-purple-50:hover {
-  color: rgba(75, 46, 145, 0.5); }
-
-.april-fools-purple-60 {
-  color: rgba(75, 46, 145, 0.6); }
-
-.hover-april-fools-purple-60:hover {
-  color: rgba(75, 46, 145, 0.6); }
-
-.april-fools-purple-70 {
-  color: rgba(75, 46, 145, 0.7); }
-
-.hover-april-fools-purple-70:hover {
-  color: rgba(75, 46, 145, 0.7); }
-
-.april-fools-purple-80 {
-  color: rgba(75, 46, 145, 0.8); }
-
-.hover-april-fools-purple-80:hover {
-  color: rgba(75, 46, 145, 0.8); }
-
-.april-fools-purple-90 {
-  color: rgba(75, 46, 145, 0.9); }
-
-.hover-april-fools-purple-90:hover {
-  color: rgba(75, 46, 145, 0.9); }
-
-.athens-gray {
-  color: #eef0f7; }
-
-.hover-athens-gray:hover {
-  color: #eef0f7; }
-
-.athens-gray-10 {
-  color: rgba(238, 240, 247, 0.1); }
-
-.hover-athens-gray-10:hover {
-  color: rgba(238, 240, 247, 0.1); }
-
-.athens-gray-20 {
-  color: rgba(238, 240, 247, 0.2); }
-
-.hover-athens-gray-20:hover {
-  color: rgba(238, 240, 247, 0.2); }
-
-.athens-gray-30 {
-  color: rgba(238, 240, 247, 0.3); }
-
-.hover-athens-gray-30:hover {
-  color: rgba(238, 240, 247, 0.3); }
-
-.athens-gray-40 {
-  color: rgba(238, 240, 247, 0.4); }
-
-.hover-athens-gray-40:hover {
-  color: rgba(238, 240, 247, 0.4); }
-
-.athens-gray-50 {
-  color: rgba(238, 240, 247, 0.5); }
-
-.hover-athens-gray-50:hover {
-  color: rgba(238, 240, 247, 0.5); }
-
-.athens-gray-60 {
-  color: rgba(238, 240, 247, 0.6); }
-
-.hover-athens-gray-60:hover {
-  color: rgba(238, 240, 247, 0.6); }
-
-.athens-gray-70 {
-  color: rgba(238, 240, 247, 0.7); }
-
-.hover-athens-gray-70:hover {
-  color: rgba(238, 240, 247, 0.7); }
-
-.athens-gray-80 {
-  color: rgba(238, 240, 247, 0.8); }
-
-.hover-athens-gray-80:hover {
-  color: rgba(238, 240, 247, 0.8); }
-
-.athens-gray-90 {
-  color: rgba(238, 240, 247, 0.9); }
-
-.hover-athens-gray-90:hover {
-  color: rgba(238, 240, 247, 0.9); }
-
-.bittersweet {
-  color: #ff6c5f; }
-
-.hover-bittersweet:hover {
-  color: #ff6c5f; }
-
-.bittersweet-10 {
-  color: rgba(255, 108, 95, 0.1); }
-
-.hover-bittersweet-10:hover {
-  color: rgba(255, 108, 95, 0.1); }
-
-.bittersweet-20 {
-  color: rgba(255, 108, 95, 0.2); }
-
-.hover-bittersweet-20:hover {
-  color: rgba(255, 108, 95, 0.2); }
-
-.bittersweet-30 {
-  color: rgba(255, 108, 95, 0.3); }
-
-.hover-bittersweet-30:hover {
-  color: rgba(255, 108, 95, 0.3); }
-
-.bittersweet-40 {
-  color: rgba(255, 108, 95, 0.4); }
-
-.hover-bittersweet-40:hover {
-  color: rgba(255, 108, 95, 0.4); }
-
-.bittersweet-50 {
-  color: rgba(255, 108, 95, 0.5); }
-
-.hover-bittersweet-50:hover {
-  color: rgba(255, 108, 95, 0.5); }
-
-.bittersweet-60 {
-  color: rgba(255, 108, 95, 0.6); }
-
-.hover-bittersweet-60:hover {
-  color: rgba(255, 108, 95, 0.6); }
-
-.bittersweet-70 {
-  color: rgba(255, 108, 95, 0.7); }
-
-.hover-bittersweet-70:hover {
-  color: rgba(255, 108, 95, 0.7); }
-
-.bittersweet-80 {
-  color: rgba(255, 108, 95, 0.8); }
-
-.hover-bittersweet-80:hover {
-  color: rgba(255, 108, 95, 0.8); }
-
-.bittersweet-90 {
-  color: rgba(255, 108, 95, 0.9); }
-
-.hover-bittersweet-90:hover {
-  color: rgba(255, 108, 95, 0.9); }
-
-.blue-bell {
-  color: #a6b0d8; }
-
-.hover-blue-bell:hover {
-  color: #a6b0d8; }
-
-.blue-bell-10 {
-  color: rgba(166, 176, 216, 0.1); }
-
-.hover-blue-bell-10:hover {
-  color: rgba(166, 176, 216, 0.1); }
-
-.blue-bell-20 {
-  color: rgba(166, 176, 216, 0.2); }
-
-.hover-blue-bell-20:hover {
-  color: rgba(166, 176, 216, 0.2); }
-
-.blue-bell-30 {
-  color: rgba(166, 176, 216, 0.3); }
-
-.hover-blue-bell-30:hover {
-  color: rgba(166, 176, 216, 0.3); }
-
-.blue-bell-40 {
-  color: rgba(166, 176, 216, 0.4); }
-
-.hover-blue-bell-40:hover {
-  color: rgba(166, 176, 216, 0.4); }
-
-.blue-bell-50 {
-  color: rgba(166, 176, 216, 0.5); }
-
-.hover-blue-bell-50:hover {
-  color: rgba(166, 176, 216, 0.5); }
-
-.blue-bell-60 {
-  color: rgba(166, 176, 216, 0.6); }
-
-.hover-blue-bell-60:hover {
-  color: rgba(166, 176, 216, 0.6); }
-
-.blue-bell-70 {
-  color: rgba(166, 176, 216, 0.7); }
-
-.hover-blue-bell-70:hover {
-  color: rgba(166, 176, 216, 0.7); }
-
-.blue-bell-80 {
-  color: rgba(166, 176, 216, 0.8); }
-
-.hover-blue-bell-80:hover {
-  color: rgba(166, 176, 216, 0.8); }
-
-.blue-bell-90 {
-  color: rgba(166, 176, 216, 0.9); }
-
-.hover-blue-bell-90:hover {
-  color: rgba(166, 176, 216, 0.9); }
-
-.bunting {
-  color: #3e396b; }
-
-.hover-bunting:hover {
-  color: #3e396b; }
-
-.bunting-10 {
-  color: rgba(62, 57, 107, 0.1); }
-
-.hover-bunting-10:hover {
-  color: rgba(62, 57, 107, 0.1); }
-
-.bunting-20 {
-  color: rgba(62, 57, 107, 0.2); }
-
-.hover-bunting-20:hover {
-  color: rgba(62, 57, 107, 0.2); }
-
-.bunting-30 {
-  color: rgba(62, 57, 107, 0.3); }
-
-.hover-bunting-30:hover {
-  color: rgba(62, 57, 107, 0.3); }
-
-.bunting-40 {
-  color: rgba(62, 57, 107, 0.4); }
-
-.hover-bunting-40:hover {
-  color: rgba(62, 57, 107, 0.4); }
-
-.bunting-50 {
-  color: rgba(62, 57, 107, 0.5); }
-
-.hover-bunting-50:hover {
-  color: rgba(62, 57, 107, 0.5); }
-
-.bunting-60 {
-  color: rgba(62, 57, 107, 0.6); }
-
-.hover-bunting-60:hover {
-  color: rgba(62, 57, 107, 0.6); }
-
-.bunting-70 {
-  color: rgba(62, 57, 107, 0.7); }
-
-.hover-bunting-70:hover {
-  color: rgba(62, 57, 107, 0.7); }
-
-.bunting-80 {
-  color: rgba(62, 57, 107, 0.8); }
-
-.hover-bunting-80:hover {
-  color: rgba(62, 57, 107, 0.8); }
-
-.bunting-90 {
-  color: rgba(62, 57, 107, 0.9); }
-
-.hover-bunting-90:hover {
-  color: rgba(62, 57, 107, 0.9); }
-
-.candor {
-  color: #2dde98; }
-
-.hover-candor:hover {
-  color: #2dde98; }
-
-.candor-10 {
-  color: rgba(45, 222, 152, 0.1); }
-
-.hover-candor-10:hover {
-  color: rgba(45, 222, 152, 0.1); }
-
-.candor-20 {
-  color: rgba(45, 222, 152, 0.2); }
-
-.hover-candor-20:hover {
-  color: rgba(45, 222, 152, 0.2); }
-
-.candor-30 {
-  color: rgba(45, 222, 152, 0.3); }
-
-.hover-candor-30:hover {
-  color: rgba(45, 222, 152, 0.3); }
-
-.candor-40 {
-  color: rgba(45, 222, 152, 0.4); }
-
-.hover-candor-40:hover {
-  color: rgba(45, 222, 152, 0.4); }
-
-.candor-50 {
-  color: rgba(45, 222, 152, 0.5); }
-
-.hover-candor-50:hover {
-  color: rgba(45, 222, 152, 0.5); }
-
-.candor-60 {
-  color: rgba(45, 222, 152, 0.6); }
-
-.hover-candor-60:hover {
-  color: rgba(45, 222, 152, 0.6); }
-
-.candor-70 {
-  color: rgba(45, 222, 152, 0.7); }
-
-.hover-candor-70:hover {
-  color: rgba(45, 222, 152, 0.7); }
-
-.candor-80 {
-  color: rgba(45, 222, 152, 0.8); }
-
-.hover-candor-80:hover {
-  color: rgba(45, 222, 152, 0.8); }
-
-.candor-90 {
-  color: rgba(45, 222, 152, 0.9); }
-
-.hover-candor-90:hover {
-  color: rgba(45, 222, 152, 0.9); }
-
-.care {
-  color: #ffc168; }
-
-.hover-care:hover {
-  color: #ffc168; }
-
-.care-10 {
-  color: rgba(255, 193, 104, 0.1); }
-
-.hover-care-10:hover {
-  color: rgba(255, 193, 104, 0.1); }
-
-.care-20 {
-  color: rgba(255, 193, 104, 0.2); }
-
-.hover-care-20:hover {
-  color: rgba(255, 193, 104, 0.2); }
-
-.care-30 {
-  color: rgba(255, 193, 104, 0.3); }
-
-.hover-care-30:hover {
-  color: rgba(255, 193, 104, 0.3); }
-
-.care-40 {
-  color: rgba(255, 193, 104, 0.4); }
-
-.hover-care-40:hover {
-  color: rgba(255, 193, 104, 0.4); }
-
-.care-50 {
-  color: rgba(255, 193, 104, 0.5); }
-
-.hover-care-50:hover {
-  color: rgba(255, 193, 104, 0.5); }
-
-.care-60 {
-  color: rgba(255, 193, 104, 0.6); }
-
-.hover-care-60:hover {
-  color: rgba(255, 193, 104, 0.6); }
-
-.care-70 {
-  color: rgba(255, 193, 104, 0.7); }
-
-.hover-care-70:hover {
-  color: rgba(255, 193, 104, 0.7); }
-
-.care-80 {
-  color: rgba(255, 193, 104, 0.8); }
-
-.hover-care-80:hover {
-  color: rgba(255, 193, 104, 0.8); }
-
-.care-90 {
-  color: rgba(255, 193, 104, 0.9); }
-
-.hover-care-90:hover {
-  color: rgba(255, 193, 104, 0.9); }
-
-.deep-cove {
-  color: #050f2c; }
-
-.hover-deep-cove:hover {
-  color: #050f2c; }
-
-.deep-cove-10 {
-  color: rgba(5, 15, 44, 0.1); }
-
-.hover-deep-cove-10:hover {
-  color: rgba(5, 15, 44, 0.1); }
-
-.deep-cove-20 {
-  color: rgba(5, 15, 44, 0.2); }
-
-.hover-deep-cove-20:hover {
-  color: rgba(5, 15, 44, 0.2); }
-
-.deep-cove-30 {
-  color: rgba(5, 15, 44, 0.3); }
-
-.hover-deep-cove-30:hover {
-  color: rgba(5, 15, 44, 0.3); }
-
-.deep-cove-40 {
-  color: rgba(5, 15, 44, 0.4); }
-
-.hover-deep-cove-40:hover {
-  color: rgba(5, 15, 44, 0.4); }
-
-.deep-cove-50 {
-  color: rgba(5, 15, 44, 0.5); }
-
-.hover-deep-cove-50:hover {
-  color: rgba(5, 15, 44, 0.5); }
-
-.deep-cove-60 {
-  color: rgba(5, 15, 44, 0.6); }
-
-.hover-deep-cove-60:hover {
-  color: rgba(5, 15, 44, 0.6); }
-
-.deep-cove-70 {
-  color: rgba(5, 15, 44, 0.7); }
-
-.hover-deep-cove-70:hover {
-  color: rgba(5, 15, 44, 0.7); }
-
-.deep-cove-80 {
-  color: rgba(5, 15, 44, 0.8); }
-
-.hover-deep-cove-80:hover {
-  color: rgba(5, 15, 44, 0.8); }
-
-.deep-cove-90 {
-  color: rgba(5, 15, 44, 0.9); }
-
-.hover-deep-cove-90:hover {
-  color: rgba(5, 15, 44, 0.9); }
-
-.east-bay {
-  color: #495588; }
-
-.hover-east-bay:hover {
-  color: #495588; }
-
-.east-bay-10 {
-  color: rgba(73, 85, 136, 0.1); }
-
-.hover-east-bay-10:hover {
-  color: rgba(73, 85, 136, 0.1); }
-
-.east-bay-20 {
-  color: rgba(73, 85, 136, 0.2); }
-
-.hover-east-bay-20:hover {
-  color: rgba(73, 85, 136, 0.2); }
-
-.east-bay-30 {
-  color: rgba(73, 85, 136, 0.3); }
-
-.hover-east-bay-30:hover {
-  color: rgba(73, 85, 136, 0.3); }
-
-.east-bay-40 {
-  color: rgba(73, 85, 136, 0.4); }
-
-.hover-east-bay-40:hover {
-  color: rgba(73, 85, 136, 0.4); }
-
-.east-bay-50 {
-  color: rgba(73, 85, 136, 0.5); }
-
-.hover-east-bay-50:hover {
-  color: rgba(73, 85, 136, 0.5); }
-
-.east-bay-60 {
-  color: rgba(73, 85, 136, 0.6); }
-
-.hover-east-bay-60:hover {
-  color: rgba(73, 85, 136, 0.6); }
-
-.east-bay-70 {
-  color: rgba(73, 85, 136, 0.7); }
-
-.hover-east-bay-70:hover {
-  color: rgba(73, 85, 136, 0.7); }
-
-.east-bay-80 {
-  color: rgba(73, 85, 136, 0.8); }
-
-.hover-east-bay-80:hover {
-  color: rgba(73, 85, 136, 0.8); }
-
-.east-bay-90 {
-  color: rgba(73, 85, 136, 0.9); }
-
-.hover-east-bay-90:hover {
-  color: rgba(73, 85, 136, 0.9); }
-
-.ghost {
-  color: #c4c8d8; }
-
-.hover-ghost:hover {
-  color: #c4c8d8; }
-
-.ghost-10 {
-  color: rgba(196, 200, 216, 0.1); }
-
-.hover-ghost-10:hover {
-  color: rgba(196, 200, 216, 0.1); }
-
-.ghost-20 {
-  color: rgba(196, 200, 216, 0.2); }
-
-.hover-ghost-20:hover {
-  color: rgba(196, 200, 216, 0.2); }
-
-.ghost-30 {
-  color: rgba(196, 200, 216, 0.3); }
-
-.hover-ghost-30:hover {
-  color: rgba(196, 200, 216, 0.3); }
-
-.ghost-40 {
-  color: rgba(196, 200, 216, 0.4); }
-
-.hover-ghost-40:hover {
-  color: rgba(196, 200, 216, 0.4); }
-
-.ghost-50 {
-  color: rgba(196, 200, 216, 0.5); }
-
-.hover-ghost-50:hover {
-  color: rgba(196, 200, 216, 0.5); }
-
-.ghost-60 {
-  color: rgba(196, 200, 216, 0.6); }
-
-.hover-ghost-60:hover {
-  color: rgba(196, 200, 216, 0.6); }
-
-.ghost-70 {
-  color: rgba(196, 200, 216, 0.7); }
-
-.hover-ghost-70:hover {
-  color: rgba(196, 200, 216, 0.7); }
-
-.ghost-80 {
-  color: rgba(196, 200, 216, 0.8); }
-
-.hover-ghost-80:hover {
-  color: rgba(196, 200, 216, 0.8); }
-
-.ghost-90 {
-  color: rgba(196, 200, 216, 0.9); }
-
-.hover-ghost-90:hover {
-  color: rgba(196, 200, 216, 0.9); }
-
-.grit {
-  color: #3369e7; }
-
-.hover-grit:hover {
-  color: #3369e7; }
-
-.grit-10 {
-  color: rgba(51, 105, 231, 0.1); }
-
-.hover-grit-10:hover {
-  color: rgba(51, 105, 231, 0.1); }
-
-.grit-20 {
-  color: rgba(51, 105, 231, 0.2); }
-
-.hover-grit-20:hover {
-  color: rgba(51, 105, 231, 0.2); }
-
-.grit-30 {
-  color: rgba(51, 105, 231, 0.3); }
-
-.hover-grit-30:hover {
-  color: rgba(51, 105, 231, 0.3); }
-
-.grit-40 {
-  color: rgba(51, 105, 231, 0.4); }
-
-.hover-grit-40:hover {
-  color: rgba(51, 105, 231, 0.4); }
-
-.grit-50 {
-  color: rgba(51, 105, 231, 0.5); }
-
-.hover-grit-50:hover {
-  color: rgba(51, 105, 231, 0.5); }
-
-.grit-60 {
-  color: rgba(51, 105, 231, 0.6); }
-
-.hover-grit-60:hover {
-  color: rgba(51, 105, 231, 0.6); }
-
-.grit-70 {
-  color: rgba(51, 105, 231, 0.7); }
-
-.hover-grit-70:hover {
-  color: rgba(51, 105, 231, 0.7); }
-
-.grit-80 {
-  color: rgba(51, 105, 231, 0.8); }
-
-.hover-grit-80:hover {
-  color: rgba(51, 105, 231, 0.8); }
-
-.grit-90 {
-  color: rgba(51, 105, 231, 0.9); }
-
-.hover-grit-90:hover {
-  color: rgba(51, 105, 231, 0.9); }
-
-.humility {
-  color: #b84592; }
-
-.hover-humility:hover {
-  color: #b84592; }
-
-.humility-10 {
-  color: rgba(184, 69, 146, 0.1); }
-
-.hover-humility-10:hover {
-  color: rgba(184, 69, 146, 0.1); }
-
-.humility-20 {
-  color: rgba(184, 69, 146, 0.2); }
-
-.hover-humility-20:hover {
-  color: rgba(184, 69, 146, 0.2); }
-
-.humility-30 {
-  color: rgba(184, 69, 146, 0.3); }
-
-.hover-humility-30:hover {
-  color: rgba(184, 69, 146, 0.3); }
-
-.humility-40 {
-  color: rgba(184, 69, 146, 0.4); }
-
-.hover-humility-40:hover {
-  color: rgba(184, 69, 146, 0.4); }
-
-.humility-50 {
-  color: rgba(184, 69, 146, 0.5); }
-
-.hover-humility-50:hover {
-  color: rgba(184, 69, 146, 0.5); }
-
-.humility-60 {
-  color: rgba(184, 69, 146, 0.6); }
-
-.hover-humility-60:hover {
-  color: rgba(184, 69, 146, 0.6); }
-
-.humility-70 {
-  color: rgba(184, 69, 146, 0.7); }
-
-.hover-humility-70:hover {
-  color: rgba(184, 69, 146, 0.7); }
-
-.humility-80 {
-  color: rgba(184, 69, 146, 0.8); }
-
-.hover-humility-80:hover {
-  color: rgba(184, 69, 146, 0.8); }
-
-.humility-90 {
-  color: rgba(184, 69, 146, 0.9); }
-
-.hover-humility-90:hover {
-  color: rgba(184, 69, 146, 0.9); }
-
-.java {
-  color: #1cc7d0; }
-
-.hover-java:hover {
-  color: #1cc7d0; }
-
-.java-10 {
-  color: rgba(28, 199, 208, 0.1); }
-
-.hover-java-10:hover {
-  color: rgba(28, 199, 208, 0.1); }
-
-.java-20 {
-  color: rgba(28, 199, 208, 0.2); }
-
-.hover-java-20:hover {
-  color: rgba(28, 199, 208, 0.2); }
-
-.java-30 {
-  color: rgba(28, 199, 208, 0.3); }
-
-.hover-java-30:hover {
-  color: rgba(28, 199, 208, 0.3); }
-
-.java-40 {
-  color: rgba(28, 199, 208, 0.4); }
-
-.hover-java-40:hover {
-  color: rgba(28, 199, 208, 0.4); }
-
-.java-50 {
-  color: rgba(28, 199, 208, 0.5); }
-
-.hover-java-50:hover {
-  color: rgba(28, 199, 208, 0.5); }
-
-.java-60 {
-  color: rgba(28, 199, 208, 0.6); }
-
-.hover-java-60:hover {
-  color: rgba(28, 199, 208, 0.6); }
-
-.java-70 {
-  color: rgba(28, 199, 208, 0.7); }
-
-.hover-java-70:hover {
-  color: rgba(28, 199, 208, 0.7); }
-
-.java-80 {
-  color: rgba(28, 199, 208, 0.8); }
-
-.hover-java-80:hover {
-  color: rgba(28, 199, 208, 0.8); }
-
-.java-90 {
-  color: rgba(28, 199, 208, 0.9); }
-
-.hover-java-90:hover {
-  color: rgba(28, 199, 208, 0.9); }
-
-.koromiko {
-  color: #ffc168; }
-
-.hover-koromiko:hover {
-  color: #ffc168; }
-
-.koromiko-10 {
-  color: rgba(255, 193, 104, 0.1); }
-
-.hover-koromiko-10:hover {
-  color: rgba(255, 193, 104, 0.1); }
-
-.koromiko-20 {
-  color: rgba(255, 193, 104, 0.2); }
-
-.hover-koromiko-20:hover {
-  color: rgba(255, 193, 104, 0.2); }
-
-.koromiko-30 {
-  color: rgba(255, 193, 104, 0.3); }
-
-.hover-koromiko-30:hover {
-  color: rgba(255, 193, 104, 0.3); }
-
-.koromiko-40 {
-  color: rgba(255, 193, 104, 0.4); }
-
-.hover-koromiko-40:hover {
-  color: rgba(255, 193, 104, 0.4); }
-
-.koromiko-50 {
-  color: rgba(255, 193, 104, 0.5); }
-
-.hover-koromiko-50:hover {
-  color: rgba(255, 193, 104, 0.5); }
-
-.koromiko-60 {
-  color: rgba(255, 193, 104, 0.6); }
-
-.hover-koromiko-60:hover {
-  color: rgba(255, 193, 104, 0.6); }
-
-.koromiko-70 {
-  color: rgba(255, 193, 104, 0.7); }
-
-.hover-koromiko-70:hover {
-  color: rgba(255, 193, 104, 0.7); }
-
-.koromiko-80 {
-  color: rgba(255, 193, 104, 0.8); }
-
-.hover-koromiko-80:hover {
-  color: rgba(255, 193, 104, 0.8); }
-
-.koromiko-90 {
-  color: rgba(255, 193, 104, 0.9); }
-
-.hover-koromiko-90:hover {
-  color: rgba(255, 193, 104, 0.9); }
-
-.logan {
-  color: #9d9dbd; }
-
-.hover-logan:hover {
-  color: #9d9dbd; }
-
-.logan-10 {
-  color: rgba(157, 157, 189, 0.1); }
-
-.hover-logan-10:hover {
-  color: rgba(157, 157, 189, 0.1); }
-
-.logan-20 {
-  color: rgba(157, 157, 189, 0.2); }
-
-.hover-logan-20:hover {
-  color: rgba(157, 157, 189, 0.2); }
-
-.logan-30 {
-  color: rgba(157, 157, 189, 0.3); }
-
-.hover-logan-30:hover {
-  color: rgba(157, 157, 189, 0.3); }
-
-.logan-40 {
-  color: rgba(157, 157, 189, 0.4); }
-
-.hover-logan-40:hover {
-  color: rgba(157, 157, 189, 0.4); }
-
-.logan-50 {
-  color: rgba(157, 157, 189, 0.5); }
-
-.hover-logan-50:hover {
-  color: rgba(157, 157, 189, 0.5); }
-
-.logan-60 {
-  color: rgba(157, 157, 189, 0.6); }
-
-.hover-logan-60:hover {
-  color: rgba(157, 157, 189, 0.6); }
-
-.logan-70 {
-  color: rgba(157, 157, 189, 0.7); }
-
-.hover-logan-70:hover {
-  color: rgba(157, 157, 189, 0.7); }
-
-.logan-80 {
-  color: rgba(157, 157, 189, 0.8); }
-
-.hover-logan-80:hover {
-  color: rgba(157, 157, 189, 0.8); }
-
-.logan-90 {
-  color: rgba(157, 157, 189, 0.9); }
-
-.hover-logan-90:hover {
-  color: rgba(157, 157, 189, 0.9); }
-
-.mulberry {
-  color: #b84592; }
-
-.hover-mulberry:hover {
-  color: #b84592; }
-
-.mulberry-10 {
-  color: rgba(184, 69, 146, 0.1); }
-
-.hover-mulberry-10:hover {
-  color: rgba(184, 69, 146, 0.1); }
-
-.mulberry-20 {
-  color: rgba(184, 69, 146, 0.2); }
-
-.hover-mulberry-20:hover {
-  color: rgba(184, 69, 146, 0.2); }
-
-.mulberry-30 {
-  color: rgba(184, 69, 146, 0.3); }
-
-.hover-mulberry-30:hover {
-  color: rgba(184, 69, 146, 0.3); }
-
-.mulberry-40 {
-  color: rgba(184, 69, 146, 0.4); }
-
-.hover-mulberry-40:hover {
-  color: rgba(184, 69, 146, 0.4); }
-
-.mulberry-50 {
-  color: rgba(184, 69, 146, 0.5); }
-
-.hover-mulberry-50:hover {
-  color: rgba(184, 69, 146, 0.5); }
-
-.mulberry-60 {
-  color: rgba(184, 69, 146, 0.6); }
-
-.hover-mulberry-60:hover {
-  color: rgba(184, 69, 146, 0.6); }
-
-.mulberry-70 {
-  color: rgba(184, 69, 146, 0.7); }
-
-.hover-mulberry-70:hover {
-  color: rgba(184, 69, 146, 0.7); }
-
-.mulberry-80 {
-  color: rgba(184, 69, 146, 0.8); }
-
-.hover-mulberry-80:hover {
-  color: rgba(184, 69, 146, 0.8); }
-
-.mulberry-90 {
-  color: rgba(184, 69, 146, 0.9); }
-
-.hover-mulberry-90:hover {
-  color: rgba(184, 69, 146, 0.9); }
-
-.portage {
-  color: #8994c6; }
-
-.hover-portage:hover {
-  color: #8994c6; }
-
-.portage-10 {
-  color: rgba(137, 148, 198, 0.1); }
-
-.hover-portage-10:hover {
-  color: rgba(137, 148, 198, 0.1); }
-
-.portage-20 {
-  color: rgba(137, 148, 198, 0.2); }
-
-.hover-portage-20:hover {
-  color: rgba(137, 148, 198, 0.2); }
-
-.portage-30 {
-  color: rgba(137, 148, 198, 0.3); }
-
-.hover-portage-30:hover {
-  color: rgba(137, 148, 198, 0.3); }
-
-.portage-40 {
-  color: rgba(137, 148, 198, 0.4); }
-
-.hover-portage-40:hover {
-  color: rgba(137, 148, 198, 0.4); }
-
-.portage-50 {
-  color: rgba(137, 148, 198, 0.5); }
-
-.hover-portage-50:hover {
-  color: rgba(137, 148, 198, 0.5); }
-
-.portage-60 {
-  color: rgba(137, 148, 198, 0.6); }
-
-.hover-portage-60:hover {
-  color: rgba(137, 148, 198, 0.6); }
-
-.portage-70 {
-  color: rgba(137, 148, 198, 0.7); }
-
-.hover-portage-70:hover {
-  color: rgba(137, 148, 198, 0.7); }
-
-.portage-80 {
-  color: rgba(137, 148, 198, 0.8); }
-
-.hover-portage-80:hover {
-  color: rgba(137, 148, 198, 0.8); }
-
-.portage-90 {
-  color: rgba(137, 148, 198, 0.9); }
-
-.hover-portage-90:hover {
-  color: rgba(137, 148, 198, 0.9); }
-
-.port-gore {
-  color: #3a4570; }
-
-.hover-port-gore:hover {
-  color: #3a4570; }
-
-.port-gore-10 {
-  color: rgba(58, 69, 112, 0.1); }
-
-.hover-port-gore-10:hover {
-  color: rgba(58, 69, 112, 0.1); }
-
-.port-gore-20 {
-  color: rgba(58, 69, 112, 0.2); }
-
-.hover-port-gore-20:hover {
-  color: rgba(58, 69, 112, 0.2); }
-
-.port-gore-30 {
-  color: rgba(58, 69, 112, 0.3); }
-
-.hover-port-gore-30:hover {
-  color: rgba(58, 69, 112, 0.3); }
-
-.port-gore-40 {
-  color: rgba(58, 69, 112, 0.4); }
-
-.hover-port-gore-40:hover {
-  color: rgba(58, 69, 112, 0.4); }
-
-.port-gore-50 {
-  color: rgba(58, 69, 112, 0.5); }
-
-.hover-port-gore-50:hover {
-  color: rgba(58, 69, 112, 0.5); }
-
-.port-gore-60 {
-  color: rgba(58, 69, 112, 0.6); }
-
-.hover-port-gore-60:hover {
-  color: rgba(58, 69, 112, 0.6); }
-
-.port-gore-70 {
-  color: rgba(58, 69, 112, 0.7); }
-
-.hover-port-gore-70:hover {
-  color: rgba(58, 69, 112, 0.7); }
-
-.port-gore-80 {
-  color: rgba(58, 69, 112, 0.8); }
-
-.hover-port-gore-80:hover {
-  color: rgba(58, 69, 112, 0.8); }
-
-.port-gore-90 {
-  color: rgba(58, 69, 112, 0.9); }
-
-.hover-port-gore-90:hover {
-  color: rgba(58, 69, 112, 0.9); }
-
-.purple-heart {
-  color: #8e43e7; }
-
-.hover-purple-heart:hover {
-  color: #8e43e7; }
-
-.purple-heart-10 {
-  color: rgba(142, 67, 231, 0.1); }
-
-.hover-purple-heart-10:hover {
-  color: rgba(142, 67, 231, 0.1); }
-
-.purple-heart-20 {
-  color: rgba(142, 67, 231, 0.2); }
-
-.hover-purple-heart-20:hover {
-  color: rgba(142, 67, 231, 0.2); }
-
-.purple-heart-30 {
-  color: rgba(142, 67, 231, 0.3); }
-
-.hover-purple-heart-30:hover {
-  color: rgba(142, 67, 231, 0.3); }
-
-.purple-heart-40 {
-  color: rgba(142, 67, 231, 0.4); }
-
-.hover-purple-heart-40:hover {
-  color: rgba(142, 67, 231, 0.4); }
-
-.purple-heart-50 {
-  color: rgba(142, 67, 231, 0.5); }
-
-.hover-purple-heart-50:hover {
-  color: rgba(142, 67, 231, 0.5); }
-
-.purple-heart-60 {
-  color: rgba(142, 67, 231, 0.6); }
-
-.hover-purple-heart-60:hover {
-  color: rgba(142, 67, 231, 0.6); }
-
-.purple-heart-70 {
-  color: rgba(142, 67, 231, 0.7); }
-
-.hover-purple-heart-70:hover {
-  color: rgba(142, 67, 231, 0.7); }
-
-.purple-heart-80 {
-  color: rgba(142, 67, 231, 0.8); }
-
-.hover-purple-heart-80:hover {
-  color: rgba(142, 67, 231, 0.8); }
-
-.purple-heart-90 {
-  color: rgba(142, 67, 231, 0.9); }
-
-.hover-purple-heart-90:hover {
-  color: rgba(142, 67, 231, 0.9); }
-
-.radical-red {
-  color: #ff4f81; }
-
-.hover-radical-red:hover {
-  color: #ff4f81; }
-
-.radical-red-10 {
-  color: rgba(255, 79, 129, 0.1); }
-
-.hover-radical-red-10:hover {
-  color: rgba(255, 79, 129, 0.1); }
-
-.radical-red-20 {
-  color: rgba(255, 79, 129, 0.2); }
-
-.hover-radical-red-20:hover {
-  color: rgba(255, 79, 129, 0.2); }
-
-.radical-red-30 {
-  color: rgba(255, 79, 129, 0.3); }
-
-.hover-radical-red-30:hover {
-  color: rgba(255, 79, 129, 0.3); }
-
-.radical-red-40 {
-  color: rgba(255, 79, 129, 0.4); }
-
-.hover-radical-red-40:hover {
-  color: rgba(255, 79, 129, 0.4); }
-
-.radical-red-50 {
-  color: rgba(255, 79, 129, 0.5); }
-
-.hover-radical-red-50:hover {
-  color: rgba(255, 79, 129, 0.5); }
-
-.radical-red-60 {
-  color: rgba(255, 79, 129, 0.6); }
-
-.hover-radical-red-60:hover {
-  color: rgba(255, 79, 129, 0.6); }
-
-.radical-red-70 {
-  color: rgba(255, 79, 129, 0.7); }
-
-.hover-radical-red-70:hover {
-  color: rgba(255, 79, 129, 0.7); }
-
-.radical-red-80 {
-  color: rgba(255, 79, 129, 0.8); }
-
-.hover-radical-red-80:hover {
-  color: rgba(255, 79, 129, 0.8); }
-
-.radical-red-90 {
-  color: rgba(255, 79, 129, 0.9); }
-
-.hover-radical-red-90:hover {
-  color: rgba(255, 79, 129, 0.9); }
-
-.royal-blue {
-  color: #3369e7; }
-
-.hover-royal-blue:hover {
-  color: #3369e7; }
-
-.royal-blue-10 {
-  color: rgba(51, 105, 231, 0.1); }
-
-.hover-royal-blue-10:hover {
-  color: rgba(51, 105, 231, 0.1); }
-
-.royal-blue-20 {
-  color: rgba(51, 105, 231, 0.2); }
-
-.hover-royal-blue-20:hover {
-  color: rgba(51, 105, 231, 0.2); }
-
-.royal-blue-30 {
-  color: rgba(51, 105, 231, 0.3); }
-
-.hover-royal-blue-30:hover {
-  color: rgba(51, 105, 231, 0.3); }
-
-.royal-blue-40 {
-  color: rgba(51, 105, 231, 0.4); }
-
-.hover-royal-blue-40:hover {
-  color: rgba(51, 105, 231, 0.4); }
-
-.royal-blue-50 {
-  color: rgba(51, 105, 231, 0.5); }
-
-.hover-royal-blue-50:hover {
-  color: rgba(51, 105, 231, 0.5); }
-
-.royal-blue-60 {
-  color: rgba(51, 105, 231, 0.6); }
-
-.hover-royal-blue-60:hover {
-  color: rgba(51, 105, 231, 0.6); }
-
-.royal-blue-70 {
-  color: rgba(51, 105, 231, 0.7); }
-
-.hover-royal-blue-70:hover {
-  color: rgba(51, 105, 231, 0.7); }
-
-.royal-blue-80 {
-  color: rgba(51, 105, 231, 0.8); }
-
-.hover-royal-blue-80:hover {
-  color: rgba(51, 105, 231, 0.8); }
-
-.royal-blue-90 {
-  color: rgba(51, 105, 231, 0.9); }
-
-.hover-royal-blue-90:hover {
-  color: rgba(51, 105, 231, 0.9); }
-
-.shamrock {
-  color: #2dde98; }
-
-.hover-shamrock:hover {
-  color: #2dde98; }
-
-.shamrock-10 {
-  color: rgba(45, 222, 152, 0.1); }
-
-.hover-shamrock-10:hover {
-  color: rgba(45, 222, 152, 0.1); }
-
-.shamrock-20 {
-  color: rgba(45, 222, 152, 0.2); }
-
-.hover-shamrock-20:hover {
-  color: rgba(45, 222, 152, 0.2); }
-
-.shamrock-30 {
-  color: rgba(45, 222, 152, 0.3); }
-
-.hover-shamrock-30:hover {
-  color: rgba(45, 222, 152, 0.3); }
-
-.shamrock-40 {
-  color: rgba(45, 222, 152, 0.4); }
-
-.hover-shamrock-40:hover {
-  color: rgba(45, 222, 152, 0.4); }
-
-.shamrock-50 {
-  color: rgba(45, 222, 152, 0.5); }
-
-.hover-shamrock-50:hover {
-  color: rgba(45, 222, 152, 0.5); }
-
-.shamrock-60 {
-  color: rgba(45, 222, 152, 0.6); }
-
-.hover-shamrock-60:hover {
-  color: rgba(45, 222, 152, 0.6); }
-
-.shamrock-70 {
-  color: rgba(45, 222, 152, 0.7); }
-
-.hover-shamrock-70:hover {
-  color: rgba(45, 222, 152, 0.7); }
-
-.shamrock-80 {
-  color: rgba(45, 222, 152, 0.8); }
-
-.hover-shamrock-80:hover {
-  color: rgba(45, 222, 152, 0.8); }
-
-.shamrock-90 {
-  color: rgba(45, 222, 152, 0.9); }
-
-.hover-shamrock-90:hover {
-  color: rgba(45, 222, 152, 0.9); }
-
-.titan-white {
-  color: #f8faff; }
-
-.hover-titan-white:hover {
-  color: #f8faff; }
-
-.titan-white-10 {
-  color: rgba(248, 250, 255, 0.1); }
-
-.hover-titan-white-10:hover {
-  color: rgba(248, 250, 255, 0.1); }
-
-.titan-white-20 {
-  color: rgba(248, 250, 255, 0.2); }
-
-.hover-titan-white-20:hover {
-  color: rgba(248, 250, 255, 0.2); }
-
-.titan-white-30 {
-  color: rgba(248, 250, 255, 0.3); }
-
-.hover-titan-white-30:hover {
-  color: rgba(248, 250, 255, 0.3); }
-
-.titan-white-40 {
-  color: rgba(248, 250, 255, 0.4); }
-
-.hover-titan-white-40:hover {
-  color: rgba(248, 250, 255, 0.4); }
-
-.titan-white-50 {
-  color: rgba(248, 250, 255, 0.5); }
-
-.hover-titan-white-50:hover {
-  color: rgba(248, 250, 255, 0.5); }
-
-.titan-white-60 {
-  color: rgba(248, 250, 255, 0.6); }
-
-.hover-titan-white-60:hover {
-  color: rgba(248, 250, 255, 0.6); }
-
-.titan-white-70 {
-  color: rgba(248, 250, 255, 0.7); }
-
-.hover-titan-white-70:hover {
-  color: rgba(248, 250, 255, 0.7); }
-
-.titan-white-80 {
-  color: rgba(248, 250, 255, 0.8); }
-
-.hover-titan-white-80:hover {
-  color: rgba(248, 250, 255, 0.8); }
-
-.titan-white-90 {
-  color: rgba(248, 250, 255, 0.9); }
-
-.hover-titan-white-90:hover {
-  color: rgba(248, 250, 255, 0.9); }
-
-.trust {
-  color: #00aeff; }
-
-.hover-trust:hover {
-  color: #00aeff; }
-
-.trust-10 {
-  color: rgba(0, 174, 255, 0.1); }
-
-.hover-trust-10:hover {
-  color: rgba(0, 174, 255, 0.1); }
-
-.trust-20 {
-  color: rgba(0, 174, 255, 0.2); }
-
-.hover-trust-20:hover {
-  color: rgba(0, 174, 255, 0.2); }
-
-.trust-30 {
-  color: rgba(0, 174, 255, 0.3); }
-
-.hover-trust-30:hover {
-  color: rgba(0, 174, 255, 0.3); }
-
-.trust-40 {
-  color: rgba(0, 174, 255, 0.4); }
-
-.hover-trust-40:hover {
-  color: rgba(0, 174, 255, 0.4); }
-
-.trust-50 {
-  color: rgba(0, 174, 255, 0.5); }
-
-.hover-trust-50:hover {
-  color: rgba(0, 174, 255, 0.5); }
-
-.trust-60 {
-  color: rgba(0, 174, 255, 0.6); }
-
-.hover-trust-60:hover {
-  color: rgba(0, 174, 255, 0.6); }
-
-.trust-70 {
-  color: rgba(0, 174, 255, 0.7); }
-
-.hover-trust-70:hover {
-  color: rgba(0, 174, 255, 0.7); }
-
-.trust-80 {
-  color: rgba(0, 174, 255, 0.8); }
-
-.hover-trust-80:hover {
-  color: rgba(0, 174, 255, 0.8); }
-
-.trust-90 {
-  color: rgba(0, 174, 255, 0.9); }
-
-.hover-trust-90:hover {
-  color: rgba(0, 174, 255, 0.9); }
-
-/**
- * Coloring background using named Algolia values. Allow for various opacity
- * settings
- **/
 .bg-algolia-blue {
   background-color: #00aeff; }
 
 .hover-bg-algolia-blue:hover {
   background-color: #00aeff; }
+
+.b--algolia-blue {
+  border-color: #00aeff; }
+
+.hover-b--algolia-blue:hover {
+  border-color: #00aeff; }
+
+.algolia-blue-10 {
+  color: rgba(0, 174, 255, 0.1); }
+
+.hover-algolia-blue-10:hover {
+  color: rgba(0, 174, 255, 0.1); }
 
 .bg-algolia-blue-10 {
   background-color: rgba(0, 174, 255, 0.1); }
@@ -9167,11 +7695,35 @@ code, .code {
 .hover-bg-algolia-blue-10:hover {
   background-color: rgba(0, 174, 255, 0.1); }
 
+.b--algolia-blue-10 {
+  border-color: rgba(0, 174, 255, 0.1); }
+
+.hover-b--algolia-blue-10:hover {
+  border-color: rgba(0, 174, 255, 0.1); }
+
+.algolia-blue-20 {
+  color: rgba(0, 174, 255, 0.2); }
+
+.hover-algolia-blue-20:hover {
+  color: rgba(0, 174, 255, 0.2); }
+
 .bg-algolia-blue-20 {
   background-color: rgba(0, 174, 255, 0.2); }
 
 .hover-bg-algolia-blue-20:hover {
   background-color: rgba(0, 174, 255, 0.2); }
+
+.b--algolia-blue-20 {
+  border-color: rgba(0, 174, 255, 0.2); }
+
+.hover-b--algolia-blue-20:hover {
+  border-color: rgba(0, 174, 255, 0.2); }
+
+.algolia-blue-30 {
+  color: rgba(0, 174, 255, 0.3); }
+
+.hover-algolia-blue-30:hover {
+  color: rgba(0, 174, 255, 0.3); }
 
 .bg-algolia-blue-30 {
   background-color: rgba(0, 174, 255, 0.3); }
@@ -9179,11 +7731,35 @@ code, .code {
 .hover-bg-algolia-blue-30:hover {
   background-color: rgba(0, 174, 255, 0.3); }
 
+.b--algolia-blue-30 {
+  border-color: rgba(0, 174, 255, 0.3); }
+
+.hover-b--algolia-blue-30:hover {
+  border-color: rgba(0, 174, 255, 0.3); }
+
+.algolia-blue-40 {
+  color: rgba(0, 174, 255, 0.4); }
+
+.hover-algolia-blue-40:hover {
+  color: rgba(0, 174, 255, 0.4); }
+
 .bg-algolia-blue-40 {
   background-color: rgba(0, 174, 255, 0.4); }
 
 .hover-bg-algolia-blue-40:hover {
   background-color: rgba(0, 174, 255, 0.4); }
+
+.b--algolia-blue-40 {
+  border-color: rgba(0, 174, 255, 0.4); }
+
+.hover-b--algolia-blue-40:hover {
+  border-color: rgba(0, 174, 255, 0.4); }
+
+.algolia-blue-50 {
+  color: rgba(0, 174, 255, 0.5); }
+
+.hover-algolia-blue-50:hover {
+  color: rgba(0, 174, 255, 0.5); }
 
 .bg-algolia-blue-50 {
   background-color: rgba(0, 174, 255, 0.5); }
@@ -9191,11 +7767,35 @@ code, .code {
 .hover-bg-algolia-blue-50:hover {
   background-color: rgba(0, 174, 255, 0.5); }
 
+.b--algolia-blue-50 {
+  border-color: rgba(0, 174, 255, 0.5); }
+
+.hover-b--algolia-blue-50:hover {
+  border-color: rgba(0, 174, 255, 0.5); }
+
+.algolia-blue-60 {
+  color: rgba(0, 174, 255, 0.6); }
+
+.hover-algolia-blue-60:hover {
+  color: rgba(0, 174, 255, 0.6); }
+
 .bg-algolia-blue-60 {
   background-color: rgba(0, 174, 255, 0.6); }
 
 .hover-bg-algolia-blue-60:hover {
   background-color: rgba(0, 174, 255, 0.6); }
+
+.b--algolia-blue-60 {
+  border-color: rgba(0, 174, 255, 0.6); }
+
+.hover-b--algolia-blue-60:hover {
+  border-color: rgba(0, 174, 255, 0.6); }
+
+.algolia-blue-70 {
+  color: rgba(0, 174, 255, 0.7); }
+
+.hover-algolia-blue-70:hover {
+  color: rgba(0, 174, 255, 0.7); }
 
 .bg-algolia-blue-70 {
   background-color: rgba(0, 174, 255, 0.7); }
@@ -9203,11 +7803,35 @@ code, .code {
 .hover-bg-algolia-blue-70:hover {
   background-color: rgba(0, 174, 255, 0.7); }
 
+.b--algolia-blue-70 {
+  border-color: rgba(0, 174, 255, 0.7); }
+
+.hover-b--algolia-blue-70:hover {
+  border-color: rgba(0, 174, 255, 0.7); }
+
+.algolia-blue-80 {
+  color: rgba(0, 174, 255, 0.8); }
+
+.hover-algolia-blue-80:hover {
+  color: rgba(0, 174, 255, 0.8); }
+
 .bg-algolia-blue-80 {
   background-color: rgba(0, 174, 255, 0.8); }
 
 .hover-bg-algolia-blue-80:hover {
   background-color: rgba(0, 174, 255, 0.8); }
+
+.b--algolia-blue-80 {
+  border-color: rgba(0, 174, 255, 0.8); }
+
+.hover-b--algolia-blue-80:hover {
+  border-color: rgba(0, 174, 255, 0.8); }
+
+.algolia-blue-90 {
+  color: rgba(0, 174, 255, 0.9); }
+
+.hover-algolia-blue-90:hover {
+  color: rgba(0, 174, 255, 0.9); }
 
 .bg-algolia-blue-90 {
   background-color: rgba(0, 174, 255, 0.9); }
@@ -9215,11 +7839,35 @@ code, .code {
 .hover-bg-algolia-blue-90:hover {
   background-color: rgba(0, 174, 255, 0.9); }
 
+.b--algolia-blue-90 {
+  border-color: rgba(0, 174, 255, 0.9); }
+
+.hover-b--algolia-blue-90:hover {
+  border-color: rgba(0, 174, 255, 0.9); }
+
+.april-fools-purple {
+  color: #4B2E91; }
+
+.hover-april-fools-purple:hover {
+  color: #4B2E91; }
+
 .bg-april-fools-purple {
   background-color: #4B2E91; }
 
 .hover-bg-april-fools-purple:hover {
   background-color: #4B2E91; }
+
+.b--april-fools-purple {
+  border-color: #4B2E91; }
+
+.hover-b--april-fools-purple:hover {
+  border-color: #4B2E91; }
+
+.april-fools-purple-10 {
+  color: rgba(75, 46, 145, 0.1); }
+
+.hover-april-fools-purple-10:hover {
+  color: rgba(75, 46, 145, 0.1); }
 
 .bg-april-fools-purple-10 {
   background-color: rgba(75, 46, 145, 0.1); }
@@ -9227,11 +7875,35 @@ code, .code {
 .hover-bg-april-fools-purple-10:hover {
   background-color: rgba(75, 46, 145, 0.1); }
 
+.b--april-fools-purple-10 {
+  border-color: rgba(75, 46, 145, 0.1); }
+
+.hover-b--april-fools-purple-10:hover {
+  border-color: rgba(75, 46, 145, 0.1); }
+
+.april-fools-purple-20 {
+  color: rgba(75, 46, 145, 0.2); }
+
+.hover-april-fools-purple-20:hover {
+  color: rgba(75, 46, 145, 0.2); }
+
 .bg-april-fools-purple-20 {
   background-color: rgba(75, 46, 145, 0.2); }
 
 .hover-bg-april-fools-purple-20:hover {
   background-color: rgba(75, 46, 145, 0.2); }
+
+.b--april-fools-purple-20 {
+  border-color: rgba(75, 46, 145, 0.2); }
+
+.hover-b--april-fools-purple-20:hover {
+  border-color: rgba(75, 46, 145, 0.2); }
+
+.april-fools-purple-30 {
+  color: rgba(75, 46, 145, 0.3); }
+
+.hover-april-fools-purple-30:hover {
+  color: rgba(75, 46, 145, 0.3); }
 
 .bg-april-fools-purple-30 {
   background-color: rgba(75, 46, 145, 0.3); }
@@ -9239,11 +7911,35 @@ code, .code {
 .hover-bg-april-fools-purple-30:hover {
   background-color: rgba(75, 46, 145, 0.3); }
 
+.b--april-fools-purple-30 {
+  border-color: rgba(75, 46, 145, 0.3); }
+
+.hover-b--april-fools-purple-30:hover {
+  border-color: rgba(75, 46, 145, 0.3); }
+
+.april-fools-purple-40 {
+  color: rgba(75, 46, 145, 0.4); }
+
+.hover-april-fools-purple-40:hover {
+  color: rgba(75, 46, 145, 0.4); }
+
 .bg-april-fools-purple-40 {
   background-color: rgba(75, 46, 145, 0.4); }
 
 .hover-bg-april-fools-purple-40:hover {
   background-color: rgba(75, 46, 145, 0.4); }
+
+.b--april-fools-purple-40 {
+  border-color: rgba(75, 46, 145, 0.4); }
+
+.hover-b--april-fools-purple-40:hover {
+  border-color: rgba(75, 46, 145, 0.4); }
+
+.april-fools-purple-50 {
+  color: rgba(75, 46, 145, 0.5); }
+
+.hover-april-fools-purple-50:hover {
+  color: rgba(75, 46, 145, 0.5); }
 
 .bg-april-fools-purple-50 {
   background-color: rgba(75, 46, 145, 0.5); }
@@ -9251,11 +7947,35 @@ code, .code {
 .hover-bg-april-fools-purple-50:hover {
   background-color: rgba(75, 46, 145, 0.5); }
 
+.b--april-fools-purple-50 {
+  border-color: rgba(75, 46, 145, 0.5); }
+
+.hover-b--april-fools-purple-50:hover {
+  border-color: rgba(75, 46, 145, 0.5); }
+
+.april-fools-purple-60 {
+  color: rgba(75, 46, 145, 0.6); }
+
+.hover-april-fools-purple-60:hover {
+  color: rgba(75, 46, 145, 0.6); }
+
 .bg-april-fools-purple-60 {
   background-color: rgba(75, 46, 145, 0.6); }
 
 .hover-bg-april-fools-purple-60:hover {
   background-color: rgba(75, 46, 145, 0.6); }
+
+.b--april-fools-purple-60 {
+  border-color: rgba(75, 46, 145, 0.6); }
+
+.hover-b--april-fools-purple-60:hover {
+  border-color: rgba(75, 46, 145, 0.6); }
+
+.april-fools-purple-70 {
+  color: rgba(75, 46, 145, 0.7); }
+
+.hover-april-fools-purple-70:hover {
+  color: rgba(75, 46, 145, 0.7); }
 
 .bg-april-fools-purple-70 {
   background-color: rgba(75, 46, 145, 0.7); }
@@ -9263,11 +7983,35 @@ code, .code {
 .hover-bg-april-fools-purple-70:hover {
   background-color: rgba(75, 46, 145, 0.7); }
 
+.b--april-fools-purple-70 {
+  border-color: rgba(75, 46, 145, 0.7); }
+
+.hover-b--april-fools-purple-70:hover {
+  border-color: rgba(75, 46, 145, 0.7); }
+
+.april-fools-purple-80 {
+  color: rgba(75, 46, 145, 0.8); }
+
+.hover-april-fools-purple-80:hover {
+  color: rgba(75, 46, 145, 0.8); }
+
 .bg-april-fools-purple-80 {
   background-color: rgba(75, 46, 145, 0.8); }
 
 .hover-bg-april-fools-purple-80:hover {
   background-color: rgba(75, 46, 145, 0.8); }
+
+.b--april-fools-purple-80 {
+  border-color: rgba(75, 46, 145, 0.8); }
+
+.hover-b--april-fools-purple-80:hover {
+  border-color: rgba(75, 46, 145, 0.8); }
+
+.april-fools-purple-90 {
+  color: rgba(75, 46, 145, 0.9); }
+
+.hover-april-fools-purple-90:hover {
+  color: rgba(75, 46, 145, 0.9); }
 
 .bg-april-fools-purple-90 {
   background-color: rgba(75, 46, 145, 0.9); }
@@ -9275,11 +8019,35 @@ code, .code {
 .hover-bg-april-fools-purple-90:hover {
   background-color: rgba(75, 46, 145, 0.9); }
 
+.b--april-fools-purple-90 {
+  border-color: rgba(75, 46, 145, 0.9); }
+
+.hover-b--april-fools-purple-90:hover {
+  border-color: rgba(75, 46, 145, 0.9); }
+
+.athens-gray {
+  color: #eef0f7; }
+
+.hover-athens-gray:hover {
+  color: #eef0f7; }
+
 .bg-athens-gray {
   background-color: #eef0f7; }
 
 .hover-bg-athens-gray:hover {
   background-color: #eef0f7; }
+
+.b--athens-gray {
+  border-color: #eef0f7; }
+
+.hover-b--athens-gray:hover {
+  border-color: #eef0f7; }
+
+.athens-gray-10 {
+  color: rgba(238, 240, 247, 0.1); }
+
+.hover-athens-gray-10:hover {
+  color: rgba(238, 240, 247, 0.1); }
 
 .bg-athens-gray-10 {
   background-color: rgba(238, 240, 247, 0.1); }
@@ -9287,11 +8055,35 @@ code, .code {
 .hover-bg-athens-gray-10:hover {
   background-color: rgba(238, 240, 247, 0.1); }
 
+.b--athens-gray-10 {
+  border-color: rgba(238, 240, 247, 0.1); }
+
+.hover-b--athens-gray-10:hover {
+  border-color: rgba(238, 240, 247, 0.1); }
+
+.athens-gray-20 {
+  color: rgba(238, 240, 247, 0.2); }
+
+.hover-athens-gray-20:hover {
+  color: rgba(238, 240, 247, 0.2); }
+
 .bg-athens-gray-20 {
   background-color: rgba(238, 240, 247, 0.2); }
 
 .hover-bg-athens-gray-20:hover {
   background-color: rgba(238, 240, 247, 0.2); }
+
+.b--athens-gray-20 {
+  border-color: rgba(238, 240, 247, 0.2); }
+
+.hover-b--athens-gray-20:hover {
+  border-color: rgba(238, 240, 247, 0.2); }
+
+.athens-gray-30 {
+  color: rgba(238, 240, 247, 0.3); }
+
+.hover-athens-gray-30:hover {
+  color: rgba(238, 240, 247, 0.3); }
 
 .bg-athens-gray-30 {
   background-color: rgba(238, 240, 247, 0.3); }
@@ -9299,11 +8091,35 @@ code, .code {
 .hover-bg-athens-gray-30:hover {
   background-color: rgba(238, 240, 247, 0.3); }
 
+.b--athens-gray-30 {
+  border-color: rgba(238, 240, 247, 0.3); }
+
+.hover-b--athens-gray-30:hover {
+  border-color: rgba(238, 240, 247, 0.3); }
+
+.athens-gray-40 {
+  color: rgba(238, 240, 247, 0.4); }
+
+.hover-athens-gray-40:hover {
+  color: rgba(238, 240, 247, 0.4); }
+
 .bg-athens-gray-40 {
   background-color: rgba(238, 240, 247, 0.4); }
 
 .hover-bg-athens-gray-40:hover {
   background-color: rgba(238, 240, 247, 0.4); }
+
+.b--athens-gray-40 {
+  border-color: rgba(238, 240, 247, 0.4); }
+
+.hover-b--athens-gray-40:hover {
+  border-color: rgba(238, 240, 247, 0.4); }
+
+.athens-gray-50 {
+  color: rgba(238, 240, 247, 0.5); }
+
+.hover-athens-gray-50:hover {
+  color: rgba(238, 240, 247, 0.5); }
 
 .bg-athens-gray-50 {
   background-color: rgba(238, 240, 247, 0.5); }
@@ -9311,11 +8127,35 @@ code, .code {
 .hover-bg-athens-gray-50:hover {
   background-color: rgba(238, 240, 247, 0.5); }
 
+.b--athens-gray-50 {
+  border-color: rgba(238, 240, 247, 0.5); }
+
+.hover-b--athens-gray-50:hover {
+  border-color: rgba(238, 240, 247, 0.5); }
+
+.athens-gray-60 {
+  color: rgba(238, 240, 247, 0.6); }
+
+.hover-athens-gray-60:hover {
+  color: rgba(238, 240, 247, 0.6); }
+
 .bg-athens-gray-60 {
   background-color: rgba(238, 240, 247, 0.6); }
 
 .hover-bg-athens-gray-60:hover {
   background-color: rgba(238, 240, 247, 0.6); }
+
+.b--athens-gray-60 {
+  border-color: rgba(238, 240, 247, 0.6); }
+
+.hover-b--athens-gray-60:hover {
+  border-color: rgba(238, 240, 247, 0.6); }
+
+.athens-gray-70 {
+  color: rgba(238, 240, 247, 0.7); }
+
+.hover-athens-gray-70:hover {
+  color: rgba(238, 240, 247, 0.7); }
 
 .bg-athens-gray-70 {
   background-color: rgba(238, 240, 247, 0.7); }
@@ -9323,11 +8163,35 @@ code, .code {
 .hover-bg-athens-gray-70:hover {
   background-color: rgba(238, 240, 247, 0.7); }
 
+.b--athens-gray-70 {
+  border-color: rgba(238, 240, 247, 0.7); }
+
+.hover-b--athens-gray-70:hover {
+  border-color: rgba(238, 240, 247, 0.7); }
+
+.athens-gray-80 {
+  color: rgba(238, 240, 247, 0.8); }
+
+.hover-athens-gray-80:hover {
+  color: rgba(238, 240, 247, 0.8); }
+
 .bg-athens-gray-80 {
   background-color: rgba(238, 240, 247, 0.8); }
 
 .hover-bg-athens-gray-80:hover {
   background-color: rgba(238, 240, 247, 0.8); }
+
+.b--athens-gray-80 {
+  border-color: rgba(238, 240, 247, 0.8); }
+
+.hover-b--athens-gray-80:hover {
+  border-color: rgba(238, 240, 247, 0.8); }
+
+.athens-gray-90 {
+  color: rgba(238, 240, 247, 0.9); }
+
+.hover-athens-gray-90:hover {
+  color: rgba(238, 240, 247, 0.9); }
 
 .bg-athens-gray-90 {
   background-color: rgba(238, 240, 247, 0.9); }
@@ -9335,11 +8199,35 @@ code, .code {
 .hover-bg-athens-gray-90:hover {
   background-color: rgba(238, 240, 247, 0.9); }
 
+.b--athens-gray-90 {
+  border-color: rgba(238, 240, 247, 0.9); }
+
+.hover-b--athens-gray-90:hover {
+  border-color: rgba(238, 240, 247, 0.9); }
+
+.bittersweet {
+  color: #ff6c5f; }
+
+.hover-bittersweet:hover {
+  color: #ff6c5f; }
+
 .bg-bittersweet {
   background-color: #ff6c5f; }
 
 .hover-bg-bittersweet:hover {
   background-color: #ff6c5f; }
+
+.b--bittersweet {
+  border-color: #ff6c5f; }
+
+.hover-b--bittersweet:hover {
+  border-color: #ff6c5f; }
+
+.bittersweet-10 {
+  color: rgba(255, 108, 95, 0.1); }
+
+.hover-bittersweet-10:hover {
+  color: rgba(255, 108, 95, 0.1); }
 
 .bg-bittersweet-10 {
   background-color: rgba(255, 108, 95, 0.1); }
@@ -9347,11 +8235,35 @@ code, .code {
 .hover-bg-bittersweet-10:hover {
   background-color: rgba(255, 108, 95, 0.1); }
 
+.b--bittersweet-10 {
+  border-color: rgba(255, 108, 95, 0.1); }
+
+.hover-b--bittersweet-10:hover {
+  border-color: rgba(255, 108, 95, 0.1); }
+
+.bittersweet-20 {
+  color: rgba(255, 108, 95, 0.2); }
+
+.hover-bittersweet-20:hover {
+  color: rgba(255, 108, 95, 0.2); }
+
 .bg-bittersweet-20 {
   background-color: rgba(255, 108, 95, 0.2); }
 
 .hover-bg-bittersweet-20:hover {
   background-color: rgba(255, 108, 95, 0.2); }
+
+.b--bittersweet-20 {
+  border-color: rgba(255, 108, 95, 0.2); }
+
+.hover-b--bittersweet-20:hover {
+  border-color: rgba(255, 108, 95, 0.2); }
+
+.bittersweet-30 {
+  color: rgba(255, 108, 95, 0.3); }
+
+.hover-bittersweet-30:hover {
+  color: rgba(255, 108, 95, 0.3); }
 
 .bg-bittersweet-30 {
   background-color: rgba(255, 108, 95, 0.3); }
@@ -9359,11 +8271,35 @@ code, .code {
 .hover-bg-bittersweet-30:hover {
   background-color: rgba(255, 108, 95, 0.3); }
 
+.b--bittersweet-30 {
+  border-color: rgba(255, 108, 95, 0.3); }
+
+.hover-b--bittersweet-30:hover {
+  border-color: rgba(255, 108, 95, 0.3); }
+
+.bittersweet-40 {
+  color: rgba(255, 108, 95, 0.4); }
+
+.hover-bittersweet-40:hover {
+  color: rgba(255, 108, 95, 0.4); }
+
 .bg-bittersweet-40 {
   background-color: rgba(255, 108, 95, 0.4); }
 
 .hover-bg-bittersweet-40:hover {
   background-color: rgba(255, 108, 95, 0.4); }
+
+.b--bittersweet-40 {
+  border-color: rgba(255, 108, 95, 0.4); }
+
+.hover-b--bittersweet-40:hover {
+  border-color: rgba(255, 108, 95, 0.4); }
+
+.bittersweet-50 {
+  color: rgba(255, 108, 95, 0.5); }
+
+.hover-bittersweet-50:hover {
+  color: rgba(255, 108, 95, 0.5); }
 
 .bg-bittersweet-50 {
   background-color: rgba(255, 108, 95, 0.5); }
@@ -9371,11 +8307,35 @@ code, .code {
 .hover-bg-bittersweet-50:hover {
   background-color: rgba(255, 108, 95, 0.5); }
 
+.b--bittersweet-50 {
+  border-color: rgba(255, 108, 95, 0.5); }
+
+.hover-b--bittersweet-50:hover {
+  border-color: rgba(255, 108, 95, 0.5); }
+
+.bittersweet-60 {
+  color: rgba(255, 108, 95, 0.6); }
+
+.hover-bittersweet-60:hover {
+  color: rgba(255, 108, 95, 0.6); }
+
 .bg-bittersweet-60 {
   background-color: rgba(255, 108, 95, 0.6); }
 
 .hover-bg-bittersweet-60:hover {
   background-color: rgba(255, 108, 95, 0.6); }
+
+.b--bittersweet-60 {
+  border-color: rgba(255, 108, 95, 0.6); }
+
+.hover-b--bittersweet-60:hover {
+  border-color: rgba(255, 108, 95, 0.6); }
+
+.bittersweet-70 {
+  color: rgba(255, 108, 95, 0.7); }
+
+.hover-bittersweet-70:hover {
+  color: rgba(255, 108, 95, 0.7); }
 
 .bg-bittersweet-70 {
   background-color: rgba(255, 108, 95, 0.7); }
@@ -9383,11 +8343,35 @@ code, .code {
 .hover-bg-bittersweet-70:hover {
   background-color: rgba(255, 108, 95, 0.7); }
 
+.b--bittersweet-70 {
+  border-color: rgba(255, 108, 95, 0.7); }
+
+.hover-b--bittersweet-70:hover {
+  border-color: rgba(255, 108, 95, 0.7); }
+
+.bittersweet-80 {
+  color: rgba(255, 108, 95, 0.8); }
+
+.hover-bittersweet-80:hover {
+  color: rgba(255, 108, 95, 0.8); }
+
 .bg-bittersweet-80 {
   background-color: rgba(255, 108, 95, 0.8); }
 
 .hover-bg-bittersweet-80:hover {
   background-color: rgba(255, 108, 95, 0.8); }
+
+.b--bittersweet-80 {
+  border-color: rgba(255, 108, 95, 0.8); }
+
+.hover-b--bittersweet-80:hover {
+  border-color: rgba(255, 108, 95, 0.8); }
+
+.bittersweet-90 {
+  color: rgba(255, 108, 95, 0.9); }
+
+.hover-bittersweet-90:hover {
+  color: rgba(255, 108, 95, 0.9); }
 
 .bg-bittersweet-90 {
   background-color: rgba(255, 108, 95, 0.9); }
@@ -9395,11 +8379,35 @@ code, .code {
 .hover-bg-bittersweet-90:hover {
   background-color: rgba(255, 108, 95, 0.9); }
 
+.b--bittersweet-90 {
+  border-color: rgba(255, 108, 95, 0.9); }
+
+.hover-b--bittersweet-90:hover {
+  border-color: rgba(255, 108, 95, 0.9); }
+
+.blue-bell {
+  color: #a6b0d8; }
+
+.hover-blue-bell:hover {
+  color: #a6b0d8; }
+
 .bg-blue-bell {
   background-color: #a6b0d8; }
 
 .hover-bg-blue-bell:hover {
   background-color: #a6b0d8; }
+
+.b--blue-bell {
+  border-color: #a6b0d8; }
+
+.hover-b--blue-bell:hover {
+  border-color: #a6b0d8; }
+
+.blue-bell-10 {
+  color: rgba(166, 176, 216, 0.1); }
+
+.hover-blue-bell-10:hover {
+  color: rgba(166, 176, 216, 0.1); }
 
 .bg-blue-bell-10 {
   background-color: rgba(166, 176, 216, 0.1); }
@@ -9407,11 +8415,35 @@ code, .code {
 .hover-bg-blue-bell-10:hover {
   background-color: rgba(166, 176, 216, 0.1); }
 
+.b--blue-bell-10 {
+  border-color: rgba(166, 176, 216, 0.1); }
+
+.hover-b--blue-bell-10:hover {
+  border-color: rgba(166, 176, 216, 0.1); }
+
+.blue-bell-20 {
+  color: rgba(166, 176, 216, 0.2); }
+
+.hover-blue-bell-20:hover {
+  color: rgba(166, 176, 216, 0.2); }
+
 .bg-blue-bell-20 {
   background-color: rgba(166, 176, 216, 0.2); }
 
 .hover-bg-blue-bell-20:hover {
   background-color: rgba(166, 176, 216, 0.2); }
+
+.b--blue-bell-20 {
+  border-color: rgba(166, 176, 216, 0.2); }
+
+.hover-b--blue-bell-20:hover {
+  border-color: rgba(166, 176, 216, 0.2); }
+
+.blue-bell-30 {
+  color: rgba(166, 176, 216, 0.3); }
+
+.hover-blue-bell-30:hover {
+  color: rgba(166, 176, 216, 0.3); }
 
 .bg-blue-bell-30 {
   background-color: rgba(166, 176, 216, 0.3); }
@@ -9419,11 +8451,35 @@ code, .code {
 .hover-bg-blue-bell-30:hover {
   background-color: rgba(166, 176, 216, 0.3); }
 
+.b--blue-bell-30 {
+  border-color: rgba(166, 176, 216, 0.3); }
+
+.hover-b--blue-bell-30:hover {
+  border-color: rgba(166, 176, 216, 0.3); }
+
+.blue-bell-40 {
+  color: rgba(166, 176, 216, 0.4); }
+
+.hover-blue-bell-40:hover {
+  color: rgba(166, 176, 216, 0.4); }
+
 .bg-blue-bell-40 {
   background-color: rgba(166, 176, 216, 0.4); }
 
 .hover-bg-blue-bell-40:hover {
   background-color: rgba(166, 176, 216, 0.4); }
+
+.b--blue-bell-40 {
+  border-color: rgba(166, 176, 216, 0.4); }
+
+.hover-b--blue-bell-40:hover {
+  border-color: rgba(166, 176, 216, 0.4); }
+
+.blue-bell-50 {
+  color: rgba(166, 176, 216, 0.5); }
+
+.hover-blue-bell-50:hover {
+  color: rgba(166, 176, 216, 0.5); }
 
 .bg-blue-bell-50 {
   background-color: rgba(166, 176, 216, 0.5); }
@@ -9431,11 +8487,35 @@ code, .code {
 .hover-bg-blue-bell-50:hover {
   background-color: rgba(166, 176, 216, 0.5); }
 
+.b--blue-bell-50 {
+  border-color: rgba(166, 176, 216, 0.5); }
+
+.hover-b--blue-bell-50:hover {
+  border-color: rgba(166, 176, 216, 0.5); }
+
+.blue-bell-60 {
+  color: rgba(166, 176, 216, 0.6); }
+
+.hover-blue-bell-60:hover {
+  color: rgba(166, 176, 216, 0.6); }
+
 .bg-blue-bell-60 {
   background-color: rgba(166, 176, 216, 0.6); }
 
 .hover-bg-blue-bell-60:hover {
   background-color: rgba(166, 176, 216, 0.6); }
+
+.b--blue-bell-60 {
+  border-color: rgba(166, 176, 216, 0.6); }
+
+.hover-b--blue-bell-60:hover {
+  border-color: rgba(166, 176, 216, 0.6); }
+
+.blue-bell-70 {
+  color: rgba(166, 176, 216, 0.7); }
+
+.hover-blue-bell-70:hover {
+  color: rgba(166, 176, 216, 0.7); }
 
 .bg-blue-bell-70 {
   background-color: rgba(166, 176, 216, 0.7); }
@@ -9443,11 +8523,35 @@ code, .code {
 .hover-bg-blue-bell-70:hover {
   background-color: rgba(166, 176, 216, 0.7); }
 
+.b--blue-bell-70 {
+  border-color: rgba(166, 176, 216, 0.7); }
+
+.hover-b--blue-bell-70:hover {
+  border-color: rgba(166, 176, 216, 0.7); }
+
+.blue-bell-80 {
+  color: rgba(166, 176, 216, 0.8); }
+
+.hover-blue-bell-80:hover {
+  color: rgba(166, 176, 216, 0.8); }
+
 .bg-blue-bell-80 {
   background-color: rgba(166, 176, 216, 0.8); }
 
 .hover-bg-blue-bell-80:hover {
   background-color: rgba(166, 176, 216, 0.8); }
+
+.b--blue-bell-80 {
+  border-color: rgba(166, 176, 216, 0.8); }
+
+.hover-b--blue-bell-80:hover {
+  border-color: rgba(166, 176, 216, 0.8); }
+
+.blue-bell-90 {
+  color: rgba(166, 176, 216, 0.9); }
+
+.hover-blue-bell-90:hover {
+  color: rgba(166, 176, 216, 0.9); }
 
 .bg-blue-bell-90 {
   background-color: rgba(166, 176, 216, 0.9); }
@@ -9455,11 +8559,35 @@ code, .code {
 .hover-bg-blue-bell-90:hover {
   background-color: rgba(166, 176, 216, 0.9); }
 
+.b--blue-bell-90 {
+  border-color: rgba(166, 176, 216, 0.9); }
+
+.hover-b--blue-bell-90:hover {
+  border-color: rgba(166, 176, 216, 0.9); }
+
+.bunting {
+  color: #3e396b; }
+
+.hover-bunting:hover {
+  color: #3e396b; }
+
 .bg-bunting {
   background-color: #3e396b; }
 
 .hover-bg-bunting:hover {
   background-color: #3e396b; }
+
+.b--bunting {
+  border-color: #3e396b; }
+
+.hover-b--bunting:hover {
+  border-color: #3e396b; }
+
+.bunting-10 {
+  color: rgba(62, 57, 107, 0.1); }
+
+.hover-bunting-10:hover {
+  color: rgba(62, 57, 107, 0.1); }
 
 .bg-bunting-10 {
   background-color: rgba(62, 57, 107, 0.1); }
@@ -9467,11 +8595,35 @@ code, .code {
 .hover-bg-bunting-10:hover {
   background-color: rgba(62, 57, 107, 0.1); }
 
+.b--bunting-10 {
+  border-color: rgba(62, 57, 107, 0.1); }
+
+.hover-b--bunting-10:hover {
+  border-color: rgba(62, 57, 107, 0.1); }
+
+.bunting-20 {
+  color: rgba(62, 57, 107, 0.2); }
+
+.hover-bunting-20:hover {
+  color: rgba(62, 57, 107, 0.2); }
+
 .bg-bunting-20 {
   background-color: rgba(62, 57, 107, 0.2); }
 
 .hover-bg-bunting-20:hover {
   background-color: rgba(62, 57, 107, 0.2); }
+
+.b--bunting-20 {
+  border-color: rgba(62, 57, 107, 0.2); }
+
+.hover-b--bunting-20:hover {
+  border-color: rgba(62, 57, 107, 0.2); }
+
+.bunting-30 {
+  color: rgba(62, 57, 107, 0.3); }
+
+.hover-bunting-30:hover {
+  color: rgba(62, 57, 107, 0.3); }
 
 .bg-bunting-30 {
   background-color: rgba(62, 57, 107, 0.3); }
@@ -9479,11 +8631,35 @@ code, .code {
 .hover-bg-bunting-30:hover {
   background-color: rgba(62, 57, 107, 0.3); }
 
+.b--bunting-30 {
+  border-color: rgba(62, 57, 107, 0.3); }
+
+.hover-b--bunting-30:hover {
+  border-color: rgba(62, 57, 107, 0.3); }
+
+.bunting-40 {
+  color: rgba(62, 57, 107, 0.4); }
+
+.hover-bunting-40:hover {
+  color: rgba(62, 57, 107, 0.4); }
+
 .bg-bunting-40 {
   background-color: rgba(62, 57, 107, 0.4); }
 
 .hover-bg-bunting-40:hover {
   background-color: rgba(62, 57, 107, 0.4); }
+
+.b--bunting-40 {
+  border-color: rgba(62, 57, 107, 0.4); }
+
+.hover-b--bunting-40:hover {
+  border-color: rgba(62, 57, 107, 0.4); }
+
+.bunting-50 {
+  color: rgba(62, 57, 107, 0.5); }
+
+.hover-bunting-50:hover {
+  color: rgba(62, 57, 107, 0.5); }
 
 .bg-bunting-50 {
   background-color: rgba(62, 57, 107, 0.5); }
@@ -9491,11 +8667,35 @@ code, .code {
 .hover-bg-bunting-50:hover {
   background-color: rgba(62, 57, 107, 0.5); }
 
+.b--bunting-50 {
+  border-color: rgba(62, 57, 107, 0.5); }
+
+.hover-b--bunting-50:hover {
+  border-color: rgba(62, 57, 107, 0.5); }
+
+.bunting-60 {
+  color: rgba(62, 57, 107, 0.6); }
+
+.hover-bunting-60:hover {
+  color: rgba(62, 57, 107, 0.6); }
+
 .bg-bunting-60 {
   background-color: rgba(62, 57, 107, 0.6); }
 
 .hover-bg-bunting-60:hover {
   background-color: rgba(62, 57, 107, 0.6); }
+
+.b--bunting-60 {
+  border-color: rgba(62, 57, 107, 0.6); }
+
+.hover-b--bunting-60:hover {
+  border-color: rgba(62, 57, 107, 0.6); }
+
+.bunting-70 {
+  color: rgba(62, 57, 107, 0.7); }
+
+.hover-bunting-70:hover {
+  color: rgba(62, 57, 107, 0.7); }
 
 .bg-bunting-70 {
   background-color: rgba(62, 57, 107, 0.7); }
@@ -9503,11 +8703,35 @@ code, .code {
 .hover-bg-bunting-70:hover {
   background-color: rgba(62, 57, 107, 0.7); }
 
+.b--bunting-70 {
+  border-color: rgba(62, 57, 107, 0.7); }
+
+.hover-b--bunting-70:hover {
+  border-color: rgba(62, 57, 107, 0.7); }
+
+.bunting-80 {
+  color: rgba(62, 57, 107, 0.8); }
+
+.hover-bunting-80:hover {
+  color: rgba(62, 57, 107, 0.8); }
+
 .bg-bunting-80 {
   background-color: rgba(62, 57, 107, 0.8); }
 
 .hover-bg-bunting-80:hover {
   background-color: rgba(62, 57, 107, 0.8); }
+
+.b--bunting-80 {
+  border-color: rgba(62, 57, 107, 0.8); }
+
+.hover-b--bunting-80:hover {
+  border-color: rgba(62, 57, 107, 0.8); }
+
+.bunting-90 {
+  color: rgba(62, 57, 107, 0.9); }
+
+.hover-bunting-90:hover {
+  color: rgba(62, 57, 107, 0.9); }
 
 .bg-bunting-90 {
   background-color: rgba(62, 57, 107, 0.9); }
@@ -9515,11 +8739,35 @@ code, .code {
 .hover-bg-bunting-90:hover {
   background-color: rgba(62, 57, 107, 0.9); }
 
+.b--bunting-90 {
+  border-color: rgba(62, 57, 107, 0.9); }
+
+.hover-b--bunting-90:hover {
+  border-color: rgba(62, 57, 107, 0.9); }
+
+.candor {
+  color: #2dde98; }
+
+.hover-candor:hover {
+  color: #2dde98; }
+
 .bg-candor {
   background-color: #2dde98; }
 
 .hover-bg-candor:hover {
   background-color: #2dde98; }
+
+.b--candor {
+  border-color: #2dde98; }
+
+.hover-b--candor:hover {
+  border-color: #2dde98; }
+
+.candor-10 {
+  color: rgba(45, 222, 152, 0.1); }
+
+.hover-candor-10:hover {
+  color: rgba(45, 222, 152, 0.1); }
 
 .bg-candor-10 {
   background-color: rgba(45, 222, 152, 0.1); }
@@ -9527,11 +8775,35 @@ code, .code {
 .hover-bg-candor-10:hover {
   background-color: rgba(45, 222, 152, 0.1); }
 
+.b--candor-10 {
+  border-color: rgba(45, 222, 152, 0.1); }
+
+.hover-b--candor-10:hover {
+  border-color: rgba(45, 222, 152, 0.1); }
+
+.candor-20 {
+  color: rgba(45, 222, 152, 0.2); }
+
+.hover-candor-20:hover {
+  color: rgba(45, 222, 152, 0.2); }
+
 .bg-candor-20 {
   background-color: rgba(45, 222, 152, 0.2); }
 
 .hover-bg-candor-20:hover {
   background-color: rgba(45, 222, 152, 0.2); }
+
+.b--candor-20 {
+  border-color: rgba(45, 222, 152, 0.2); }
+
+.hover-b--candor-20:hover {
+  border-color: rgba(45, 222, 152, 0.2); }
+
+.candor-30 {
+  color: rgba(45, 222, 152, 0.3); }
+
+.hover-candor-30:hover {
+  color: rgba(45, 222, 152, 0.3); }
 
 .bg-candor-30 {
   background-color: rgba(45, 222, 152, 0.3); }
@@ -9539,11 +8811,35 @@ code, .code {
 .hover-bg-candor-30:hover {
   background-color: rgba(45, 222, 152, 0.3); }
 
+.b--candor-30 {
+  border-color: rgba(45, 222, 152, 0.3); }
+
+.hover-b--candor-30:hover {
+  border-color: rgba(45, 222, 152, 0.3); }
+
+.candor-40 {
+  color: rgba(45, 222, 152, 0.4); }
+
+.hover-candor-40:hover {
+  color: rgba(45, 222, 152, 0.4); }
+
 .bg-candor-40 {
   background-color: rgba(45, 222, 152, 0.4); }
 
 .hover-bg-candor-40:hover {
   background-color: rgba(45, 222, 152, 0.4); }
+
+.b--candor-40 {
+  border-color: rgba(45, 222, 152, 0.4); }
+
+.hover-b--candor-40:hover {
+  border-color: rgba(45, 222, 152, 0.4); }
+
+.candor-50 {
+  color: rgba(45, 222, 152, 0.5); }
+
+.hover-candor-50:hover {
+  color: rgba(45, 222, 152, 0.5); }
 
 .bg-candor-50 {
   background-color: rgba(45, 222, 152, 0.5); }
@@ -9551,11 +8847,35 @@ code, .code {
 .hover-bg-candor-50:hover {
   background-color: rgba(45, 222, 152, 0.5); }
 
+.b--candor-50 {
+  border-color: rgba(45, 222, 152, 0.5); }
+
+.hover-b--candor-50:hover {
+  border-color: rgba(45, 222, 152, 0.5); }
+
+.candor-60 {
+  color: rgba(45, 222, 152, 0.6); }
+
+.hover-candor-60:hover {
+  color: rgba(45, 222, 152, 0.6); }
+
 .bg-candor-60 {
   background-color: rgba(45, 222, 152, 0.6); }
 
 .hover-bg-candor-60:hover {
   background-color: rgba(45, 222, 152, 0.6); }
+
+.b--candor-60 {
+  border-color: rgba(45, 222, 152, 0.6); }
+
+.hover-b--candor-60:hover {
+  border-color: rgba(45, 222, 152, 0.6); }
+
+.candor-70 {
+  color: rgba(45, 222, 152, 0.7); }
+
+.hover-candor-70:hover {
+  color: rgba(45, 222, 152, 0.7); }
 
 .bg-candor-70 {
   background-color: rgba(45, 222, 152, 0.7); }
@@ -9563,11 +8883,35 @@ code, .code {
 .hover-bg-candor-70:hover {
   background-color: rgba(45, 222, 152, 0.7); }
 
+.b--candor-70 {
+  border-color: rgba(45, 222, 152, 0.7); }
+
+.hover-b--candor-70:hover {
+  border-color: rgba(45, 222, 152, 0.7); }
+
+.candor-80 {
+  color: rgba(45, 222, 152, 0.8); }
+
+.hover-candor-80:hover {
+  color: rgba(45, 222, 152, 0.8); }
+
 .bg-candor-80 {
   background-color: rgba(45, 222, 152, 0.8); }
 
 .hover-bg-candor-80:hover {
   background-color: rgba(45, 222, 152, 0.8); }
+
+.b--candor-80 {
+  border-color: rgba(45, 222, 152, 0.8); }
+
+.hover-b--candor-80:hover {
+  border-color: rgba(45, 222, 152, 0.8); }
+
+.candor-90 {
+  color: rgba(45, 222, 152, 0.9); }
+
+.hover-candor-90:hover {
+  color: rgba(45, 222, 152, 0.9); }
 
 .bg-candor-90 {
   background-color: rgba(45, 222, 152, 0.9); }
@@ -9575,11 +8919,35 @@ code, .code {
 .hover-bg-candor-90:hover {
   background-color: rgba(45, 222, 152, 0.9); }
 
+.b--candor-90 {
+  border-color: rgba(45, 222, 152, 0.9); }
+
+.hover-b--candor-90:hover {
+  border-color: rgba(45, 222, 152, 0.9); }
+
+.care {
+  color: #ffc168; }
+
+.hover-care:hover {
+  color: #ffc168; }
+
 .bg-care {
   background-color: #ffc168; }
 
 .hover-bg-care:hover {
   background-color: #ffc168; }
+
+.b--care {
+  border-color: #ffc168; }
+
+.hover-b--care:hover {
+  border-color: #ffc168; }
+
+.care-10 {
+  color: rgba(255, 193, 104, 0.1); }
+
+.hover-care-10:hover {
+  color: rgba(255, 193, 104, 0.1); }
 
 .bg-care-10 {
   background-color: rgba(255, 193, 104, 0.1); }
@@ -9587,11 +8955,35 @@ code, .code {
 .hover-bg-care-10:hover {
   background-color: rgba(255, 193, 104, 0.1); }
 
+.b--care-10 {
+  border-color: rgba(255, 193, 104, 0.1); }
+
+.hover-b--care-10:hover {
+  border-color: rgba(255, 193, 104, 0.1); }
+
+.care-20 {
+  color: rgba(255, 193, 104, 0.2); }
+
+.hover-care-20:hover {
+  color: rgba(255, 193, 104, 0.2); }
+
 .bg-care-20 {
   background-color: rgba(255, 193, 104, 0.2); }
 
 .hover-bg-care-20:hover {
   background-color: rgba(255, 193, 104, 0.2); }
+
+.b--care-20 {
+  border-color: rgba(255, 193, 104, 0.2); }
+
+.hover-b--care-20:hover {
+  border-color: rgba(255, 193, 104, 0.2); }
+
+.care-30 {
+  color: rgba(255, 193, 104, 0.3); }
+
+.hover-care-30:hover {
+  color: rgba(255, 193, 104, 0.3); }
 
 .bg-care-30 {
   background-color: rgba(255, 193, 104, 0.3); }
@@ -9599,11 +8991,35 @@ code, .code {
 .hover-bg-care-30:hover {
   background-color: rgba(255, 193, 104, 0.3); }
 
+.b--care-30 {
+  border-color: rgba(255, 193, 104, 0.3); }
+
+.hover-b--care-30:hover {
+  border-color: rgba(255, 193, 104, 0.3); }
+
+.care-40 {
+  color: rgba(255, 193, 104, 0.4); }
+
+.hover-care-40:hover {
+  color: rgba(255, 193, 104, 0.4); }
+
 .bg-care-40 {
   background-color: rgba(255, 193, 104, 0.4); }
 
 .hover-bg-care-40:hover {
   background-color: rgba(255, 193, 104, 0.4); }
+
+.b--care-40 {
+  border-color: rgba(255, 193, 104, 0.4); }
+
+.hover-b--care-40:hover {
+  border-color: rgba(255, 193, 104, 0.4); }
+
+.care-50 {
+  color: rgba(255, 193, 104, 0.5); }
+
+.hover-care-50:hover {
+  color: rgba(255, 193, 104, 0.5); }
 
 .bg-care-50 {
   background-color: rgba(255, 193, 104, 0.5); }
@@ -9611,11 +9027,35 @@ code, .code {
 .hover-bg-care-50:hover {
   background-color: rgba(255, 193, 104, 0.5); }
 
+.b--care-50 {
+  border-color: rgba(255, 193, 104, 0.5); }
+
+.hover-b--care-50:hover {
+  border-color: rgba(255, 193, 104, 0.5); }
+
+.care-60 {
+  color: rgba(255, 193, 104, 0.6); }
+
+.hover-care-60:hover {
+  color: rgba(255, 193, 104, 0.6); }
+
 .bg-care-60 {
   background-color: rgba(255, 193, 104, 0.6); }
 
 .hover-bg-care-60:hover {
   background-color: rgba(255, 193, 104, 0.6); }
+
+.b--care-60 {
+  border-color: rgba(255, 193, 104, 0.6); }
+
+.hover-b--care-60:hover {
+  border-color: rgba(255, 193, 104, 0.6); }
+
+.care-70 {
+  color: rgba(255, 193, 104, 0.7); }
+
+.hover-care-70:hover {
+  color: rgba(255, 193, 104, 0.7); }
 
 .bg-care-70 {
   background-color: rgba(255, 193, 104, 0.7); }
@@ -9623,11 +9063,35 @@ code, .code {
 .hover-bg-care-70:hover {
   background-color: rgba(255, 193, 104, 0.7); }
 
+.b--care-70 {
+  border-color: rgba(255, 193, 104, 0.7); }
+
+.hover-b--care-70:hover {
+  border-color: rgba(255, 193, 104, 0.7); }
+
+.care-80 {
+  color: rgba(255, 193, 104, 0.8); }
+
+.hover-care-80:hover {
+  color: rgba(255, 193, 104, 0.8); }
+
 .bg-care-80 {
   background-color: rgba(255, 193, 104, 0.8); }
 
 .hover-bg-care-80:hover {
   background-color: rgba(255, 193, 104, 0.8); }
+
+.b--care-80 {
+  border-color: rgba(255, 193, 104, 0.8); }
+
+.hover-b--care-80:hover {
+  border-color: rgba(255, 193, 104, 0.8); }
+
+.care-90 {
+  color: rgba(255, 193, 104, 0.9); }
+
+.hover-care-90:hover {
+  color: rgba(255, 193, 104, 0.9); }
 
 .bg-care-90 {
   background-color: rgba(255, 193, 104, 0.9); }
@@ -9635,11 +9099,35 @@ code, .code {
 .hover-bg-care-90:hover {
   background-color: rgba(255, 193, 104, 0.9); }
 
+.b--care-90 {
+  border-color: rgba(255, 193, 104, 0.9); }
+
+.hover-b--care-90:hover {
+  border-color: rgba(255, 193, 104, 0.9); }
+
+.deep-cove {
+  color: #050f2c; }
+
+.hover-deep-cove:hover {
+  color: #050f2c; }
+
 .bg-deep-cove {
   background-color: #050f2c; }
 
 .hover-bg-deep-cove:hover {
   background-color: #050f2c; }
+
+.b--deep-cove {
+  border-color: #050f2c; }
+
+.hover-b--deep-cove:hover {
+  border-color: #050f2c; }
+
+.deep-cove-10 {
+  color: rgba(5, 15, 44, 0.1); }
+
+.hover-deep-cove-10:hover {
+  color: rgba(5, 15, 44, 0.1); }
 
 .bg-deep-cove-10 {
   background-color: rgba(5, 15, 44, 0.1); }
@@ -9647,11 +9135,35 @@ code, .code {
 .hover-bg-deep-cove-10:hover {
   background-color: rgba(5, 15, 44, 0.1); }
 
+.b--deep-cove-10 {
+  border-color: rgba(5, 15, 44, 0.1); }
+
+.hover-b--deep-cove-10:hover {
+  border-color: rgba(5, 15, 44, 0.1); }
+
+.deep-cove-20 {
+  color: rgba(5, 15, 44, 0.2); }
+
+.hover-deep-cove-20:hover {
+  color: rgba(5, 15, 44, 0.2); }
+
 .bg-deep-cove-20 {
   background-color: rgba(5, 15, 44, 0.2); }
 
 .hover-bg-deep-cove-20:hover {
   background-color: rgba(5, 15, 44, 0.2); }
+
+.b--deep-cove-20 {
+  border-color: rgba(5, 15, 44, 0.2); }
+
+.hover-b--deep-cove-20:hover {
+  border-color: rgba(5, 15, 44, 0.2); }
+
+.deep-cove-30 {
+  color: rgba(5, 15, 44, 0.3); }
+
+.hover-deep-cove-30:hover {
+  color: rgba(5, 15, 44, 0.3); }
 
 .bg-deep-cove-30 {
   background-color: rgba(5, 15, 44, 0.3); }
@@ -9659,11 +9171,35 @@ code, .code {
 .hover-bg-deep-cove-30:hover {
   background-color: rgba(5, 15, 44, 0.3); }
 
+.b--deep-cove-30 {
+  border-color: rgba(5, 15, 44, 0.3); }
+
+.hover-b--deep-cove-30:hover {
+  border-color: rgba(5, 15, 44, 0.3); }
+
+.deep-cove-40 {
+  color: rgba(5, 15, 44, 0.4); }
+
+.hover-deep-cove-40:hover {
+  color: rgba(5, 15, 44, 0.4); }
+
 .bg-deep-cove-40 {
   background-color: rgba(5, 15, 44, 0.4); }
 
 .hover-bg-deep-cove-40:hover {
   background-color: rgba(5, 15, 44, 0.4); }
+
+.b--deep-cove-40 {
+  border-color: rgba(5, 15, 44, 0.4); }
+
+.hover-b--deep-cove-40:hover {
+  border-color: rgba(5, 15, 44, 0.4); }
+
+.deep-cove-50 {
+  color: rgba(5, 15, 44, 0.5); }
+
+.hover-deep-cove-50:hover {
+  color: rgba(5, 15, 44, 0.5); }
 
 .bg-deep-cove-50 {
   background-color: rgba(5, 15, 44, 0.5); }
@@ -9671,11 +9207,35 @@ code, .code {
 .hover-bg-deep-cove-50:hover {
   background-color: rgba(5, 15, 44, 0.5); }
 
+.b--deep-cove-50 {
+  border-color: rgba(5, 15, 44, 0.5); }
+
+.hover-b--deep-cove-50:hover {
+  border-color: rgba(5, 15, 44, 0.5); }
+
+.deep-cove-60 {
+  color: rgba(5, 15, 44, 0.6); }
+
+.hover-deep-cove-60:hover {
+  color: rgba(5, 15, 44, 0.6); }
+
 .bg-deep-cove-60 {
   background-color: rgba(5, 15, 44, 0.6); }
 
 .hover-bg-deep-cove-60:hover {
   background-color: rgba(5, 15, 44, 0.6); }
+
+.b--deep-cove-60 {
+  border-color: rgba(5, 15, 44, 0.6); }
+
+.hover-b--deep-cove-60:hover {
+  border-color: rgba(5, 15, 44, 0.6); }
+
+.deep-cove-70 {
+  color: rgba(5, 15, 44, 0.7); }
+
+.hover-deep-cove-70:hover {
+  color: rgba(5, 15, 44, 0.7); }
 
 .bg-deep-cove-70 {
   background-color: rgba(5, 15, 44, 0.7); }
@@ -9683,11 +9243,35 @@ code, .code {
 .hover-bg-deep-cove-70:hover {
   background-color: rgba(5, 15, 44, 0.7); }
 
+.b--deep-cove-70 {
+  border-color: rgba(5, 15, 44, 0.7); }
+
+.hover-b--deep-cove-70:hover {
+  border-color: rgba(5, 15, 44, 0.7); }
+
+.deep-cove-80 {
+  color: rgba(5, 15, 44, 0.8); }
+
+.hover-deep-cove-80:hover {
+  color: rgba(5, 15, 44, 0.8); }
+
 .bg-deep-cove-80 {
   background-color: rgba(5, 15, 44, 0.8); }
 
 .hover-bg-deep-cove-80:hover {
   background-color: rgba(5, 15, 44, 0.8); }
+
+.b--deep-cove-80 {
+  border-color: rgba(5, 15, 44, 0.8); }
+
+.hover-b--deep-cove-80:hover {
+  border-color: rgba(5, 15, 44, 0.8); }
+
+.deep-cove-90 {
+  color: rgba(5, 15, 44, 0.9); }
+
+.hover-deep-cove-90:hover {
+  color: rgba(5, 15, 44, 0.9); }
 
 .bg-deep-cove-90 {
   background-color: rgba(5, 15, 44, 0.9); }
@@ -9695,11 +9279,35 @@ code, .code {
 .hover-bg-deep-cove-90:hover {
   background-color: rgba(5, 15, 44, 0.9); }
 
+.b--deep-cove-90 {
+  border-color: rgba(5, 15, 44, 0.9); }
+
+.hover-b--deep-cove-90:hover {
+  border-color: rgba(5, 15, 44, 0.9); }
+
+.east-bay {
+  color: #495588; }
+
+.hover-east-bay:hover {
+  color: #495588; }
+
 .bg-east-bay {
   background-color: #495588; }
 
 .hover-bg-east-bay:hover {
   background-color: #495588; }
+
+.b--east-bay {
+  border-color: #495588; }
+
+.hover-b--east-bay:hover {
+  border-color: #495588; }
+
+.east-bay-10 {
+  color: rgba(73, 85, 136, 0.1); }
+
+.hover-east-bay-10:hover {
+  color: rgba(73, 85, 136, 0.1); }
 
 .bg-east-bay-10 {
   background-color: rgba(73, 85, 136, 0.1); }
@@ -9707,11 +9315,35 @@ code, .code {
 .hover-bg-east-bay-10:hover {
   background-color: rgba(73, 85, 136, 0.1); }
 
+.b--east-bay-10 {
+  border-color: rgba(73, 85, 136, 0.1); }
+
+.hover-b--east-bay-10:hover {
+  border-color: rgba(73, 85, 136, 0.1); }
+
+.east-bay-20 {
+  color: rgba(73, 85, 136, 0.2); }
+
+.hover-east-bay-20:hover {
+  color: rgba(73, 85, 136, 0.2); }
+
 .bg-east-bay-20 {
   background-color: rgba(73, 85, 136, 0.2); }
 
 .hover-bg-east-bay-20:hover {
   background-color: rgba(73, 85, 136, 0.2); }
+
+.b--east-bay-20 {
+  border-color: rgba(73, 85, 136, 0.2); }
+
+.hover-b--east-bay-20:hover {
+  border-color: rgba(73, 85, 136, 0.2); }
+
+.east-bay-30 {
+  color: rgba(73, 85, 136, 0.3); }
+
+.hover-east-bay-30:hover {
+  color: rgba(73, 85, 136, 0.3); }
 
 .bg-east-bay-30 {
   background-color: rgba(73, 85, 136, 0.3); }
@@ -9719,11 +9351,35 @@ code, .code {
 .hover-bg-east-bay-30:hover {
   background-color: rgba(73, 85, 136, 0.3); }
 
+.b--east-bay-30 {
+  border-color: rgba(73, 85, 136, 0.3); }
+
+.hover-b--east-bay-30:hover {
+  border-color: rgba(73, 85, 136, 0.3); }
+
+.east-bay-40 {
+  color: rgba(73, 85, 136, 0.4); }
+
+.hover-east-bay-40:hover {
+  color: rgba(73, 85, 136, 0.4); }
+
 .bg-east-bay-40 {
   background-color: rgba(73, 85, 136, 0.4); }
 
 .hover-bg-east-bay-40:hover {
   background-color: rgba(73, 85, 136, 0.4); }
+
+.b--east-bay-40 {
+  border-color: rgba(73, 85, 136, 0.4); }
+
+.hover-b--east-bay-40:hover {
+  border-color: rgba(73, 85, 136, 0.4); }
+
+.east-bay-50 {
+  color: rgba(73, 85, 136, 0.5); }
+
+.hover-east-bay-50:hover {
+  color: rgba(73, 85, 136, 0.5); }
 
 .bg-east-bay-50 {
   background-color: rgba(73, 85, 136, 0.5); }
@@ -9731,11 +9387,35 @@ code, .code {
 .hover-bg-east-bay-50:hover {
   background-color: rgba(73, 85, 136, 0.5); }
 
+.b--east-bay-50 {
+  border-color: rgba(73, 85, 136, 0.5); }
+
+.hover-b--east-bay-50:hover {
+  border-color: rgba(73, 85, 136, 0.5); }
+
+.east-bay-60 {
+  color: rgba(73, 85, 136, 0.6); }
+
+.hover-east-bay-60:hover {
+  color: rgba(73, 85, 136, 0.6); }
+
 .bg-east-bay-60 {
   background-color: rgba(73, 85, 136, 0.6); }
 
 .hover-bg-east-bay-60:hover {
   background-color: rgba(73, 85, 136, 0.6); }
+
+.b--east-bay-60 {
+  border-color: rgba(73, 85, 136, 0.6); }
+
+.hover-b--east-bay-60:hover {
+  border-color: rgba(73, 85, 136, 0.6); }
+
+.east-bay-70 {
+  color: rgba(73, 85, 136, 0.7); }
+
+.hover-east-bay-70:hover {
+  color: rgba(73, 85, 136, 0.7); }
 
 .bg-east-bay-70 {
   background-color: rgba(73, 85, 136, 0.7); }
@@ -9743,11 +9423,35 @@ code, .code {
 .hover-bg-east-bay-70:hover {
   background-color: rgba(73, 85, 136, 0.7); }
 
+.b--east-bay-70 {
+  border-color: rgba(73, 85, 136, 0.7); }
+
+.hover-b--east-bay-70:hover {
+  border-color: rgba(73, 85, 136, 0.7); }
+
+.east-bay-80 {
+  color: rgba(73, 85, 136, 0.8); }
+
+.hover-east-bay-80:hover {
+  color: rgba(73, 85, 136, 0.8); }
+
 .bg-east-bay-80 {
   background-color: rgba(73, 85, 136, 0.8); }
 
 .hover-bg-east-bay-80:hover {
   background-color: rgba(73, 85, 136, 0.8); }
+
+.b--east-bay-80 {
+  border-color: rgba(73, 85, 136, 0.8); }
+
+.hover-b--east-bay-80:hover {
+  border-color: rgba(73, 85, 136, 0.8); }
+
+.east-bay-90 {
+  color: rgba(73, 85, 136, 0.9); }
+
+.hover-east-bay-90:hover {
+  color: rgba(73, 85, 136, 0.9); }
 
 .bg-east-bay-90 {
   background-color: rgba(73, 85, 136, 0.9); }
@@ -9755,11 +9459,35 @@ code, .code {
 .hover-bg-east-bay-90:hover {
   background-color: rgba(73, 85, 136, 0.9); }
 
+.b--east-bay-90 {
+  border-color: rgba(73, 85, 136, 0.9); }
+
+.hover-b--east-bay-90:hover {
+  border-color: rgba(73, 85, 136, 0.9); }
+
+.ghost {
+  color: #c4c8d8; }
+
+.hover-ghost:hover {
+  color: #c4c8d8; }
+
 .bg-ghost {
   background-color: #c4c8d8; }
 
 .hover-bg-ghost:hover {
   background-color: #c4c8d8; }
+
+.b--ghost {
+  border-color: #c4c8d8; }
+
+.hover-b--ghost:hover {
+  border-color: #c4c8d8; }
+
+.ghost-10 {
+  color: rgba(196, 200, 216, 0.1); }
+
+.hover-ghost-10:hover {
+  color: rgba(196, 200, 216, 0.1); }
 
 .bg-ghost-10 {
   background-color: rgba(196, 200, 216, 0.1); }
@@ -9767,11 +9495,35 @@ code, .code {
 .hover-bg-ghost-10:hover {
   background-color: rgba(196, 200, 216, 0.1); }
 
+.b--ghost-10 {
+  border-color: rgba(196, 200, 216, 0.1); }
+
+.hover-b--ghost-10:hover {
+  border-color: rgba(196, 200, 216, 0.1); }
+
+.ghost-20 {
+  color: rgba(196, 200, 216, 0.2); }
+
+.hover-ghost-20:hover {
+  color: rgba(196, 200, 216, 0.2); }
+
 .bg-ghost-20 {
   background-color: rgba(196, 200, 216, 0.2); }
 
 .hover-bg-ghost-20:hover {
   background-color: rgba(196, 200, 216, 0.2); }
+
+.b--ghost-20 {
+  border-color: rgba(196, 200, 216, 0.2); }
+
+.hover-b--ghost-20:hover {
+  border-color: rgba(196, 200, 216, 0.2); }
+
+.ghost-30 {
+  color: rgba(196, 200, 216, 0.3); }
+
+.hover-ghost-30:hover {
+  color: rgba(196, 200, 216, 0.3); }
 
 .bg-ghost-30 {
   background-color: rgba(196, 200, 216, 0.3); }
@@ -9779,11 +9531,35 @@ code, .code {
 .hover-bg-ghost-30:hover {
   background-color: rgba(196, 200, 216, 0.3); }
 
+.b--ghost-30 {
+  border-color: rgba(196, 200, 216, 0.3); }
+
+.hover-b--ghost-30:hover {
+  border-color: rgba(196, 200, 216, 0.3); }
+
+.ghost-40 {
+  color: rgba(196, 200, 216, 0.4); }
+
+.hover-ghost-40:hover {
+  color: rgba(196, 200, 216, 0.4); }
+
 .bg-ghost-40 {
   background-color: rgba(196, 200, 216, 0.4); }
 
 .hover-bg-ghost-40:hover {
   background-color: rgba(196, 200, 216, 0.4); }
+
+.b--ghost-40 {
+  border-color: rgba(196, 200, 216, 0.4); }
+
+.hover-b--ghost-40:hover {
+  border-color: rgba(196, 200, 216, 0.4); }
+
+.ghost-50 {
+  color: rgba(196, 200, 216, 0.5); }
+
+.hover-ghost-50:hover {
+  color: rgba(196, 200, 216, 0.5); }
 
 .bg-ghost-50 {
   background-color: rgba(196, 200, 216, 0.5); }
@@ -9791,11 +9567,35 @@ code, .code {
 .hover-bg-ghost-50:hover {
   background-color: rgba(196, 200, 216, 0.5); }
 
+.b--ghost-50 {
+  border-color: rgba(196, 200, 216, 0.5); }
+
+.hover-b--ghost-50:hover {
+  border-color: rgba(196, 200, 216, 0.5); }
+
+.ghost-60 {
+  color: rgba(196, 200, 216, 0.6); }
+
+.hover-ghost-60:hover {
+  color: rgba(196, 200, 216, 0.6); }
+
 .bg-ghost-60 {
   background-color: rgba(196, 200, 216, 0.6); }
 
 .hover-bg-ghost-60:hover {
   background-color: rgba(196, 200, 216, 0.6); }
+
+.b--ghost-60 {
+  border-color: rgba(196, 200, 216, 0.6); }
+
+.hover-b--ghost-60:hover {
+  border-color: rgba(196, 200, 216, 0.6); }
+
+.ghost-70 {
+  color: rgba(196, 200, 216, 0.7); }
+
+.hover-ghost-70:hover {
+  color: rgba(196, 200, 216, 0.7); }
 
 .bg-ghost-70 {
   background-color: rgba(196, 200, 216, 0.7); }
@@ -9803,11 +9603,35 @@ code, .code {
 .hover-bg-ghost-70:hover {
   background-color: rgba(196, 200, 216, 0.7); }
 
+.b--ghost-70 {
+  border-color: rgba(196, 200, 216, 0.7); }
+
+.hover-b--ghost-70:hover {
+  border-color: rgba(196, 200, 216, 0.7); }
+
+.ghost-80 {
+  color: rgba(196, 200, 216, 0.8); }
+
+.hover-ghost-80:hover {
+  color: rgba(196, 200, 216, 0.8); }
+
 .bg-ghost-80 {
   background-color: rgba(196, 200, 216, 0.8); }
 
 .hover-bg-ghost-80:hover {
   background-color: rgba(196, 200, 216, 0.8); }
+
+.b--ghost-80 {
+  border-color: rgba(196, 200, 216, 0.8); }
+
+.hover-b--ghost-80:hover {
+  border-color: rgba(196, 200, 216, 0.8); }
+
+.ghost-90 {
+  color: rgba(196, 200, 216, 0.9); }
+
+.hover-ghost-90:hover {
+  color: rgba(196, 200, 216, 0.9); }
 
 .bg-ghost-90 {
   background-color: rgba(196, 200, 216, 0.9); }
@@ -9815,11 +9639,35 @@ code, .code {
 .hover-bg-ghost-90:hover {
   background-color: rgba(196, 200, 216, 0.9); }
 
+.b--ghost-90 {
+  border-color: rgba(196, 200, 216, 0.9); }
+
+.hover-b--ghost-90:hover {
+  border-color: rgba(196, 200, 216, 0.9); }
+
+.grit {
+  color: #3369e7; }
+
+.hover-grit:hover {
+  color: #3369e7; }
+
 .bg-grit {
   background-color: #3369e7; }
 
 .hover-bg-grit:hover {
   background-color: #3369e7; }
+
+.b--grit {
+  border-color: #3369e7; }
+
+.hover-b--grit:hover {
+  border-color: #3369e7; }
+
+.grit-10 {
+  color: rgba(51, 105, 231, 0.1); }
+
+.hover-grit-10:hover {
+  color: rgba(51, 105, 231, 0.1); }
 
 .bg-grit-10 {
   background-color: rgba(51, 105, 231, 0.1); }
@@ -9827,11 +9675,35 @@ code, .code {
 .hover-bg-grit-10:hover {
   background-color: rgba(51, 105, 231, 0.1); }
 
+.b--grit-10 {
+  border-color: rgba(51, 105, 231, 0.1); }
+
+.hover-b--grit-10:hover {
+  border-color: rgba(51, 105, 231, 0.1); }
+
+.grit-20 {
+  color: rgba(51, 105, 231, 0.2); }
+
+.hover-grit-20:hover {
+  color: rgba(51, 105, 231, 0.2); }
+
 .bg-grit-20 {
   background-color: rgba(51, 105, 231, 0.2); }
 
 .hover-bg-grit-20:hover {
   background-color: rgba(51, 105, 231, 0.2); }
+
+.b--grit-20 {
+  border-color: rgba(51, 105, 231, 0.2); }
+
+.hover-b--grit-20:hover {
+  border-color: rgba(51, 105, 231, 0.2); }
+
+.grit-30 {
+  color: rgba(51, 105, 231, 0.3); }
+
+.hover-grit-30:hover {
+  color: rgba(51, 105, 231, 0.3); }
 
 .bg-grit-30 {
   background-color: rgba(51, 105, 231, 0.3); }
@@ -9839,11 +9711,35 @@ code, .code {
 .hover-bg-grit-30:hover {
   background-color: rgba(51, 105, 231, 0.3); }
 
+.b--grit-30 {
+  border-color: rgba(51, 105, 231, 0.3); }
+
+.hover-b--grit-30:hover {
+  border-color: rgba(51, 105, 231, 0.3); }
+
+.grit-40 {
+  color: rgba(51, 105, 231, 0.4); }
+
+.hover-grit-40:hover {
+  color: rgba(51, 105, 231, 0.4); }
+
 .bg-grit-40 {
   background-color: rgba(51, 105, 231, 0.4); }
 
 .hover-bg-grit-40:hover {
   background-color: rgba(51, 105, 231, 0.4); }
+
+.b--grit-40 {
+  border-color: rgba(51, 105, 231, 0.4); }
+
+.hover-b--grit-40:hover {
+  border-color: rgba(51, 105, 231, 0.4); }
+
+.grit-50 {
+  color: rgba(51, 105, 231, 0.5); }
+
+.hover-grit-50:hover {
+  color: rgba(51, 105, 231, 0.5); }
 
 .bg-grit-50 {
   background-color: rgba(51, 105, 231, 0.5); }
@@ -9851,11 +9747,35 @@ code, .code {
 .hover-bg-grit-50:hover {
   background-color: rgba(51, 105, 231, 0.5); }
 
+.b--grit-50 {
+  border-color: rgba(51, 105, 231, 0.5); }
+
+.hover-b--grit-50:hover {
+  border-color: rgba(51, 105, 231, 0.5); }
+
+.grit-60 {
+  color: rgba(51, 105, 231, 0.6); }
+
+.hover-grit-60:hover {
+  color: rgba(51, 105, 231, 0.6); }
+
 .bg-grit-60 {
   background-color: rgba(51, 105, 231, 0.6); }
 
 .hover-bg-grit-60:hover {
   background-color: rgba(51, 105, 231, 0.6); }
+
+.b--grit-60 {
+  border-color: rgba(51, 105, 231, 0.6); }
+
+.hover-b--grit-60:hover {
+  border-color: rgba(51, 105, 231, 0.6); }
+
+.grit-70 {
+  color: rgba(51, 105, 231, 0.7); }
+
+.hover-grit-70:hover {
+  color: rgba(51, 105, 231, 0.7); }
 
 .bg-grit-70 {
   background-color: rgba(51, 105, 231, 0.7); }
@@ -9863,11 +9783,35 @@ code, .code {
 .hover-bg-grit-70:hover {
   background-color: rgba(51, 105, 231, 0.7); }
 
+.b--grit-70 {
+  border-color: rgba(51, 105, 231, 0.7); }
+
+.hover-b--grit-70:hover {
+  border-color: rgba(51, 105, 231, 0.7); }
+
+.grit-80 {
+  color: rgba(51, 105, 231, 0.8); }
+
+.hover-grit-80:hover {
+  color: rgba(51, 105, 231, 0.8); }
+
 .bg-grit-80 {
   background-color: rgba(51, 105, 231, 0.8); }
 
 .hover-bg-grit-80:hover {
   background-color: rgba(51, 105, 231, 0.8); }
+
+.b--grit-80 {
+  border-color: rgba(51, 105, 231, 0.8); }
+
+.hover-b--grit-80:hover {
+  border-color: rgba(51, 105, 231, 0.8); }
+
+.grit-90 {
+  color: rgba(51, 105, 231, 0.9); }
+
+.hover-grit-90:hover {
+  color: rgba(51, 105, 231, 0.9); }
 
 .bg-grit-90 {
   background-color: rgba(51, 105, 231, 0.9); }
@@ -9875,11 +9819,35 @@ code, .code {
 .hover-bg-grit-90:hover {
   background-color: rgba(51, 105, 231, 0.9); }
 
+.b--grit-90 {
+  border-color: rgba(51, 105, 231, 0.9); }
+
+.hover-b--grit-90:hover {
+  border-color: rgba(51, 105, 231, 0.9); }
+
+.humility {
+  color: #b84592; }
+
+.hover-humility:hover {
+  color: #b84592; }
+
 .bg-humility {
   background-color: #b84592; }
 
 .hover-bg-humility:hover {
   background-color: #b84592; }
+
+.b--humility {
+  border-color: #b84592; }
+
+.hover-b--humility:hover {
+  border-color: #b84592; }
+
+.humility-10 {
+  color: rgba(184, 69, 146, 0.1); }
+
+.hover-humility-10:hover {
+  color: rgba(184, 69, 146, 0.1); }
 
 .bg-humility-10 {
   background-color: rgba(184, 69, 146, 0.1); }
@@ -9887,11 +9855,35 @@ code, .code {
 .hover-bg-humility-10:hover {
   background-color: rgba(184, 69, 146, 0.1); }
 
+.b--humility-10 {
+  border-color: rgba(184, 69, 146, 0.1); }
+
+.hover-b--humility-10:hover {
+  border-color: rgba(184, 69, 146, 0.1); }
+
+.humility-20 {
+  color: rgba(184, 69, 146, 0.2); }
+
+.hover-humility-20:hover {
+  color: rgba(184, 69, 146, 0.2); }
+
 .bg-humility-20 {
   background-color: rgba(184, 69, 146, 0.2); }
 
 .hover-bg-humility-20:hover {
   background-color: rgba(184, 69, 146, 0.2); }
+
+.b--humility-20 {
+  border-color: rgba(184, 69, 146, 0.2); }
+
+.hover-b--humility-20:hover {
+  border-color: rgba(184, 69, 146, 0.2); }
+
+.humility-30 {
+  color: rgba(184, 69, 146, 0.3); }
+
+.hover-humility-30:hover {
+  color: rgba(184, 69, 146, 0.3); }
 
 .bg-humility-30 {
   background-color: rgba(184, 69, 146, 0.3); }
@@ -9899,11 +9891,35 @@ code, .code {
 .hover-bg-humility-30:hover {
   background-color: rgba(184, 69, 146, 0.3); }
 
+.b--humility-30 {
+  border-color: rgba(184, 69, 146, 0.3); }
+
+.hover-b--humility-30:hover {
+  border-color: rgba(184, 69, 146, 0.3); }
+
+.humility-40 {
+  color: rgba(184, 69, 146, 0.4); }
+
+.hover-humility-40:hover {
+  color: rgba(184, 69, 146, 0.4); }
+
 .bg-humility-40 {
   background-color: rgba(184, 69, 146, 0.4); }
 
 .hover-bg-humility-40:hover {
   background-color: rgba(184, 69, 146, 0.4); }
+
+.b--humility-40 {
+  border-color: rgba(184, 69, 146, 0.4); }
+
+.hover-b--humility-40:hover {
+  border-color: rgba(184, 69, 146, 0.4); }
+
+.humility-50 {
+  color: rgba(184, 69, 146, 0.5); }
+
+.hover-humility-50:hover {
+  color: rgba(184, 69, 146, 0.5); }
 
 .bg-humility-50 {
   background-color: rgba(184, 69, 146, 0.5); }
@@ -9911,11 +9927,35 @@ code, .code {
 .hover-bg-humility-50:hover {
   background-color: rgba(184, 69, 146, 0.5); }
 
+.b--humility-50 {
+  border-color: rgba(184, 69, 146, 0.5); }
+
+.hover-b--humility-50:hover {
+  border-color: rgba(184, 69, 146, 0.5); }
+
+.humility-60 {
+  color: rgba(184, 69, 146, 0.6); }
+
+.hover-humility-60:hover {
+  color: rgba(184, 69, 146, 0.6); }
+
 .bg-humility-60 {
   background-color: rgba(184, 69, 146, 0.6); }
 
 .hover-bg-humility-60:hover {
   background-color: rgba(184, 69, 146, 0.6); }
+
+.b--humility-60 {
+  border-color: rgba(184, 69, 146, 0.6); }
+
+.hover-b--humility-60:hover {
+  border-color: rgba(184, 69, 146, 0.6); }
+
+.humility-70 {
+  color: rgba(184, 69, 146, 0.7); }
+
+.hover-humility-70:hover {
+  color: rgba(184, 69, 146, 0.7); }
 
 .bg-humility-70 {
   background-color: rgba(184, 69, 146, 0.7); }
@@ -9923,11 +9963,35 @@ code, .code {
 .hover-bg-humility-70:hover {
   background-color: rgba(184, 69, 146, 0.7); }
 
+.b--humility-70 {
+  border-color: rgba(184, 69, 146, 0.7); }
+
+.hover-b--humility-70:hover {
+  border-color: rgba(184, 69, 146, 0.7); }
+
+.humility-80 {
+  color: rgba(184, 69, 146, 0.8); }
+
+.hover-humility-80:hover {
+  color: rgba(184, 69, 146, 0.8); }
+
 .bg-humility-80 {
   background-color: rgba(184, 69, 146, 0.8); }
 
 .hover-bg-humility-80:hover {
   background-color: rgba(184, 69, 146, 0.8); }
+
+.b--humility-80 {
+  border-color: rgba(184, 69, 146, 0.8); }
+
+.hover-b--humility-80:hover {
+  border-color: rgba(184, 69, 146, 0.8); }
+
+.humility-90 {
+  color: rgba(184, 69, 146, 0.9); }
+
+.hover-humility-90:hover {
+  color: rgba(184, 69, 146, 0.9); }
 
 .bg-humility-90 {
   background-color: rgba(184, 69, 146, 0.9); }
@@ -9935,11 +9999,35 @@ code, .code {
 .hover-bg-humility-90:hover {
   background-color: rgba(184, 69, 146, 0.9); }
 
+.b--humility-90 {
+  border-color: rgba(184, 69, 146, 0.9); }
+
+.hover-b--humility-90:hover {
+  border-color: rgba(184, 69, 146, 0.9); }
+
+.java {
+  color: #1cc7d0; }
+
+.hover-java:hover {
+  color: #1cc7d0; }
+
 .bg-java {
   background-color: #1cc7d0; }
 
 .hover-bg-java:hover {
   background-color: #1cc7d0; }
+
+.b--java {
+  border-color: #1cc7d0; }
+
+.hover-b--java:hover {
+  border-color: #1cc7d0; }
+
+.java-10 {
+  color: rgba(28, 199, 208, 0.1); }
+
+.hover-java-10:hover {
+  color: rgba(28, 199, 208, 0.1); }
 
 .bg-java-10 {
   background-color: rgba(28, 199, 208, 0.1); }
@@ -9947,11 +10035,35 @@ code, .code {
 .hover-bg-java-10:hover {
   background-color: rgba(28, 199, 208, 0.1); }
 
+.b--java-10 {
+  border-color: rgba(28, 199, 208, 0.1); }
+
+.hover-b--java-10:hover {
+  border-color: rgba(28, 199, 208, 0.1); }
+
+.java-20 {
+  color: rgba(28, 199, 208, 0.2); }
+
+.hover-java-20:hover {
+  color: rgba(28, 199, 208, 0.2); }
+
 .bg-java-20 {
   background-color: rgba(28, 199, 208, 0.2); }
 
 .hover-bg-java-20:hover {
   background-color: rgba(28, 199, 208, 0.2); }
+
+.b--java-20 {
+  border-color: rgba(28, 199, 208, 0.2); }
+
+.hover-b--java-20:hover {
+  border-color: rgba(28, 199, 208, 0.2); }
+
+.java-30 {
+  color: rgba(28, 199, 208, 0.3); }
+
+.hover-java-30:hover {
+  color: rgba(28, 199, 208, 0.3); }
 
 .bg-java-30 {
   background-color: rgba(28, 199, 208, 0.3); }
@@ -9959,11 +10071,35 @@ code, .code {
 .hover-bg-java-30:hover {
   background-color: rgba(28, 199, 208, 0.3); }
 
+.b--java-30 {
+  border-color: rgba(28, 199, 208, 0.3); }
+
+.hover-b--java-30:hover {
+  border-color: rgba(28, 199, 208, 0.3); }
+
+.java-40 {
+  color: rgba(28, 199, 208, 0.4); }
+
+.hover-java-40:hover {
+  color: rgba(28, 199, 208, 0.4); }
+
 .bg-java-40 {
   background-color: rgba(28, 199, 208, 0.4); }
 
 .hover-bg-java-40:hover {
   background-color: rgba(28, 199, 208, 0.4); }
+
+.b--java-40 {
+  border-color: rgba(28, 199, 208, 0.4); }
+
+.hover-b--java-40:hover {
+  border-color: rgba(28, 199, 208, 0.4); }
+
+.java-50 {
+  color: rgba(28, 199, 208, 0.5); }
+
+.hover-java-50:hover {
+  color: rgba(28, 199, 208, 0.5); }
 
 .bg-java-50 {
   background-color: rgba(28, 199, 208, 0.5); }
@@ -9971,11 +10107,35 @@ code, .code {
 .hover-bg-java-50:hover {
   background-color: rgba(28, 199, 208, 0.5); }
 
+.b--java-50 {
+  border-color: rgba(28, 199, 208, 0.5); }
+
+.hover-b--java-50:hover {
+  border-color: rgba(28, 199, 208, 0.5); }
+
+.java-60 {
+  color: rgba(28, 199, 208, 0.6); }
+
+.hover-java-60:hover {
+  color: rgba(28, 199, 208, 0.6); }
+
 .bg-java-60 {
   background-color: rgba(28, 199, 208, 0.6); }
 
 .hover-bg-java-60:hover {
   background-color: rgba(28, 199, 208, 0.6); }
+
+.b--java-60 {
+  border-color: rgba(28, 199, 208, 0.6); }
+
+.hover-b--java-60:hover {
+  border-color: rgba(28, 199, 208, 0.6); }
+
+.java-70 {
+  color: rgba(28, 199, 208, 0.7); }
+
+.hover-java-70:hover {
+  color: rgba(28, 199, 208, 0.7); }
 
 .bg-java-70 {
   background-color: rgba(28, 199, 208, 0.7); }
@@ -9983,11 +10143,35 @@ code, .code {
 .hover-bg-java-70:hover {
   background-color: rgba(28, 199, 208, 0.7); }
 
+.b--java-70 {
+  border-color: rgba(28, 199, 208, 0.7); }
+
+.hover-b--java-70:hover {
+  border-color: rgba(28, 199, 208, 0.7); }
+
+.java-80 {
+  color: rgba(28, 199, 208, 0.8); }
+
+.hover-java-80:hover {
+  color: rgba(28, 199, 208, 0.8); }
+
 .bg-java-80 {
   background-color: rgba(28, 199, 208, 0.8); }
 
 .hover-bg-java-80:hover {
   background-color: rgba(28, 199, 208, 0.8); }
+
+.b--java-80 {
+  border-color: rgba(28, 199, 208, 0.8); }
+
+.hover-b--java-80:hover {
+  border-color: rgba(28, 199, 208, 0.8); }
+
+.java-90 {
+  color: rgba(28, 199, 208, 0.9); }
+
+.hover-java-90:hover {
+  color: rgba(28, 199, 208, 0.9); }
 
 .bg-java-90 {
   background-color: rgba(28, 199, 208, 0.9); }
@@ -9995,11 +10179,35 @@ code, .code {
 .hover-bg-java-90:hover {
   background-color: rgba(28, 199, 208, 0.9); }
 
+.b--java-90 {
+  border-color: rgba(28, 199, 208, 0.9); }
+
+.hover-b--java-90:hover {
+  border-color: rgba(28, 199, 208, 0.9); }
+
+.koromiko {
+  color: #ffc168; }
+
+.hover-koromiko:hover {
+  color: #ffc168; }
+
 .bg-koromiko {
   background-color: #ffc168; }
 
 .hover-bg-koromiko:hover {
   background-color: #ffc168; }
+
+.b--koromiko {
+  border-color: #ffc168; }
+
+.hover-b--koromiko:hover {
+  border-color: #ffc168; }
+
+.koromiko-10 {
+  color: rgba(255, 193, 104, 0.1); }
+
+.hover-koromiko-10:hover {
+  color: rgba(255, 193, 104, 0.1); }
 
 .bg-koromiko-10 {
   background-color: rgba(255, 193, 104, 0.1); }
@@ -10007,11 +10215,35 @@ code, .code {
 .hover-bg-koromiko-10:hover {
   background-color: rgba(255, 193, 104, 0.1); }
 
+.b--koromiko-10 {
+  border-color: rgba(255, 193, 104, 0.1); }
+
+.hover-b--koromiko-10:hover {
+  border-color: rgba(255, 193, 104, 0.1); }
+
+.koromiko-20 {
+  color: rgba(255, 193, 104, 0.2); }
+
+.hover-koromiko-20:hover {
+  color: rgba(255, 193, 104, 0.2); }
+
 .bg-koromiko-20 {
   background-color: rgba(255, 193, 104, 0.2); }
 
 .hover-bg-koromiko-20:hover {
   background-color: rgba(255, 193, 104, 0.2); }
+
+.b--koromiko-20 {
+  border-color: rgba(255, 193, 104, 0.2); }
+
+.hover-b--koromiko-20:hover {
+  border-color: rgba(255, 193, 104, 0.2); }
+
+.koromiko-30 {
+  color: rgba(255, 193, 104, 0.3); }
+
+.hover-koromiko-30:hover {
+  color: rgba(255, 193, 104, 0.3); }
 
 .bg-koromiko-30 {
   background-color: rgba(255, 193, 104, 0.3); }
@@ -10019,11 +10251,35 @@ code, .code {
 .hover-bg-koromiko-30:hover {
   background-color: rgba(255, 193, 104, 0.3); }
 
+.b--koromiko-30 {
+  border-color: rgba(255, 193, 104, 0.3); }
+
+.hover-b--koromiko-30:hover {
+  border-color: rgba(255, 193, 104, 0.3); }
+
+.koromiko-40 {
+  color: rgba(255, 193, 104, 0.4); }
+
+.hover-koromiko-40:hover {
+  color: rgba(255, 193, 104, 0.4); }
+
 .bg-koromiko-40 {
   background-color: rgba(255, 193, 104, 0.4); }
 
 .hover-bg-koromiko-40:hover {
   background-color: rgba(255, 193, 104, 0.4); }
+
+.b--koromiko-40 {
+  border-color: rgba(255, 193, 104, 0.4); }
+
+.hover-b--koromiko-40:hover {
+  border-color: rgba(255, 193, 104, 0.4); }
+
+.koromiko-50 {
+  color: rgba(255, 193, 104, 0.5); }
+
+.hover-koromiko-50:hover {
+  color: rgba(255, 193, 104, 0.5); }
 
 .bg-koromiko-50 {
   background-color: rgba(255, 193, 104, 0.5); }
@@ -10031,11 +10287,35 @@ code, .code {
 .hover-bg-koromiko-50:hover {
   background-color: rgba(255, 193, 104, 0.5); }
 
+.b--koromiko-50 {
+  border-color: rgba(255, 193, 104, 0.5); }
+
+.hover-b--koromiko-50:hover {
+  border-color: rgba(255, 193, 104, 0.5); }
+
+.koromiko-60 {
+  color: rgba(255, 193, 104, 0.6); }
+
+.hover-koromiko-60:hover {
+  color: rgba(255, 193, 104, 0.6); }
+
 .bg-koromiko-60 {
   background-color: rgba(255, 193, 104, 0.6); }
 
 .hover-bg-koromiko-60:hover {
   background-color: rgba(255, 193, 104, 0.6); }
+
+.b--koromiko-60 {
+  border-color: rgba(255, 193, 104, 0.6); }
+
+.hover-b--koromiko-60:hover {
+  border-color: rgba(255, 193, 104, 0.6); }
+
+.koromiko-70 {
+  color: rgba(255, 193, 104, 0.7); }
+
+.hover-koromiko-70:hover {
+  color: rgba(255, 193, 104, 0.7); }
 
 .bg-koromiko-70 {
   background-color: rgba(255, 193, 104, 0.7); }
@@ -10043,11 +10323,35 @@ code, .code {
 .hover-bg-koromiko-70:hover {
   background-color: rgba(255, 193, 104, 0.7); }
 
+.b--koromiko-70 {
+  border-color: rgba(255, 193, 104, 0.7); }
+
+.hover-b--koromiko-70:hover {
+  border-color: rgba(255, 193, 104, 0.7); }
+
+.koromiko-80 {
+  color: rgba(255, 193, 104, 0.8); }
+
+.hover-koromiko-80:hover {
+  color: rgba(255, 193, 104, 0.8); }
+
 .bg-koromiko-80 {
   background-color: rgba(255, 193, 104, 0.8); }
 
 .hover-bg-koromiko-80:hover {
   background-color: rgba(255, 193, 104, 0.8); }
+
+.b--koromiko-80 {
+  border-color: rgba(255, 193, 104, 0.8); }
+
+.hover-b--koromiko-80:hover {
+  border-color: rgba(255, 193, 104, 0.8); }
+
+.koromiko-90 {
+  color: rgba(255, 193, 104, 0.9); }
+
+.hover-koromiko-90:hover {
+  color: rgba(255, 193, 104, 0.9); }
 
 .bg-koromiko-90 {
   background-color: rgba(255, 193, 104, 0.9); }
@@ -10055,11 +10359,35 @@ code, .code {
 .hover-bg-koromiko-90:hover {
   background-color: rgba(255, 193, 104, 0.9); }
 
+.b--koromiko-90 {
+  border-color: rgba(255, 193, 104, 0.9); }
+
+.hover-b--koromiko-90:hover {
+  border-color: rgba(255, 193, 104, 0.9); }
+
+.logan {
+  color: #9d9dbd; }
+
+.hover-logan:hover {
+  color: #9d9dbd; }
+
 .bg-logan {
   background-color: #9d9dbd; }
 
 .hover-bg-logan:hover {
   background-color: #9d9dbd; }
+
+.b--logan {
+  border-color: #9d9dbd; }
+
+.hover-b--logan:hover {
+  border-color: #9d9dbd; }
+
+.logan-10 {
+  color: rgba(157, 157, 189, 0.1); }
+
+.hover-logan-10:hover {
+  color: rgba(157, 157, 189, 0.1); }
 
 .bg-logan-10 {
   background-color: rgba(157, 157, 189, 0.1); }
@@ -10067,11 +10395,35 @@ code, .code {
 .hover-bg-logan-10:hover {
   background-color: rgba(157, 157, 189, 0.1); }
 
+.b--logan-10 {
+  border-color: rgba(157, 157, 189, 0.1); }
+
+.hover-b--logan-10:hover {
+  border-color: rgba(157, 157, 189, 0.1); }
+
+.logan-20 {
+  color: rgba(157, 157, 189, 0.2); }
+
+.hover-logan-20:hover {
+  color: rgba(157, 157, 189, 0.2); }
+
 .bg-logan-20 {
   background-color: rgba(157, 157, 189, 0.2); }
 
 .hover-bg-logan-20:hover {
   background-color: rgba(157, 157, 189, 0.2); }
+
+.b--logan-20 {
+  border-color: rgba(157, 157, 189, 0.2); }
+
+.hover-b--logan-20:hover {
+  border-color: rgba(157, 157, 189, 0.2); }
+
+.logan-30 {
+  color: rgba(157, 157, 189, 0.3); }
+
+.hover-logan-30:hover {
+  color: rgba(157, 157, 189, 0.3); }
 
 .bg-logan-30 {
   background-color: rgba(157, 157, 189, 0.3); }
@@ -10079,11 +10431,35 @@ code, .code {
 .hover-bg-logan-30:hover {
   background-color: rgba(157, 157, 189, 0.3); }
 
+.b--logan-30 {
+  border-color: rgba(157, 157, 189, 0.3); }
+
+.hover-b--logan-30:hover {
+  border-color: rgba(157, 157, 189, 0.3); }
+
+.logan-40 {
+  color: rgba(157, 157, 189, 0.4); }
+
+.hover-logan-40:hover {
+  color: rgba(157, 157, 189, 0.4); }
+
 .bg-logan-40 {
   background-color: rgba(157, 157, 189, 0.4); }
 
 .hover-bg-logan-40:hover {
   background-color: rgba(157, 157, 189, 0.4); }
+
+.b--logan-40 {
+  border-color: rgba(157, 157, 189, 0.4); }
+
+.hover-b--logan-40:hover {
+  border-color: rgba(157, 157, 189, 0.4); }
+
+.logan-50 {
+  color: rgba(157, 157, 189, 0.5); }
+
+.hover-logan-50:hover {
+  color: rgba(157, 157, 189, 0.5); }
 
 .bg-logan-50 {
   background-color: rgba(157, 157, 189, 0.5); }
@@ -10091,11 +10467,35 @@ code, .code {
 .hover-bg-logan-50:hover {
   background-color: rgba(157, 157, 189, 0.5); }
 
+.b--logan-50 {
+  border-color: rgba(157, 157, 189, 0.5); }
+
+.hover-b--logan-50:hover {
+  border-color: rgba(157, 157, 189, 0.5); }
+
+.logan-60 {
+  color: rgba(157, 157, 189, 0.6); }
+
+.hover-logan-60:hover {
+  color: rgba(157, 157, 189, 0.6); }
+
 .bg-logan-60 {
   background-color: rgba(157, 157, 189, 0.6); }
 
 .hover-bg-logan-60:hover {
   background-color: rgba(157, 157, 189, 0.6); }
+
+.b--logan-60 {
+  border-color: rgba(157, 157, 189, 0.6); }
+
+.hover-b--logan-60:hover {
+  border-color: rgba(157, 157, 189, 0.6); }
+
+.logan-70 {
+  color: rgba(157, 157, 189, 0.7); }
+
+.hover-logan-70:hover {
+  color: rgba(157, 157, 189, 0.7); }
 
 .bg-logan-70 {
   background-color: rgba(157, 157, 189, 0.7); }
@@ -10103,11 +10503,35 @@ code, .code {
 .hover-bg-logan-70:hover {
   background-color: rgba(157, 157, 189, 0.7); }
 
+.b--logan-70 {
+  border-color: rgba(157, 157, 189, 0.7); }
+
+.hover-b--logan-70:hover {
+  border-color: rgba(157, 157, 189, 0.7); }
+
+.logan-80 {
+  color: rgba(157, 157, 189, 0.8); }
+
+.hover-logan-80:hover {
+  color: rgba(157, 157, 189, 0.8); }
+
 .bg-logan-80 {
   background-color: rgba(157, 157, 189, 0.8); }
 
 .hover-bg-logan-80:hover {
   background-color: rgba(157, 157, 189, 0.8); }
+
+.b--logan-80 {
+  border-color: rgba(157, 157, 189, 0.8); }
+
+.hover-b--logan-80:hover {
+  border-color: rgba(157, 157, 189, 0.8); }
+
+.logan-90 {
+  color: rgba(157, 157, 189, 0.9); }
+
+.hover-logan-90:hover {
+  color: rgba(157, 157, 189, 0.9); }
 
 .bg-logan-90 {
   background-color: rgba(157, 157, 189, 0.9); }
@@ -10115,11 +10539,35 @@ code, .code {
 .hover-bg-logan-90:hover {
   background-color: rgba(157, 157, 189, 0.9); }
 
+.b--logan-90 {
+  border-color: rgba(157, 157, 189, 0.9); }
+
+.hover-b--logan-90:hover {
+  border-color: rgba(157, 157, 189, 0.9); }
+
+.mulberry {
+  color: #b84592; }
+
+.hover-mulberry:hover {
+  color: #b84592; }
+
 .bg-mulberry {
   background-color: #b84592; }
 
 .hover-bg-mulberry:hover {
   background-color: #b84592; }
+
+.b--mulberry {
+  border-color: #b84592; }
+
+.hover-b--mulberry:hover {
+  border-color: #b84592; }
+
+.mulberry-10 {
+  color: rgba(184, 69, 146, 0.1); }
+
+.hover-mulberry-10:hover {
+  color: rgba(184, 69, 146, 0.1); }
 
 .bg-mulberry-10 {
   background-color: rgba(184, 69, 146, 0.1); }
@@ -10127,11 +10575,35 @@ code, .code {
 .hover-bg-mulberry-10:hover {
   background-color: rgba(184, 69, 146, 0.1); }
 
+.b--mulberry-10 {
+  border-color: rgba(184, 69, 146, 0.1); }
+
+.hover-b--mulberry-10:hover {
+  border-color: rgba(184, 69, 146, 0.1); }
+
+.mulberry-20 {
+  color: rgba(184, 69, 146, 0.2); }
+
+.hover-mulberry-20:hover {
+  color: rgba(184, 69, 146, 0.2); }
+
 .bg-mulberry-20 {
   background-color: rgba(184, 69, 146, 0.2); }
 
 .hover-bg-mulberry-20:hover {
   background-color: rgba(184, 69, 146, 0.2); }
+
+.b--mulberry-20 {
+  border-color: rgba(184, 69, 146, 0.2); }
+
+.hover-b--mulberry-20:hover {
+  border-color: rgba(184, 69, 146, 0.2); }
+
+.mulberry-30 {
+  color: rgba(184, 69, 146, 0.3); }
+
+.hover-mulberry-30:hover {
+  color: rgba(184, 69, 146, 0.3); }
 
 .bg-mulberry-30 {
   background-color: rgba(184, 69, 146, 0.3); }
@@ -10139,11 +10611,35 @@ code, .code {
 .hover-bg-mulberry-30:hover {
   background-color: rgba(184, 69, 146, 0.3); }
 
+.b--mulberry-30 {
+  border-color: rgba(184, 69, 146, 0.3); }
+
+.hover-b--mulberry-30:hover {
+  border-color: rgba(184, 69, 146, 0.3); }
+
+.mulberry-40 {
+  color: rgba(184, 69, 146, 0.4); }
+
+.hover-mulberry-40:hover {
+  color: rgba(184, 69, 146, 0.4); }
+
 .bg-mulberry-40 {
   background-color: rgba(184, 69, 146, 0.4); }
 
 .hover-bg-mulberry-40:hover {
   background-color: rgba(184, 69, 146, 0.4); }
+
+.b--mulberry-40 {
+  border-color: rgba(184, 69, 146, 0.4); }
+
+.hover-b--mulberry-40:hover {
+  border-color: rgba(184, 69, 146, 0.4); }
+
+.mulberry-50 {
+  color: rgba(184, 69, 146, 0.5); }
+
+.hover-mulberry-50:hover {
+  color: rgba(184, 69, 146, 0.5); }
 
 .bg-mulberry-50 {
   background-color: rgba(184, 69, 146, 0.5); }
@@ -10151,11 +10647,35 @@ code, .code {
 .hover-bg-mulberry-50:hover {
   background-color: rgba(184, 69, 146, 0.5); }
 
+.b--mulberry-50 {
+  border-color: rgba(184, 69, 146, 0.5); }
+
+.hover-b--mulberry-50:hover {
+  border-color: rgba(184, 69, 146, 0.5); }
+
+.mulberry-60 {
+  color: rgba(184, 69, 146, 0.6); }
+
+.hover-mulberry-60:hover {
+  color: rgba(184, 69, 146, 0.6); }
+
 .bg-mulberry-60 {
   background-color: rgba(184, 69, 146, 0.6); }
 
 .hover-bg-mulberry-60:hover {
   background-color: rgba(184, 69, 146, 0.6); }
+
+.b--mulberry-60 {
+  border-color: rgba(184, 69, 146, 0.6); }
+
+.hover-b--mulberry-60:hover {
+  border-color: rgba(184, 69, 146, 0.6); }
+
+.mulberry-70 {
+  color: rgba(184, 69, 146, 0.7); }
+
+.hover-mulberry-70:hover {
+  color: rgba(184, 69, 146, 0.7); }
 
 .bg-mulberry-70 {
   background-color: rgba(184, 69, 146, 0.7); }
@@ -10163,11 +10683,35 @@ code, .code {
 .hover-bg-mulberry-70:hover {
   background-color: rgba(184, 69, 146, 0.7); }
 
+.b--mulberry-70 {
+  border-color: rgba(184, 69, 146, 0.7); }
+
+.hover-b--mulberry-70:hover {
+  border-color: rgba(184, 69, 146, 0.7); }
+
+.mulberry-80 {
+  color: rgba(184, 69, 146, 0.8); }
+
+.hover-mulberry-80:hover {
+  color: rgba(184, 69, 146, 0.8); }
+
 .bg-mulberry-80 {
   background-color: rgba(184, 69, 146, 0.8); }
 
 .hover-bg-mulberry-80:hover {
   background-color: rgba(184, 69, 146, 0.8); }
+
+.b--mulberry-80 {
+  border-color: rgba(184, 69, 146, 0.8); }
+
+.hover-b--mulberry-80:hover {
+  border-color: rgba(184, 69, 146, 0.8); }
+
+.mulberry-90 {
+  color: rgba(184, 69, 146, 0.9); }
+
+.hover-mulberry-90:hover {
+  color: rgba(184, 69, 146, 0.9); }
 
 .bg-mulberry-90 {
   background-color: rgba(184, 69, 146, 0.9); }
@@ -10175,11 +10719,35 @@ code, .code {
 .hover-bg-mulberry-90:hover {
   background-color: rgba(184, 69, 146, 0.9); }
 
+.b--mulberry-90 {
+  border-color: rgba(184, 69, 146, 0.9); }
+
+.hover-b--mulberry-90:hover {
+  border-color: rgba(184, 69, 146, 0.9); }
+
+.portage {
+  color: #8994c6; }
+
+.hover-portage:hover {
+  color: #8994c6; }
+
 .bg-portage {
   background-color: #8994c6; }
 
 .hover-bg-portage:hover {
   background-color: #8994c6; }
+
+.b--portage {
+  border-color: #8994c6; }
+
+.hover-b--portage:hover {
+  border-color: #8994c6; }
+
+.portage-10 {
+  color: rgba(137, 148, 198, 0.1); }
+
+.hover-portage-10:hover {
+  color: rgba(137, 148, 198, 0.1); }
 
 .bg-portage-10 {
   background-color: rgba(137, 148, 198, 0.1); }
@@ -10187,11 +10755,35 @@ code, .code {
 .hover-bg-portage-10:hover {
   background-color: rgba(137, 148, 198, 0.1); }
 
+.b--portage-10 {
+  border-color: rgba(137, 148, 198, 0.1); }
+
+.hover-b--portage-10:hover {
+  border-color: rgba(137, 148, 198, 0.1); }
+
+.portage-20 {
+  color: rgba(137, 148, 198, 0.2); }
+
+.hover-portage-20:hover {
+  color: rgba(137, 148, 198, 0.2); }
+
 .bg-portage-20 {
   background-color: rgba(137, 148, 198, 0.2); }
 
 .hover-bg-portage-20:hover {
   background-color: rgba(137, 148, 198, 0.2); }
+
+.b--portage-20 {
+  border-color: rgba(137, 148, 198, 0.2); }
+
+.hover-b--portage-20:hover {
+  border-color: rgba(137, 148, 198, 0.2); }
+
+.portage-30 {
+  color: rgba(137, 148, 198, 0.3); }
+
+.hover-portage-30:hover {
+  color: rgba(137, 148, 198, 0.3); }
 
 .bg-portage-30 {
   background-color: rgba(137, 148, 198, 0.3); }
@@ -10199,11 +10791,35 @@ code, .code {
 .hover-bg-portage-30:hover {
   background-color: rgba(137, 148, 198, 0.3); }
 
+.b--portage-30 {
+  border-color: rgba(137, 148, 198, 0.3); }
+
+.hover-b--portage-30:hover {
+  border-color: rgba(137, 148, 198, 0.3); }
+
+.portage-40 {
+  color: rgba(137, 148, 198, 0.4); }
+
+.hover-portage-40:hover {
+  color: rgba(137, 148, 198, 0.4); }
+
 .bg-portage-40 {
   background-color: rgba(137, 148, 198, 0.4); }
 
 .hover-bg-portage-40:hover {
   background-color: rgba(137, 148, 198, 0.4); }
+
+.b--portage-40 {
+  border-color: rgba(137, 148, 198, 0.4); }
+
+.hover-b--portage-40:hover {
+  border-color: rgba(137, 148, 198, 0.4); }
+
+.portage-50 {
+  color: rgba(137, 148, 198, 0.5); }
+
+.hover-portage-50:hover {
+  color: rgba(137, 148, 198, 0.5); }
 
 .bg-portage-50 {
   background-color: rgba(137, 148, 198, 0.5); }
@@ -10211,11 +10827,35 @@ code, .code {
 .hover-bg-portage-50:hover {
   background-color: rgba(137, 148, 198, 0.5); }
 
+.b--portage-50 {
+  border-color: rgba(137, 148, 198, 0.5); }
+
+.hover-b--portage-50:hover {
+  border-color: rgba(137, 148, 198, 0.5); }
+
+.portage-60 {
+  color: rgba(137, 148, 198, 0.6); }
+
+.hover-portage-60:hover {
+  color: rgba(137, 148, 198, 0.6); }
+
 .bg-portage-60 {
   background-color: rgba(137, 148, 198, 0.6); }
 
 .hover-bg-portage-60:hover {
   background-color: rgba(137, 148, 198, 0.6); }
+
+.b--portage-60 {
+  border-color: rgba(137, 148, 198, 0.6); }
+
+.hover-b--portage-60:hover {
+  border-color: rgba(137, 148, 198, 0.6); }
+
+.portage-70 {
+  color: rgba(137, 148, 198, 0.7); }
+
+.hover-portage-70:hover {
+  color: rgba(137, 148, 198, 0.7); }
 
 .bg-portage-70 {
   background-color: rgba(137, 148, 198, 0.7); }
@@ -10223,11 +10863,35 @@ code, .code {
 .hover-bg-portage-70:hover {
   background-color: rgba(137, 148, 198, 0.7); }
 
+.b--portage-70 {
+  border-color: rgba(137, 148, 198, 0.7); }
+
+.hover-b--portage-70:hover {
+  border-color: rgba(137, 148, 198, 0.7); }
+
+.portage-80 {
+  color: rgba(137, 148, 198, 0.8); }
+
+.hover-portage-80:hover {
+  color: rgba(137, 148, 198, 0.8); }
+
 .bg-portage-80 {
   background-color: rgba(137, 148, 198, 0.8); }
 
 .hover-bg-portage-80:hover {
   background-color: rgba(137, 148, 198, 0.8); }
+
+.b--portage-80 {
+  border-color: rgba(137, 148, 198, 0.8); }
+
+.hover-b--portage-80:hover {
+  border-color: rgba(137, 148, 198, 0.8); }
+
+.portage-90 {
+  color: rgba(137, 148, 198, 0.9); }
+
+.hover-portage-90:hover {
+  color: rgba(137, 148, 198, 0.9); }
 
 .bg-portage-90 {
   background-color: rgba(137, 148, 198, 0.9); }
@@ -10235,11 +10899,35 @@ code, .code {
 .hover-bg-portage-90:hover {
   background-color: rgba(137, 148, 198, 0.9); }
 
+.b--portage-90 {
+  border-color: rgba(137, 148, 198, 0.9); }
+
+.hover-b--portage-90:hover {
+  border-color: rgba(137, 148, 198, 0.9); }
+
+.port-gore {
+  color: #3a4570; }
+
+.hover-port-gore:hover {
+  color: #3a4570; }
+
 .bg-port-gore {
   background-color: #3a4570; }
 
 .hover-bg-port-gore:hover {
   background-color: #3a4570; }
+
+.b--port-gore {
+  border-color: #3a4570; }
+
+.hover-b--port-gore:hover {
+  border-color: #3a4570; }
+
+.port-gore-10 {
+  color: rgba(58, 69, 112, 0.1); }
+
+.hover-port-gore-10:hover {
+  color: rgba(58, 69, 112, 0.1); }
 
 .bg-port-gore-10 {
   background-color: rgba(58, 69, 112, 0.1); }
@@ -10247,11 +10935,35 @@ code, .code {
 .hover-bg-port-gore-10:hover {
   background-color: rgba(58, 69, 112, 0.1); }
 
+.b--port-gore-10 {
+  border-color: rgba(58, 69, 112, 0.1); }
+
+.hover-b--port-gore-10:hover {
+  border-color: rgba(58, 69, 112, 0.1); }
+
+.port-gore-20 {
+  color: rgba(58, 69, 112, 0.2); }
+
+.hover-port-gore-20:hover {
+  color: rgba(58, 69, 112, 0.2); }
+
 .bg-port-gore-20 {
   background-color: rgba(58, 69, 112, 0.2); }
 
 .hover-bg-port-gore-20:hover {
   background-color: rgba(58, 69, 112, 0.2); }
+
+.b--port-gore-20 {
+  border-color: rgba(58, 69, 112, 0.2); }
+
+.hover-b--port-gore-20:hover {
+  border-color: rgba(58, 69, 112, 0.2); }
+
+.port-gore-30 {
+  color: rgba(58, 69, 112, 0.3); }
+
+.hover-port-gore-30:hover {
+  color: rgba(58, 69, 112, 0.3); }
 
 .bg-port-gore-30 {
   background-color: rgba(58, 69, 112, 0.3); }
@@ -10259,11 +10971,35 @@ code, .code {
 .hover-bg-port-gore-30:hover {
   background-color: rgba(58, 69, 112, 0.3); }
 
+.b--port-gore-30 {
+  border-color: rgba(58, 69, 112, 0.3); }
+
+.hover-b--port-gore-30:hover {
+  border-color: rgba(58, 69, 112, 0.3); }
+
+.port-gore-40 {
+  color: rgba(58, 69, 112, 0.4); }
+
+.hover-port-gore-40:hover {
+  color: rgba(58, 69, 112, 0.4); }
+
 .bg-port-gore-40 {
   background-color: rgba(58, 69, 112, 0.4); }
 
 .hover-bg-port-gore-40:hover {
   background-color: rgba(58, 69, 112, 0.4); }
+
+.b--port-gore-40 {
+  border-color: rgba(58, 69, 112, 0.4); }
+
+.hover-b--port-gore-40:hover {
+  border-color: rgba(58, 69, 112, 0.4); }
+
+.port-gore-50 {
+  color: rgba(58, 69, 112, 0.5); }
+
+.hover-port-gore-50:hover {
+  color: rgba(58, 69, 112, 0.5); }
 
 .bg-port-gore-50 {
   background-color: rgba(58, 69, 112, 0.5); }
@@ -10271,11 +11007,35 @@ code, .code {
 .hover-bg-port-gore-50:hover {
   background-color: rgba(58, 69, 112, 0.5); }
 
+.b--port-gore-50 {
+  border-color: rgba(58, 69, 112, 0.5); }
+
+.hover-b--port-gore-50:hover {
+  border-color: rgba(58, 69, 112, 0.5); }
+
+.port-gore-60 {
+  color: rgba(58, 69, 112, 0.6); }
+
+.hover-port-gore-60:hover {
+  color: rgba(58, 69, 112, 0.6); }
+
 .bg-port-gore-60 {
   background-color: rgba(58, 69, 112, 0.6); }
 
 .hover-bg-port-gore-60:hover {
   background-color: rgba(58, 69, 112, 0.6); }
+
+.b--port-gore-60 {
+  border-color: rgba(58, 69, 112, 0.6); }
+
+.hover-b--port-gore-60:hover {
+  border-color: rgba(58, 69, 112, 0.6); }
+
+.port-gore-70 {
+  color: rgba(58, 69, 112, 0.7); }
+
+.hover-port-gore-70:hover {
+  color: rgba(58, 69, 112, 0.7); }
 
 .bg-port-gore-70 {
   background-color: rgba(58, 69, 112, 0.7); }
@@ -10283,11 +11043,35 @@ code, .code {
 .hover-bg-port-gore-70:hover {
   background-color: rgba(58, 69, 112, 0.7); }
 
+.b--port-gore-70 {
+  border-color: rgba(58, 69, 112, 0.7); }
+
+.hover-b--port-gore-70:hover {
+  border-color: rgba(58, 69, 112, 0.7); }
+
+.port-gore-80 {
+  color: rgba(58, 69, 112, 0.8); }
+
+.hover-port-gore-80:hover {
+  color: rgba(58, 69, 112, 0.8); }
+
 .bg-port-gore-80 {
   background-color: rgba(58, 69, 112, 0.8); }
 
 .hover-bg-port-gore-80:hover {
   background-color: rgba(58, 69, 112, 0.8); }
+
+.b--port-gore-80 {
+  border-color: rgba(58, 69, 112, 0.8); }
+
+.hover-b--port-gore-80:hover {
+  border-color: rgba(58, 69, 112, 0.8); }
+
+.port-gore-90 {
+  color: rgba(58, 69, 112, 0.9); }
+
+.hover-port-gore-90:hover {
+  color: rgba(58, 69, 112, 0.9); }
 
 .bg-port-gore-90 {
   background-color: rgba(58, 69, 112, 0.9); }
@@ -10295,11 +11079,35 @@ code, .code {
 .hover-bg-port-gore-90:hover {
   background-color: rgba(58, 69, 112, 0.9); }
 
+.b--port-gore-90 {
+  border-color: rgba(58, 69, 112, 0.9); }
+
+.hover-b--port-gore-90:hover {
+  border-color: rgba(58, 69, 112, 0.9); }
+
+.purple-heart {
+  color: #8e43e7; }
+
+.hover-purple-heart:hover {
+  color: #8e43e7; }
+
 .bg-purple-heart {
   background-color: #8e43e7; }
 
 .hover-bg-purple-heart:hover {
   background-color: #8e43e7; }
+
+.b--purple-heart {
+  border-color: #8e43e7; }
+
+.hover-b--purple-heart:hover {
+  border-color: #8e43e7; }
+
+.purple-heart-10 {
+  color: rgba(142, 67, 231, 0.1); }
+
+.hover-purple-heart-10:hover {
+  color: rgba(142, 67, 231, 0.1); }
 
 .bg-purple-heart-10 {
   background-color: rgba(142, 67, 231, 0.1); }
@@ -10307,11 +11115,35 @@ code, .code {
 .hover-bg-purple-heart-10:hover {
   background-color: rgba(142, 67, 231, 0.1); }
 
+.b--purple-heart-10 {
+  border-color: rgba(142, 67, 231, 0.1); }
+
+.hover-b--purple-heart-10:hover {
+  border-color: rgba(142, 67, 231, 0.1); }
+
+.purple-heart-20 {
+  color: rgba(142, 67, 231, 0.2); }
+
+.hover-purple-heart-20:hover {
+  color: rgba(142, 67, 231, 0.2); }
+
 .bg-purple-heart-20 {
   background-color: rgba(142, 67, 231, 0.2); }
 
 .hover-bg-purple-heart-20:hover {
   background-color: rgba(142, 67, 231, 0.2); }
+
+.b--purple-heart-20 {
+  border-color: rgba(142, 67, 231, 0.2); }
+
+.hover-b--purple-heart-20:hover {
+  border-color: rgba(142, 67, 231, 0.2); }
+
+.purple-heart-30 {
+  color: rgba(142, 67, 231, 0.3); }
+
+.hover-purple-heart-30:hover {
+  color: rgba(142, 67, 231, 0.3); }
 
 .bg-purple-heart-30 {
   background-color: rgba(142, 67, 231, 0.3); }
@@ -10319,11 +11151,35 @@ code, .code {
 .hover-bg-purple-heart-30:hover {
   background-color: rgba(142, 67, 231, 0.3); }
 
+.b--purple-heart-30 {
+  border-color: rgba(142, 67, 231, 0.3); }
+
+.hover-b--purple-heart-30:hover {
+  border-color: rgba(142, 67, 231, 0.3); }
+
+.purple-heart-40 {
+  color: rgba(142, 67, 231, 0.4); }
+
+.hover-purple-heart-40:hover {
+  color: rgba(142, 67, 231, 0.4); }
+
 .bg-purple-heart-40 {
   background-color: rgba(142, 67, 231, 0.4); }
 
 .hover-bg-purple-heart-40:hover {
   background-color: rgba(142, 67, 231, 0.4); }
+
+.b--purple-heart-40 {
+  border-color: rgba(142, 67, 231, 0.4); }
+
+.hover-b--purple-heart-40:hover {
+  border-color: rgba(142, 67, 231, 0.4); }
+
+.purple-heart-50 {
+  color: rgba(142, 67, 231, 0.5); }
+
+.hover-purple-heart-50:hover {
+  color: rgba(142, 67, 231, 0.5); }
 
 .bg-purple-heart-50 {
   background-color: rgba(142, 67, 231, 0.5); }
@@ -10331,11 +11187,35 @@ code, .code {
 .hover-bg-purple-heart-50:hover {
   background-color: rgba(142, 67, 231, 0.5); }
 
+.b--purple-heart-50 {
+  border-color: rgba(142, 67, 231, 0.5); }
+
+.hover-b--purple-heart-50:hover {
+  border-color: rgba(142, 67, 231, 0.5); }
+
+.purple-heart-60 {
+  color: rgba(142, 67, 231, 0.6); }
+
+.hover-purple-heart-60:hover {
+  color: rgba(142, 67, 231, 0.6); }
+
 .bg-purple-heart-60 {
   background-color: rgba(142, 67, 231, 0.6); }
 
 .hover-bg-purple-heart-60:hover {
   background-color: rgba(142, 67, 231, 0.6); }
+
+.b--purple-heart-60 {
+  border-color: rgba(142, 67, 231, 0.6); }
+
+.hover-b--purple-heart-60:hover {
+  border-color: rgba(142, 67, 231, 0.6); }
+
+.purple-heart-70 {
+  color: rgba(142, 67, 231, 0.7); }
+
+.hover-purple-heart-70:hover {
+  color: rgba(142, 67, 231, 0.7); }
 
 .bg-purple-heart-70 {
   background-color: rgba(142, 67, 231, 0.7); }
@@ -10343,11 +11223,35 @@ code, .code {
 .hover-bg-purple-heart-70:hover {
   background-color: rgba(142, 67, 231, 0.7); }
 
+.b--purple-heart-70 {
+  border-color: rgba(142, 67, 231, 0.7); }
+
+.hover-b--purple-heart-70:hover {
+  border-color: rgba(142, 67, 231, 0.7); }
+
+.purple-heart-80 {
+  color: rgba(142, 67, 231, 0.8); }
+
+.hover-purple-heart-80:hover {
+  color: rgba(142, 67, 231, 0.8); }
+
 .bg-purple-heart-80 {
   background-color: rgba(142, 67, 231, 0.8); }
 
 .hover-bg-purple-heart-80:hover {
   background-color: rgba(142, 67, 231, 0.8); }
+
+.b--purple-heart-80 {
+  border-color: rgba(142, 67, 231, 0.8); }
+
+.hover-b--purple-heart-80:hover {
+  border-color: rgba(142, 67, 231, 0.8); }
+
+.purple-heart-90 {
+  color: rgba(142, 67, 231, 0.9); }
+
+.hover-purple-heart-90:hover {
+  color: rgba(142, 67, 231, 0.9); }
 
 .bg-purple-heart-90 {
   background-color: rgba(142, 67, 231, 0.9); }
@@ -10355,11 +11259,35 @@ code, .code {
 .hover-bg-purple-heart-90:hover {
   background-color: rgba(142, 67, 231, 0.9); }
 
+.b--purple-heart-90 {
+  border-color: rgba(142, 67, 231, 0.9); }
+
+.hover-b--purple-heart-90:hover {
+  border-color: rgba(142, 67, 231, 0.9); }
+
+.radical-red {
+  color: #ff4f81; }
+
+.hover-radical-red:hover {
+  color: #ff4f81; }
+
 .bg-radical-red {
   background-color: #ff4f81; }
 
 .hover-bg-radical-red:hover {
   background-color: #ff4f81; }
+
+.b--radical-red {
+  border-color: #ff4f81; }
+
+.hover-b--radical-red:hover {
+  border-color: #ff4f81; }
+
+.radical-red-10 {
+  color: rgba(255, 79, 129, 0.1); }
+
+.hover-radical-red-10:hover {
+  color: rgba(255, 79, 129, 0.1); }
 
 .bg-radical-red-10 {
   background-color: rgba(255, 79, 129, 0.1); }
@@ -10367,11 +11295,35 @@ code, .code {
 .hover-bg-radical-red-10:hover {
   background-color: rgba(255, 79, 129, 0.1); }
 
+.b--radical-red-10 {
+  border-color: rgba(255, 79, 129, 0.1); }
+
+.hover-b--radical-red-10:hover {
+  border-color: rgba(255, 79, 129, 0.1); }
+
+.radical-red-20 {
+  color: rgba(255, 79, 129, 0.2); }
+
+.hover-radical-red-20:hover {
+  color: rgba(255, 79, 129, 0.2); }
+
 .bg-radical-red-20 {
   background-color: rgba(255, 79, 129, 0.2); }
 
 .hover-bg-radical-red-20:hover {
   background-color: rgba(255, 79, 129, 0.2); }
+
+.b--radical-red-20 {
+  border-color: rgba(255, 79, 129, 0.2); }
+
+.hover-b--radical-red-20:hover {
+  border-color: rgba(255, 79, 129, 0.2); }
+
+.radical-red-30 {
+  color: rgba(255, 79, 129, 0.3); }
+
+.hover-radical-red-30:hover {
+  color: rgba(255, 79, 129, 0.3); }
 
 .bg-radical-red-30 {
   background-color: rgba(255, 79, 129, 0.3); }
@@ -10379,11 +11331,35 @@ code, .code {
 .hover-bg-radical-red-30:hover {
   background-color: rgba(255, 79, 129, 0.3); }
 
+.b--radical-red-30 {
+  border-color: rgba(255, 79, 129, 0.3); }
+
+.hover-b--radical-red-30:hover {
+  border-color: rgba(255, 79, 129, 0.3); }
+
+.radical-red-40 {
+  color: rgba(255, 79, 129, 0.4); }
+
+.hover-radical-red-40:hover {
+  color: rgba(255, 79, 129, 0.4); }
+
 .bg-radical-red-40 {
   background-color: rgba(255, 79, 129, 0.4); }
 
 .hover-bg-radical-red-40:hover {
   background-color: rgba(255, 79, 129, 0.4); }
+
+.b--radical-red-40 {
+  border-color: rgba(255, 79, 129, 0.4); }
+
+.hover-b--radical-red-40:hover {
+  border-color: rgba(255, 79, 129, 0.4); }
+
+.radical-red-50 {
+  color: rgba(255, 79, 129, 0.5); }
+
+.hover-radical-red-50:hover {
+  color: rgba(255, 79, 129, 0.5); }
 
 .bg-radical-red-50 {
   background-color: rgba(255, 79, 129, 0.5); }
@@ -10391,11 +11367,35 @@ code, .code {
 .hover-bg-radical-red-50:hover {
   background-color: rgba(255, 79, 129, 0.5); }
 
+.b--radical-red-50 {
+  border-color: rgba(255, 79, 129, 0.5); }
+
+.hover-b--radical-red-50:hover {
+  border-color: rgba(255, 79, 129, 0.5); }
+
+.radical-red-60 {
+  color: rgba(255, 79, 129, 0.6); }
+
+.hover-radical-red-60:hover {
+  color: rgba(255, 79, 129, 0.6); }
+
 .bg-radical-red-60 {
   background-color: rgba(255, 79, 129, 0.6); }
 
 .hover-bg-radical-red-60:hover {
   background-color: rgba(255, 79, 129, 0.6); }
+
+.b--radical-red-60 {
+  border-color: rgba(255, 79, 129, 0.6); }
+
+.hover-b--radical-red-60:hover {
+  border-color: rgba(255, 79, 129, 0.6); }
+
+.radical-red-70 {
+  color: rgba(255, 79, 129, 0.7); }
+
+.hover-radical-red-70:hover {
+  color: rgba(255, 79, 129, 0.7); }
 
 .bg-radical-red-70 {
   background-color: rgba(255, 79, 129, 0.7); }
@@ -10403,11 +11403,35 @@ code, .code {
 .hover-bg-radical-red-70:hover {
   background-color: rgba(255, 79, 129, 0.7); }
 
+.b--radical-red-70 {
+  border-color: rgba(255, 79, 129, 0.7); }
+
+.hover-b--radical-red-70:hover {
+  border-color: rgba(255, 79, 129, 0.7); }
+
+.radical-red-80 {
+  color: rgba(255, 79, 129, 0.8); }
+
+.hover-radical-red-80:hover {
+  color: rgba(255, 79, 129, 0.8); }
+
 .bg-radical-red-80 {
   background-color: rgba(255, 79, 129, 0.8); }
 
 .hover-bg-radical-red-80:hover {
   background-color: rgba(255, 79, 129, 0.8); }
+
+.b--radical-red-80 {
+  border-color: rgba(255, 79, 129, 0.8); }
+
+.hover-b--radical-red-80:hover {
+  border-color: rgba(255, 79, 129, 0.8); }
+
+.radical-red-90 {
+  color: rgba(255, 79, 129, 0.9); }
+
+.hover-radical-red-90:hover {
+  color: rgba(255, 79, 129, 0.9); }
 
 .bg-radical-red-90 {
   background-color: rgba(255, 79, 129, 0.9); }
@@ -10415,11 +11439,35 @@ code, .code {
 .hover-bg-radical-red-90:hover {
   background-color: rgba(255, 79, 129, 0.9); }
 
+.b--radical-red-90 {
+  border-color: rgba(255, 79, 129, 0.9); }
+
+.hover-b--radical-red-90:hover {
+  border-color: rgba(255, 79, 129, 0.9); }
+
+.royal-blue {
+  color: #3369e7; }
+
+.hover-royal-blue:hover {
+  color: #3369e7; }
+
 .bg-royal-blue {
   background-color: #3369e7; }
 
 .hover-bg-royal-blue:hover {
   background-color: #3369e7; }
+
+.b--royal-blue {
+  border-color: #3369e7; }
+
+.hover-b--royal-blue:hover {
+  border-color: #3369e7; }
+
+.royal-blue-10 {
+  color: rgba(51, 105, 231, 0.1); }
+
+.hover-royal-blue-10:hover {
+  color: rgba(51, 105, 231, 0.1); }
 
 .bg-royal-blue-10 {
   background-color: rgba(51, 105, 231, 0.1); }
@@ -10427,11 +11475,35 @@ code, .code {
 .hover-bg-royal-blue-10:hover {
   background-color: rgba(51, 105, 231, 0.1); }
 
+.b--royal-blue-10 {
+  border-color: rgba(51, 105, 231, 0.1); }
+
+.hover-b--royal-blue-10:hover {
+  border-color: rgba(51, 105, 231, 0.1); }
+
+.royal-blue-20 {
+  color: rgba(51, 105, 231, 0.2); }
+
+.hover-royal-blue-20:hover {
+  color: rgba(51, 105, 231, 0.2); }
+
 .bg-royal-blue-20 {
   background-color: rgba(51, 105, 231, 0.2); }
 
 .hover-bg-royal-blue-20:hover {
   background-color: rgba(51, 105, 231, 0.2); }
+
+.b--royal-blue-20 {
+  border-color: rgba(51, 105, 231, 0.2); }
+
+.hover-b--royal-blue-20:hover {
+  border-color: rgba(51, 105, 231, 0.2); }
+
+.royal-blue-30 {
+  color: rgba(51, 105, 231, 0.3); }
+
+.hover-royal-blue-30:hover {
+  color: rgba(51, 105, 231, 0.3); }
 
 .bg-royal-blue-30 {
   background-color: rgba(51, 105, 231, 0.3); }
@@ -10439,11 +11511,35 @@ code, .code {
 .hover-bg-royal-blue-30:hover {
   background-color: rgba(51, 105, 231, 0.3); }
 
+.b--royal-blue-30 {
+  border-color: rgba(51, 105, 231, 0.3); }
+
+.hover-b--royal-blue-30:hover {
+  border-color: rgba(51, 105, 231, 0.3); }
+
+.royal-blue-40 {
+  color: rgba(51, 105, 231, 0.4); }
+
+.hover-royal-blue-40:hover {
+  color: rgba(51, 105, 231, 0.4); }
+
 .bg-royal-blue-40 {
   background-color: rgba(51, 105, 231, 0.4); }
 
 .hover-bg-royal-blue-40:hover {
   background-color: rgba(51, 105, 231, 0.4); }
+
+.b--royal-blue-40 {
+  border-color: rgba(51, 105, 231, 0.4); }
+
+.hover-b--royal-blue-40:hover {
+  border-color: rgba(51, 105, 231, 0.4); }
+
+.royal-blue-50 {
+  color: rgba(51, 105, 231, 0.5); }
+
+.hover-royal-blue-50:hover {
+  color: rgba(51, 105, 231, 0.5); }
 
 .bg-royal-blue-50 {
   background-color: rgba(51, 105, 231, 0.5); }
@@ -10451,11 +11547,35 @@ code, .code {
 .hover-bg-royal-blue-50:hover {
   background-color: rgba(51, 105, 231, 0.5); }
 
+.b--royal-blue-50 {
+  border-color: rgba(51, 105, 231, 0.5); }
+
+.hover-b--royal-blue-50:hover {
+  border-color: rgba(51, 105, 231, 0.5); }
+
+.royal-blue-60 {
+  color: rgba(51, 105, 231, 0.6); }
+
+.hover-royal-blue-60:hover {
+  color: rgba(51, 105, 231, 0.6); }
+
 .bg-royal-blue-60 {
   background-color: rgba(51, 105, 231, 0.6); }
 
 .hover-bg-royal-blue-60:hover {
   background-color: rgba(51, 105, 231, 0.6); }
+
+.b--royal-blue-60 {
+  border-color: rgba(51, 105, 231, 0.6); }
+
+.hover-b--royal-blue-60:hover {
+  border-color: rgba(51, 105, 231, 0.6); }
+
+.royal-blue-70 {
+  color: rgba(51, 105, 231, 0.7); }
+
+.hover-royal-blue-70:hover {
+  color: rgba(51, 105, 231, 0.7); }
 
 .bg-royal-blue-70 {
   background-color: rgba(51, 105, 231, 0.7); }
@@ -10463,11 +11583,35 @@ code, .code {
 .hover-bg-royal-blue-70:hover {
   background-color: rgba(51, 105, 231, 0.7); }
 
+.b--royal-blue-70 {
+  border-color: rgba(51, 105, 231, 0.7); }
+
+.hover-b--royal-blue-70:hover {
+  border-color: rgba(51, 105, 231, 0.7); }
+
+.royal-blue-80 {
+  color: rgba(51, 105, 231, 0.8); }
+
+.hover-royal-blue-80:hover {
+  color: rgba(51, 105, 231, 0.8); }
+
 .bg-royal-blue-80 {
   background-color: rgba(51, 105, 231, 0.8); }
 
 .hover-bg-royal-blue-80:hover {
   background-color: rgba(51, 105, 231, 0.8); }
+
+.b--royal-blue-80 {
+  border-color: rgba(51, 105, 231, 0.8); }
+
+.hover-b--royal-blue-80:hover {
+  border-color: rgba(51, 105, 231, 0.8); }
+
+.royal-blue-90 {
+  color: rgba(51, 105, 231, 0.9); }
+
+.hover-royal-blue-90:hover {
+  color: rgba(51, 105, 231, 0.9); }
 
 .bg-royal-blue-90 {
   background-color: rgba(51, 105, 231, 0.9); }
@@ -10475,11 +11619,35 @@ code, .code {
 .hover-bg-royal-blue-90:hover {
   background-color: rgba(51, 105, 231, 0.9); }
 
+.b--royal-blue-90 {
+  border-color: rgba(51, 105, 231, 0.9); }
+
+.hover-b--royal-blue-90:hover {
+  border-color: rgba(51, 105, 231, 0.9); }
+
+.shamrock {
+  color: #2dde98; }
+
+.hover-shamrock:hover {
+  color: #2dde98; }
+
 .bg-shamrock {
   background-color: #2dde98; }
 
 .hover-bg-shamrock:hover {
   background-color: #2dde98; }
+
+.b--shamrock {
+  border-color: #2dde98; }
+
+.hover-b--shamrock:hover {
+  border-color: #2dde98; }
+
+.shamrock-10 {
+  color: rgba(45, 222, 152, 0.1); }
+
+.hover-shamrock-10:hover {
+  color: rgba(45, 222, 152, 0.1); }
 
 .bg-shamrock-10 {
   background-color: rgba(45, 222, 152, 0.1); }
@@ -10487,11 +11655,35 @@ code, .code {
 .hover-bg-shamrock-10:hover {
   background-color: rgba(45, 222, 152, 0.1); }
 
+.b--shamrock-10 {
+  border-color: rgba(45, 222, 152, 0.1); }
+
+.hover-b--shamrock-10:hover {
+  border-color: rgba(45, 222, 152, 0.1); }
+
+.shamrock-20 {
+  color: rgba(45, 222, 152, 0.2); }
+
+.hover-shamrock-20:hover {
+  color: rgba(45, 222, 152, 0.2); }
+
 .bg-shamrock-20 {
   background-color: rgba(45, 222, 152, 0.2); }
 
 .hover-bg-shamrock-20:hover {
   background-color: rgba(45, 222, 152, 0.2); }
+
+.b--shamrock-20 {
+  border-color: rgba(45, 222, 152, 0.2); }
+
+.hover-b--shamrock-20:hover {
+  border-color: rgba(45, 222, 152, 0.2); }
+
+.shamrock-30 {
+  color: rgba(45, 222, 152, 0.3); }
+
+.hover-shamrock-30:hover {
+  color: rgba(45, 222, 152, 0.3); }
 
 .bg-shamrock-30 {
   background-color: rgba(45, 222, 152, 0.3); }
@@ -10499,11 +11691,35 @@ code, .code {
 .hover-bg-shamrock-30:hover {
   background-color: rgba(45, 222, 152, 0.3); }
 
+.b--shamrock-30 {
+  border-color: rgba(45, 222, 152, 0.3); }
+
+.hover-b--shamrock-30:hover {
+  border-color: rgba(45, 222, 152, 0.3); }
+
+.shamrock-40 {
+  color: rgba(45, 222, 152, 0.4); }
+
+.hover-shamrock-40:hover {
+  color: rgba(45, 222, 152, 0.4); }
+
 .bg-shamrock-40 {
   background-color: rgba(45, 222, 152, 0.4); }
 
 .hover-bg-shamrock-40:hover {
   background-color: rgba(45, 222, 152, 0.4); }
+
+.b--shamrock-40 {
+  border-color: rgba(45, 222, 152, 0.4); }
+
+.hover-b--shamrock-40:hover {
+  border-color: rgba(45, 222, 152, 0.4); }
+
+.shamrock-50 {
+  color: rgba(45, 222, 152, 0.5); }
+
+.hover-shamrock-50:hover {
+  color: rgba(45, 222, 152, 0.5); }
 
 .bg-shamrock-50 {
   background-color: rgba(45, 222, 152, 0.5); }
@@ -10511,11 +11727,35 @@ code, .code {
 .hover-bg-shamrock-50:hover {
   background-color: rgba(45, 222, 152, 0.5); }
 
+.b--shamrock-50 {
+  border-color: rgba(45, 222, 152, 0.5); }
+
+.hover-b--shamrock-50:hover {
+  border-color: rgba(45, 222, 152, 0.5); }
+
+.shamrock-60 {
+  color: rgba(45, 222, 152, 0.6); }
+
+.hover-shamrock-60:hover {
+  color: rgba(45, 222, 152, 0.6); }
+
 .bg-shamrock-60 {
   background-color: rgba(45, 222, 152, 0.6); }
 
 .hover-bg-shamrock-60:hover {
   background-color: rgba(45, 222, 152, 0.6); }
+
+.b--shamrock-60 {
+  border-color: rgba(45, 222, 152, 0.6); }
+
+.hover-b--shamrock-60:hover {
+  border-color: rgba(45, 222, 152, 0.6); }
+
+.shamrock-70 {
+  color: rgba(45, 222, 152, 0.7); }
+
+.hover-shamrock-70:hover {
+  color: rgba(45, 222, 152, 0.7); }
 
 .bg-shamrock-70 {
   background-color: rgba(45, 222, 152, 0.7); }
@@ -10523,11 +11763,35 @@ code, .code {
 .hover-bg-shamrock-70:hover {
   background-color: rgba(45, 222, 152, 0.7); }
 
+.b--shamrock-70 {
+  border-color: rgba(45, 222, 152, 0.7); }
+
+.hover-b--shamrock-70:hover {
+  border-color: rgba(45, 222, 152, 0.7); }
+
+.shamrock-80 {
+  color: rgba(45, 222, 152, 0.8); }
+
+.hover-shamrock-80:hover {
+  color: rgba(45, 222, 152, 0.8); }
+
 .bg-shamrock-80 {
   background-color: rgba(45, 222, 152, 0.8); }
 
 .hover-bg-shamrock-80:hover {
   background-color: rgba(45, 222, 152, 0.8); }
+
+.b--shamrock-80 {
+  border-color: rgba(45, 222, 152, 0.8); }
+
+.hover-b--shamrock-80:hover {
+  border-color: rgba(45, 222, 152, 0.8); }
+
+.shamrock-90 {
+  color: rgba(45, 222, 152, 0.9); }
+
+.hover-shamrock-90:hover {
+  color: rgba(45, 222, 152, 0.9); }
 
 .bg-shamrock-90 {
   background-color: rgba(45, 222, 152, 0.9); }
@@ -10535,11 +11799,35 @@ code, .code {
 .hover-bg-shamrock-90:hover {
   background-color: rgba(45, 222, 152, 0.9); }
 
+.b--shamrock-90 {
+  border-color: rgba(45, 222, 152, 0.9); }
+
+.hover-b--shamrock-90:hover {
+  border-color: rgba(45, 222, 152, 0.9); }
+
+.titan-white {
+  color: #f8faff; }
+
+.hover-titan-white:hover {
+  color: #f8faff; }
+
 .bg-titan-white {
   background-color: #f8faff; }
 
 .hover-bg-titan-white:hover {
   background-color: #f8faff; }
+
+.b--titan-white {
+  border-color: #f8faff; }
+
+.hover-b--titan-white:hover {
+  border-color: #f8faff; }
+
+.titan-white-10 {
+  color: rgba(248, 250, 255, 0.1); }
+
+.hover-titan-white-10:hover {
+  color: rgba(248, 250, 255, 0.1); }
 
 .bg-titan-white-10 {
   background-color: rgba(248, 250, 255, 0.1); }
@@ -10547,11 +11835,35 @@ code, .code {
 .hover-bg-titan-white-10:hover {
   background-color: rgba(248, 250, 255, 0.1); }
 
+.b--titan-white-10 {
+  border-color: rgba(248, 250, 255, 0.1); }
+
+.hover-b--titan-white-10:hover {
+  border-color: rgba(248, 250, 255, 0.1); }
+
+.titan-white-20 {
+  color: rgba(248, 250, 255, 0.2); }
+
+.hover-titan-white-20:hover {
+  color: rgba(248, 250, 255, 0.2); }
+
 .bg-titan-white-20 {
   background-color: rgba(248, 250, 255, 0.2); }
 
 .hover-bg-titan-white-20:hover {
   background-color: rgba(248, 250, 255, 0.2); }
+
+.b--titan-white-20 {
+  border-color: rgba(248, 250, 255, 0.2); }
+
+.hover-b--titan-white-20:hover {
+  border-color: rgba(248, 250, 255, 0.2); }
+
+.titan-white-30 {
+  color: rgba(248, 250, 255, 0.3); }
+
+.hover-titan-white-30:hover {
+  color: rgba(248, 250, 255, 0.3); }
 
 .bg-titan-white-30 {
   background-color: rgba(248, 250, 255, 0.3); }
@@ -10559,11 +11871,35 @@ code, .code {
 .hover-bg-titan-white-30:hover {
   background-color: rgba(248, 250, 255, 0.3); }
 
+.b--titan-white-30 {
+  border-color: rgba(248, 250, 255, 0.3); }
+
+.hover-b--titan-white-30:hover {
+  border-color: rgba(248, 250, 255, 0.3); }
+
+.titan-white-40 {
+  color: rgba(248, 250, 255, 0.4); }
+
+.hover-titan-white-40:hover {
+  color: rgba(248, 250, 255, 0.4); }
+
 .bg-titan-white-40 {
   background-color: rgba(248, 250, 255, 0.4); }
 
 .hover-bg-titan-white-40:hover {
   background-color: rgba(248, 250, 255, 0.4); }
+
+.b--titan-white-40 {
+  border-color: rgba(248, 250, 255, 0.4); }
+
+.hover-b--titan-white-40:hover {
+  border-color: rgba(248, 250, 255, 0.4); }
+
+.titan-white-50 {
+  color: rgba(248, 250, 255, 0.5); }
+
+.hover-titan-white-50:hover {
+  color: rgba(248, 250, 255, 0.5); }
 
 .bg-titan-white-50 {
   background-color: rgba(248, 250, 255, 0.5); }
@@ -10571,11 +11907,35 @@ code, .code {
 .hover-bg-titan-white-50:hover {
   background-color: rgba(248, 250, 255, 0.5); }
 
+.b--titan-white-50 {
+  border-color: rgba(248, 250, 255, 0.5); }
+
+.hover-b--titan-white-50:hover {
+  border-color: rgba(248, 250, 255, 0.5); }
+
+.titan-white-60 {
+  color: rgba(248, 250, 255, 0.6); }
+
+.hover-titan-white-60:hover {
+  color: rgba(248, 250, 255, 0.6); }
+
 .bg-titan-white-60 {
   background-color: rgba(248, 250, 255, 0.6); }
 
 .hover-bg-titan-white-60:hover {
   background-color: rgba(248, 250, 255, 0.6); }
+
+.b--titan-white-60 {
+  border-color: rgba(248, 250, 255, 0.6); }
+
+.hover-b--titan-white-60:hover {
+  border-color: rgba(248, 250, 255, 0.6); }
+
+.titan-white-70 {
+  color: rgba(248, 250, 255, 0.7); }
+
+.hover-titan-white-70:hover {
+  color: rgba(248, 250, 255, 0.7); }
 
 .bg-titan-white-70 {
   background-color: rgba(248, 250, 255, 0.7); }
@@ -10583,11 +11943,35 @@ code, .code {
 .hover-bg-titan-white-70:hover {
   background-color: rgba(248, 250, 255, 0.7); }
 
+.b--titan-white-70 {
+  border-color: rgba(248, 250, 255, 0.7); }
+
+.hover-b--titan-white-70:hover {
+  border-color: rgba(248, 250, 255, 0.7); }
+
+.titan-white-80 {
+  color: rgba(248, 250, 255, 0.8); }
+
+.hover-titan-white-80:hover {
+  color: rgba(248, 250, 255, 0.8); }
+
 .bg-titan-white-80 {
   background-color: rgba(248, 250, 255, 0.8); }
 
 .hover-bg-titan-white-80:hover {
   background-color: rgba(248, 250, 255, 0.8); }
+
+.b--titan-white-80 {
+  border-color: rgba(248, 250, 255, 0.8); }
+
+.hover-b--titan-white-80:hover {
+  border-color: rgba(248, 250, 255, 0.8); }
+
+.titan-white-90 {
+  color: rgba(248, 250, 255, 0.9); }
+
+.hover-titan-white-90:hover {
+  color: rgba(248, 250, 255, 0.9); }
 
 .bg-titan-white-90 {
   background-color: rgba(248, 250, 255, 0.9); }
@@ -10595,11 +11979,35 @@ code, .code {
 .hover-bg-titan-white-90:hover {
   background-color: rgba(248, 250, 255, 0.9); }
 
+.b--titan-white-90 {
+  border-color: rgba(248, 250, 255, 0.9); }
+
+.hover-b--titan-white-90:hover {
+  border-color: rgba(248, 250, 255, 0.9); }
+
+.trust {
+  color: #00aeff; }
+
+.hover-trust:hover {
+  color: #00aeff; }
+
 .bg-trust {
   background-color: #00aeff; }
 
 .hover-bg-trust:hover {
   background-color: #00aeff; }
+
+.b--trust {
+  border-color: #00aeff; }
+
+.hover-b--trust:hover {
+  border-color: #00aeff; }
+
+.trust-10 {
+  color: rgba(0, 174, 255, 0.1); }
+
+.hover-trust-10:hover {
+  color: rgba(0, 174, 255, 0.1); }
 
 .bg-trust-10 {
   background-color: rgba(0, 174, 255, 0.1); }
@@ -10607,11 +12015,35 @@ code, .code {
 .hover-bg-trust-10:hover {
   background-color: rgba(0, 174, 255, 0.1); }
 
+.b--trust-10 {
+  border-color: rgba(0, 174, 255, 0.1); }
+
+.hover-b--trust-10:hover {
+  border-color: rgba(0, 174, 255, 0.1); }
+
+.trust-20 {
+  color: rgba(0, 174, 255, 0.2); }
+
+.hover-trust-20:hover {
+  color: rgba(0, 174, 255, 0.2); }
+
 .bg-trust-20 {
   background-color: rgba(0, 174, 255, 0.2); }
 
 .hover-bg-trust-20:hover {
   background-color: rgba(0, 174, 255, 0.2); }
+
+.b--trust-20 {
+  border-color: rgba(0, 174, 255, 0.2); }
+
+.hover-b--trust-20:hover {
+  border-color: rgba(0, 174, 255, 0.2); }
+
+.trust-30 {
+  color: rgba(0, 174, 255, 0.3); }
+
+.hover-trust-30:hover {
+  color: rgba(0, 174, 255, 0.3); }
 
 .bg-trust-30 {
   background-color: rgba(0, 174, 255, 0.3); }
@@ -10619,11 +12051,35 @@ code, .code {
 .hover-bg-trust-30:hover {
   background-color: rgba(0, 174, 255, 0.3); }
 
+.b--trust-30 {
+  border-color: rgba(0, 174, 255, 0.3); }
+
+.hover-b--trust-30:hover {
+  border-color: rgba(0, 174, 255, 0.3); }
+
+.trust-40 {
+  color: rgba(0, 174, 255, 0.4); }
+
+.hover-trust-40:hover {
+  color: rgba(0, 174, 255, 0.4); }
+
 .bg-trust-40 {
   background-color: rgba(0, 174, 255, 0.4); }
 
 .hover-bg-trust-40:hover {
   background-color: rgba(0, 174, 255, 0.4); }
+
+.b--trust-40 {
+  border-color: rgba(0, 174, 255, 0.4); }
+
+.hover-b--trust-40:hover {
+  border-color: rgba(0, 174, 255, 0.4); }
+
+.trust-50 {
+  color: rgba(0, 174, 255, 0.5); }
+
+.hover-trust-50:hover {
+  color: rgba(0, 174, 255, 0.5); }
 
 .bg-trust-50 {
   background-color: rgba(0, 174, 255, 0.5); }
@@ -10631,11 +12087,35 @@ code, .code {
 .hover-bg-trust-50:hover {
   background-color: rgba(0, 174, 255, 0.5); }
 
+.b--trust-50 {
+  border-color: rgba(0, 174, 255, 0.5); }
+
+.hover-b--trust-50:hover {
+  border-color: rgba(0, 174, 255, 0.5); }
+
+.trust-60 {
+  color: rgba(0, 174, 255, 0.6); }
+
+.hover-trust-60:hover {
+  color: rgba(0, 174, 255, 0.6); }
+
 .bg-trust-60 {
   background-color: rgba(0, 174, 255, 0.6); }
 
 .hover-bg-trust-60:hover {
   background-color: rgba(0, 174, 255, 0.6); }
+
+.b--trust-60 {
+  border-color: rgba(0, 174, 255, 0.6); }
+
+.hover-b--trust-60:hover {
+  border-color: rgba(0, 174, 255, 0.6); }
+
+.trust-70 {
+  color: rgba(0, 174, 255, 0.7); }
+
+.hover-trust-70:hover {
+  color: rgba(0, 174, 255, 0.7); }
 
 .bg-trust-70 {
   background-color: rgba(0, 174, 255, 0.7); }
@@ -10643,17 +12123,47 @@ code, .code {
 .hover-bg-trust-70:hover {
   background-color: rgba(0, 174, 255, 0.7); }
 
+.b--trust-70 {
+  border-color: rgba(0, 174, 255, 0.7); }
+
+.hover-b--trust-70:hover {
+  border-color: rgba(0, 174, 255, 0.7); }
+
+.trust-80 {
+  color: rgba(0, 174, 255, 0.8); }
+
+.hover-trust-80:hover {
+  color: rgba(0, 174, 255, 0.8); }
+
 .bg-trust-80 {
   background-color: rgba(0, 174, 255, 0.8); }
 
 .hover-bg-trust-80:hover {
   background-color: rgba(0, 174, 255, 0.8); }
 
+.b--trust-80 {
+  border-color: rgba(0, 174, 255, 0.8); }
+
+.hover-b--trust-80:hover {
+  border-color: rgba(0, 174, 255, 0.8); }
+
+.trust-90 {
+  color: rgba(0, 174, 255, 0.9); }
+
+.hover-trust-90:hover {
+  color: rgba(0, 174, 255, 0.9); }
+
 .bg-trust-90 {
   background-color: rgba(0, 174, 255, 0.9); }
 
 .hover-bg-trust-90:hover {
   background-color: rgba(0, 174, 255, 0.9); }
+
+.b--trust-90 {
+  border-color: rgba(0, 174, 255, 0.9); }
+
+.hover-b--trust-90:hover {
+  border-color: rgba(0, 174, 255, 0.9); }
 
 /**
  * Allow for colored bullets (> ) at the start of elements
@@ -10662,15 +12172,7 @@ code, .code {
   content: "> ";
   color: #00aeff; }
 
-.hover-bullet-algolia-blue:hover:before {
-  content: "> ";
-  color: #00aeff; }
-
 .bullet-april-fools-purple:before {
-  content: "> ";
-  color: #4B2E91; }
-
-.hover-bullet-april-fools-purple:hover:before {
   content: "> ";
   color: #4B2E91; }
 
@@ -10678,15 +12180,7 @@ code, .code {
   content: "> ";
   color: #eef0f7; }
 
-.hover-bullet-athens-gray:hover:before {
-  content: "> ";
-  color: #eef0f7; }
-
 .bullet-bittersweet:before {
-  content: "> ";
-  color: #ff6c5f; }
-
-.hover-bullet-bittersweet:hover:before {
   content: "> ";
   color: #ff6c5f; }
 
@@ -10694,15 +12188,7 @@ code, .code {
   content: "> ";
   color: #a6b0d8; }
 
-.hover-bullet-blue-bell:hover:before {
-  content: "> ";
-  color: #a6b0d8; }
-
 .bullet-bunting:before {
-  content: "> ";
-  color: #3e396b; }
-
-.hover-bullet-bunting:hover:before {
   content: "> ";
   color: #3e396b; }
 
@@ -10710,15 +12196,7 @@ code, .code {
   content: "> ";
   color: #2dde98; }
 
-.hover-bullet-candor:hover:before {
-  content: "> ";
-  color: #2dde98; }
-
 .bullet-care:before {
-  content: "> ";
-  color: #ffc168; }
-
-.hover-bullet-care:hover:before {
   content: "> ";
   color: #ffc168; }
 
@@ -10726,15 +12204,7 @@ code, .code {
   content: "> ";
   color: #050f2c; }
 
-.hover-bullet-deep-cove:hover:before {
-  content: "> ";
-  color: #050f2c; }
-
 .bullet-east-bay:before {
-  content: "> ";
-  color: #495588; }
-
-.hover-bullet-east-bay:hover:before {
   content: "> ";
   color: #495588; }
 
@@ -10742,15 +12212,7 @@ code, .code {
   content: "> ";
   color: #c4c8d8; }
 
-.hover-bullet-ghost:hover:before {
-  content: "> ";
-  color: #c4c8d8; }
-
 .bullet-grit:before {
-  content: "> ";
-  color: #3369e7; }
-
-.hover-bullet-grit:hover:before {
   content: "> ";
   color: #3369e7; }
 
@@ -10758,15 +12220,7 @@ code, .code {
   content: "> ";
   color: #b84592; }
 
-.hover-bullet-humility:hover:before {
-  content: "> ";
-  color: #b84592; }
-
 .bullet-java:before {
-  content: "> ";
-  color: #1cc7d0; }
-
-.hover-bullet-java:hover:before {
   content: "> ";
   color: #1cc7d0; }
 
@@ -10774,15 +12228,7 @@ code, .code {
   content: "> ";
   color: #ffc168; }
 
-.hover-bullet-koromiko:hover:before {
-  content: "> ";
-  color: #ffc168; }
-
 .bullet-logan:before {
-  content: "> ";
-  color: #9d9dbd; }
-
-.hover-bullet-logan:hover:before {
   content: "> ";
   color: #9d9dbd; }
 
@@ -10790,15 +12236,7 @@ code, .code {
   content: "> ";
   color: #b84592; }
 
-.hover-bullet-mulberry:hover:before {
-  content: "> ";
-  color: #b84592; }
-
 .bullet-portage:before {
-  content: "> ";
-  color: #8994c6; }
-
-.hover-bullet-portage:hover:before {
   content: "> ";
   color: #8994c6; }
 
@@ -10806,15 +12244,7 @@ code, .code {
   content: "> ";
   color: #3a4570; }
 
-.hover-bullet-port-gore:hover:before {
-  content: "> ";
-  color: #3a4570; }
-
 .bullet-purple-heart:before {
-  content: "> ";
-  color: #8e43e7; }
-
-.hover-bullet-purple-heart:hover:before {
   content: "> ";
   color: #8e43e7; }
 
@@ -10822,15 +12252,7 @@ code, .code {
   content: "> ";
   color: #ff4f81; }
 
-.hover-bullet-radical-red:hover:before {
-  content: "> ";
-  color: #ff4f81; }
-
 .bullet-royal-blue:before {
-  content: "> ";
-  color: #3369e7; }
-
-.hover-bullet-royal-blue:hover:before {
   content: "> ";
   color: #3369e7; }
 
@@ -10838,23 +12260,11 @@ code, .code {
   content: "> ";
   color: #2dde98; }
 
-.hover-bullet-shamrock:hover:before {
-  content: "> ";
-  color: #2dde98; }
-
 .bullet-titan-white:before {
   content: "> ";
   color: #f8faff; }
 
-.hover-bullet-titan-white:hover:before {
-  content: "> ";
-  color: #f8faff; }
-
 .bullet-trust:before {
-  content: "> ";
-  color: #00aeff; }
-
-.hover-bullet-trust:hover:before {
   content: "> ";
   color: #00aeff; }
 
