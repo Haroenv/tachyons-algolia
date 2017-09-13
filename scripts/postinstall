@@ -1,10 +1,17 @@
 #!/usr/bin/env sh
 
+# Tachyons
 mkdir -p ./src/vendors/tachyons
-
 cp \
   -r \
  ./node_modules/tachyons-sass/tachyons.scss \
  ./node_modules/tachyons-sass/scss/ \
  ./src/vendors/tachyons
+
+# FontAwesome
+mkdir -p ./src/vendors/font-awesome
+cp \
+  -r \
+ ./node_modules/font-awesome/scss/* \
+ ./src/vendors/font-awesome
 
