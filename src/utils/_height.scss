@@ -20,16 +20,33 @@
 /**
  * Adding max-height for the basic scale
  **/
-.mh1 { max-height: $spacing-medium; }
-.mh2 { max-height: $spacing-large; }
-.mh3 { max-height: $spacing-extra-large; }
-.mh4 { max-height: $spacing-extra-extra-large; }
-.mh5 { max-height: $spacing-extra-extra-extra-large; }
+.max-h1 { max-height: $spacing-medium; }
+.max-h2 { max-height: $spacing-large; }
+.max-h3 { max-height: $spacing-extra-large; }
+.max-h4 { max-height: $spacing-extra-extra-large; }
+.max-h5 { max-height: $spacing-extra-extra-extra-large; }
 
 /**
  * Allow setting max-height in percentage, by 5% increments.
  **/
 @for $i from 1 through 20 {
   $height: $i * 5;
-  .mh-#{$height} { max-height: $height + %; }
+  .max-h-#{$height} { max-height: $height + %; }
+}
+
+/**
+ * Adding min-height for the basic scale
+ **/
+.min-h1 { min-height: $spacing-medium; }
+.min-h2 { min-height: $spacing-large; }
+.min-h3 { min-height: $spacing-extra-large; }
+.min-h4 { min-height: $spacing-extra-extra-large; }
+.min-h5 { min-height: $spacing-extra-extra-extra-large; }
+
+/**
+ * Allow setting min-height in percentage, by 5% increments.
+ **/
+@for $i from 1 through 20 {
+  $height: $i * 5;
+  .min-h-#{$height} { min-height: $height + %; }
 }
