@@ -3,21 +3,29 @@
  * background and border colors. They all include various opacity levels and the
  * :hover modifier.
  *
- * Examples with koromiko
- * .koromiko:             Text color is Koromiko
- * .koromiko-70:          Text color with 70% opacity
- * .hover-koromiko:       Text color only on hover
- * .hover-koromiko-70:    Text color with 70% opacity only on hover
-
- * .bg-koromiko:          Background color 
- * .bg-koromiko-30:       Background color with 30% opacity
- * .hover-bg-koromiko:    Background color 
- * .hover-bg-koromiko-30: Background color with 30% opacity
-
- * .b--koromiko:          Border color
- * .b--koromiko-50:       Border color with 50% opacity
- * .hover-b--koromiko:    Border color
- * .hover-b--koromiko-50: Border color with 50% opacity
+ * Class names are all based upon the following principles.
+ *
+ * 1. The color can be used as the class name and will apply to the text color
+ *    Examples: .koromiko, .royal-blue, .algolia-blue
+ *  
+ * 2. The opacity can be added as suffix, with a value from 0 to 100, by
+ *    increments of 5
+ *    Examples: .koromiko-50, .royal-blue-75
+ *
+ * 3. The changes can be applied only on hover by adding hover- as a prefix
+ *    Examples: .hover-koromiko, .hover-royal-blue-75
+ *
+ * 4. The color can be applied to the background instead of the text by adding
+ *    bg- before the color name
+ *    Examples: .bg-koromiko, .hover-bg-royal-blue-75
+ *
+ * 5. The color can be applied to the borders instead of the text by adding b--
+ *    before the color name (similar to bg-)
+ *    Examples: .b--koromiko, .hover-b--royal-blue-75
+ *
+ * 6. All those modifications can be applied to any .child element on hover by
+ *    adding both the .hover- prefix and -child suffix
+ *    Examples: .hover-koromiko-child, .hover-royal-blue-75.child
  **/
 @each $color in $colors {
   $name: nth($color, 1);
@@ -27,30 +35,39 @@
   .#{$name} { color: $value }
   // Text color on hover
   .hover-#{$name}:hover { color: $value }
+  // Only for child items
+  .hover-#{$name}-child:hover .child { color: $value }
 
   // Background color
   .bg-#{$name} { background-color: $value }
   // Background color on hover
   .hover-bg-#{$name}:hover { background-color: $value }
+  // Only for child items
+  .hover-bg-#{$name}-child:hover .child { background-color: $value }
 
   // Border color
   .b--#{$name} { border-color: $value }
   // Border color on hover
   .hover-b--#{$name}:hover { border-color: $value }
+  // Only for child items
+  .hover-b--#{$name}-child:hover .child { border-color: $value }
 
   // Same for levels of opacity by 10 increment
   @for $opacity from 1 through 9 {
     // Text color
     .#{$name}-#{$opacity}0 { color: rgba($value, $opacity / 10); }
     .hover-#{$name}-#{$opacity}0:hover { color: rgba($value, $opacity / 10); }
+    .hover-#{$name}-#{$opacity}0-child:hover .child { color: rgba($value, $opacity / 10); }
 
     // Background color
     .bg-#{$name}-#{$opacity}0 { background-color: rgba($value, $opacity / 10); }
     .hover-bg-#{$name}-#{$opacity}0:hover { background-color: rgba($value, $opacity / 10); }
+    .hover-bg-#{$name}-#{$opacity}0-child:hover .child { background-color: rgba($value, $opacity / 10); }
 
     // Border color
     .b--#{$name}-#{$opacity}0 { border-color: rgba($value, $opacity / 10); }
     .hover-b--#{$name}-#{$opacity}0:hover { border-color: rgba($value, $opacity / 10); }
+    .hover-b--#{$name}-#{$opacity}0-child:hover .child { border-color: rgba($value, $opacity / 10); }
   }
 }
 
