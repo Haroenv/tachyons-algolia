@@ -14,7 +14,8 @@
  **/
 @for $i from 1 through 20 {
   $height: $i * 5;
-  .h-#{$height} { height: $height + %; }
+  $heightPercent: "#{$height}%";
+  .h-#{$height} { height: $heightPercent; }
 }
 
 /**
@@ -31,7 +32,8 @@
  **/
 @for $i from 1 through 20 {
   $height: $i * 5;
-  .max-h-#{$height} { max-height: $height + %; }
+  $heightPercent: "#{$height}%";
+  .max-h-#{$height} { max-height: $heightPercent; }
 }
 
 /**
@@ -48,5 +50,6 @@
  **/
 @for $i from 1 through 20 {
   $height: $i * 5;
-  .min-h-#{$height} { min-height: $height + %; }
+  $heightPercent: "#{$height}%";
+  .min-h-#{$height} { min-height: $heightPercent; }
 }

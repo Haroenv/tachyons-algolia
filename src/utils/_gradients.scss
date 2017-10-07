@@ -5,7 +5,7 @@
  * For ease of use, we'll refer to them using the name of their predominant
  * color (like .bg-gradient-green or .bg-gradient-purple).
  **/
-$gradients: 
+$gradients: (
   green       320deg  $shamrock      mix($shamrock,  $java),
   blue        256deg  $algolia-blue  $royal-blue,
   pink        256deg  $bittersweet   $radical-red,
@@ -13,7 +13,7 @@ $gradients:
   purple      269deg  #8e43e6        #b84592,
   light-blue  269deg  $algolia-blue  $java,
   dark        283deg  $deep-cove     $bunting
-;
+);
 
 @each $gradient in $gradients {
   $name: nth($gradient, 1);
@@ -22,23 +22,23 @@ $gradients:
   $end: nth($gradient, 4);
 
   // Base gradient
-  .bg-gradient-#{$name} {
+  .bg-gradient-#{""+$name} {
     background-image: linear-gradient($angle, $start, $end);
   }
   // Various opacity settings
   @for $i from 1 through 9 {
-    .bg-gradient-#{$name}-#{$i}0 {
+    .bg-gradient-#{""+$name}-#{$i}0 {
       background-image: linear-gradient($angle, rgba($start, $i / 10), rgba($end, $i / 10));
     }
   }
 
   // Inverted gradient
-  .bg-gradient-#{$name}-inverted {
+  .bg-gradient-#{""+$name}-inverted {
     background-image: linear-gradient($angle, $end, $start);
   }
   // Various opacity settings
   @for $i from 1 through 9 {
-    .bg-gradient-#{$name}-inverted-#{$i}0 {
+    .bg-gradient-#{""+$name}-inverted-#{$i}0 {
       background-image: linear-gradient($angle, rgba($end, $i / 10), rgba($start, $i / 10));
     }
   }

@@ -1,11 +1,7 @@
 #!/usr/bin/env sh
 set -e 
 
-# Check CSS syntax
-for file in ./src/utils/*.scss ./src/*.scss
-do
-  scss --check "$file"
-done
+scss --check ./src/main.scss
 
 stylelint \
   ./src/*.scss \
