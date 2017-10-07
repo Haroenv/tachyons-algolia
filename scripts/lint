@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+stylelint \
+  ./src/*.scss \
+  ./src/utils/*.scss
