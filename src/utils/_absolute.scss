@@ -10,6 +10,7 @@
  **/
 .absolute-0 {
   position: absolute;
+
   @extend .absolute--fill;
 }
 
@@ -23,12 +24,15 @@
 .top-3 {
   top: $spacing-extra-large;
 }
+
 .right-3 {
-  right: $spacing-extra-large
+  right: $spacing-extra-large;
 }
+
 .bottom-3 {
   bottom: $spacing-extra-large;
 }
+
 .left-3 {
   left: $spacing-extra-large;
 }
@@ -36,12 +40,15 @@
 .top-4 {
   top: $spacing-extra-extra-large;
 }
+
 .right-4 {
   right: $spacing-extra-extra-large;
 }
+
 .bottom-4 {
   bottom: $spacing-extra-extra-large;
 }
+
 .left-4 {
   left: $spacing-extra-extra-large;
 }
@@ -49,12 +56,15 @@
 .top-5 {
   top: $spacing-extra-extra-extra-large;
 }
+
 .right-5 {
   right: $spacing-extra-extra-extra-large;
 }
+
 .bottom-5 {
   bottom: $spacing-extra-extra-extra-large;
 }
+
 .left-5 {
   left: $spacing-extra-extra-extra-large;
 }
@@ -62,12 +72,15 @@
 .top--3 {
   top: -$spacing-extra-large;
 }
+
 .right--3 {
   right: -$spacing-extra-large;
 }
+
 .bottom--3 {
   bottom: -$spacing-extra-large;
 }
+
 .left--3 {
   left: -$spacing-extra-large;
 }
@@ -75,12 +88,15 @@
 .top--4 {
   top: -$spacing-extra-extra-large;
 }
+
 .right--4 {
   right: -$spacing-extra-extra-large;
 }
+
 .bottom--4 {
   bottom: -$spacing-extra-extra-large;
 }
+
 .left--4 {
   left: -$spacing-extra-extra-large;
 }
@@ -88,12 +104,15 @@
 .top--5 {
   top: -$spacing-extra-extra-extra-large;
 }
+
 .right--5 {
   right: -$spacing-extra-extra-extra-large;
 }
+
 .bottom--5 {
   bottom: -$spacing-extra-extra-extra-large;
 }
+
 .left--5 {
   left: -$spacing-extra-extra-extra-large;
 }
@@ -104,31 +123,37 @@
  **/
 @for $i from 1 through 20 {
   $percent: $i * 5;
-  $percentString: "#{$percent}%";
+
   .top-#{$percent} {
-    top: $percentString;
+    top: #{$percent + "%"};
   }
+
   .right-#{$percent} {
-    right: $percentString;
+    right: #{$percent + "%"};
   }
+
   .bottom-#{$percent} {
-    bottom: $percentString;
+    bottom: #{$percent + "%"};
   }
+
   .left-#{$percent} {
-    left: $percentString;
+    left: #{$percent + "%"};
   }
 
   .top--#{$percent} {
-    top: - $percentString;
+    top: unquote("- #{$percent + "%"}");
   }
+
   .right--#{$percent} {
-    right: - $percentString;
+    right: unquote("- #{$percent + "%"}");
   }
+
   .bottom--#{$percent} {
-    bottom: - $percentString;
+    bottom: unquote("- #{$percent + "%"}");
   }
+
   .left--#{$percent} {
-    left: - $percentString;
+    left: unquote("- #{$percent + "%"}");
   }
 }
 
@@ -143,11 +168,13 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
 .absolute-center-vertical {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
+
 .absolute-center {
   position: absolute;
   top: 50%;

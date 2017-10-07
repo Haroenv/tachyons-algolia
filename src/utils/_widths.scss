@@ -14,8 +14,7 @@
  **/
 @for $i from 1 through 20 {
   $width: $i * 5;
-  $widthPercent: "#{$width}%";
-  .w-#{$width} { width: $widthPercent; }
+  .w-#{$width} { width: #{$width+"%"}; }
 }
 
 /**
@@ -32,8 +31,7 @@
  **/
 @for $i from 1 through 20 {
   $width: $i * 5;
-  $widthPercent: "#{$width}%";
-  .mw-#{$width} { max-width: $widthPercent; }
+  .mw-#{$width} { max-width: #{$width+"%"}; }
 }
 
 /**

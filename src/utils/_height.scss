@@ -13,9 +13,8 @@
  * Allow setting relative heights in increments of 5%
  **/
 @for $i from 1 through 20 {
-  $height: $i * 5;
-  $heightPercent: "#{$height}%";
-  .h-#{$height} { height: $heightPercent; }
+  $percent: $i * 5;
+  .h-#{$percent} { height: #{$percent+"%"}; }
 }
 
 /**
@@ -31,9 +30,8 @@
  * Allow setting max-height in percentage, by 5% increments.
  **/
 @for $i from 1 through 20 {
-  $height: $i * 5;
-  $heightPercent: "#{$height}%";
-  .max-h-#{$height} { max-height: $heightPercent; }
+  $percent: $i * 5;
+  .max-h-#{$percent} { max-height: #{$percent+"%"}; }
 }
 
 /**
@@ -49,7 +47,6 @@
  * Allow setting min-height in percentage, by 5% increments.
  **/
 @for $i from 1 through 20 {
-  $height: $i * 5;
-  $heightPercent: "#{$height}%";
-  .min-h-#{$height} { min-height: $heightPercent; }
+  $percent: $i * 5;
+  .min-h-#{$percent} { min-height: #{$percent+"%"}; }
 }
