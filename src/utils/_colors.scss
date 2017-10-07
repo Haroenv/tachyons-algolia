@@ -7,7 +7,7 @@
  *
  * 1. The color can be used as the class name and will apply to the text color
  *    Examples: .koromiko, .royal-blue, .algolia-blue
- *  
+ *
  * 2. The opacity can be added as suffix, with a value from 0 to 100, by
  *    increments of 5
  *    Examples: .koromiko-50, .royal-blue-75
@@ -22,8 +22,12 @@
  * 5. The color can be applied to the borders instead of the text by adding b--
  *    before the color name (similar to bg-)
  *    Examples: .b--koromiko, .hover-b--royal-blue-75
+
+ * 6. The color can be applied to the placeholder instead of the text by adding
+ *    ph- before the color name (similar to bg-)
+ *    Examples: .ph-koromiko, .hover-ph-royal-blue-75
  *
- * 6. All those modifications can be applied to any .child element on hover by
+ * 7. All those modifications can be applied to any .child element on hover by
  *    adding both the .hover- prefix and -child suffix
  *    Examples: .hover-koromiko-child, .hover-royal-blue-75.child
  **/
@@ -80,5 +84,5 @@
   $value: nth($color, 2);
 
   // Bullets
-  .bullet-#{$name}:before { content: "> "; color: #{$value} }
+  .bullet-#{$name}:before { content: '> '; color: #{$value} }
 }
