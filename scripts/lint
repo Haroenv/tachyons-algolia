@@ -1,4 +1,12 @@
 #!/usr/bin/env sh
+set -e 
+
+# Check CSS syntax
+for file in ./src/utils/*.scss ./src/*.scss
+do
+  scss --check "$file"
+done
+
 stylelint \
   ./src/*.scss \
   ./src/utils/*.scss
