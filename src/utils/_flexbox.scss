@@ -49,10 +49,28 @@
  * elements. If you don't know how many elements you'll fit, or if they have
  * relative sizes, better go with a -wrap.
  **/
-.flrnw, .flex-row-nowrap    { display: flex; flex-direction: row;    }
-.flrw,  .flex-row-wrap      { display: flex; flex-direction: row;    flex-wrap:  wrap;  }
-.flcnw, .flex-column-nowrap { display: flex; flex-direction: column; }
-.flcw,  .flex-column-wrap   { display: flex; flex-direction: column; flex-wrap:  wrap;  }
+.flrnw,
+.flex-row-nowrap {
+  display: flex;
+  flex-direction: row;
+}
+.flrw,
+.flex-row-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flcnw,
+.flex-column-nowrap {
+  display: flex;
+  flex-direction: column;
+}
+.flcw,
+.flex-column-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
 /**
  * .flex-(auto/none)
@@ -78,8 +96,16 @@
  * define how this element will behave in its current layout context, and the
  * second one will start a new layout context for other child of this element.
  **/
-.fln, .flex-none { flex: none; }
-.fla, .flex-auto { flex:1 1 auto; min-width:0; min-height:0; }
+.fln,
+.flex-none {
+  flex: none;
+}
+.fla,
+.flex-auto {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+}
 
 /**
  * .flex-(row/column)-center-(vertical-horizontal) / .fl(r/c)c(v/h)
@@ -105,11 +131,32 @@
  * you want to align several elements at once, your best bet would be to wrap
  * those elements into an intermediate div and center that one.
  **/
-.flrcv, .flex-row-center-vertical      { display: flex; align-items:     center }
-.flrch, .flex-row-center-horizontal    { display: flex; justify-content: center }
-.flccv, .flex-column-center-vertical   { display: flex; justify-content: center }
-.flcch, .flex-column-center-horizontal { display: flex; align-items:     center }
-.flc, .flex-center { display: flex; align-items: center; justify-content: center }
+.flrcv,
+.flex-row-center-vertical {
+  display: flex;
+  align-items: center;
+}
+.flrch,
+.flex-row-center-horizontal {
+  display: flex;
+  justify-content: center;
+}
+.flccv,
+.flex-column-center-vertical {
+  display: flex;
+  justify-content: center;
+}
+.flcch,
+.flex-column-center-horizontal {
+  display: flex;
+  align-items: center;
+}
+.flc,
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /**
  * .flex-space-(around/between) / .flsp(a/b)
@@ -130,8 +177,14 @@
  * before, between and after the elements, like this:
  * [  [Box 1]  [Box 2]  [Box 3]  ]
  **/
-.flspa, .flex-space-around  { justify-content: space-around; }
-.flspb, .flex-space-between { justify-content: space-between; }
+.flspa,
+.flex-space-around {
+  justify-content: space-around;
+}
+.flspb,
+.flex-space-between {
+  justify-content: space-between;
+}
 
 /**
  * .flex-column-align-(top/bottom) / .flca(t/b)
@@ -141,7 +194,19 @@
  * should be piled up. By default they stick at the top on column and on the
  * left on rows, but you can change that.
  **/
-.flral, .flex-row-align-left      { justify-content: flex-start; }
-.flrar, .flex-row-align-right     { justify-content: flex-end; }
-.flcat, .flex-column-align-top    { justify-content: flex-start; }
-.flcab, .flex-column-align-bottom { justify-content: flex-end; }
+.flral,
+.flex-row-align-left {
+  justify-content: flex-start;
+}
+.flrar,
+.flex-row-align-right {
+  justify-content: flex-end;
+}
+.flcat,
+.flex-column-align-top {
+  justify-content: flex-start;
+}
+.flcab,
+.flex-column-align-bottom {
+  justify-content: flex-end;
+}

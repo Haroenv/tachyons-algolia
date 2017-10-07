@@ -9,6 +9,7 @@
   "license": "MIT",
   "scripts": {
     "build": "./scripts/build",
+    "lint": "./scripts/lint",
     "release": "./scripts/release",
     "postinstall": "(test -f ./scripts/postinstall && ./scripts/postinstall) || true"
   },
@@ -21,6 +22,8 @@
     "node-sass": "^4.5.3",
     "prompt": "^1.0.0",
     "shelljs": "^0.7.8",
+    "stylelint": "^8.2.0",
+    "stylelint-scss": "^2.1.0",
     "tachyons-sass": "^4.7.4"
   }
 }

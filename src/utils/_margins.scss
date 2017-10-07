@@ -3,8 +3,21 @@
  * a great way to force an element to align in a flexbox content. Setting two
  * sides to auto can also help in centering elements
  **/
-.mta { margin-top:    auto; }
-.mra { margin-right:  auto; }
-.mba { margin-bottom: auto; }
-.mla { margin-left:   auto; }
-.ma  { margin-top:    auto; margin-right: auto; margin-bottom: auto; margin-left: auto;  }
+.mta {
+  margin-top: auto;
+}
+.mra {
+  margin-right: auto;
+}
+.mba {
+  margin-bottom: auto;
+}
+.mla {
+  margin-left: auto;
+}
+.ma {
+  margin: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}

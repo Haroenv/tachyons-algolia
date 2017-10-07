@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+set -e 
+
+scss --check ./src/main.scss
+
+stylelint \
+  ./src/*.scss \
+  ./src/utils/*.scss

@@ -84,5 +84,5 @@
   $value: nth($color, 2);
 
   // Bullets
-  .bullet-#{$name}:before { content: '> '; color: #{$value} }
+  .bullet-#{$name}:before { content: "> "; color: #{$value} }
 }
