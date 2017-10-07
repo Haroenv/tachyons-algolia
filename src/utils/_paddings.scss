@@ -3,10 +3,9 @@
  **/
 @for $i from 1 through 20 {
   $padding: $i * 5;
-  $paddingPercent: "#{$padding}%";
-  .pt-#{$padding} { padding-top:    $paddingPercent; }
-  .pr-#{$padding} { padding-right:  $paddingPercent; }
-  .pb-#{$padding} { padding-bottom: $paddingPercent; }
-  .pl-#{$padding} { padding-left:   $paddingPercent; }
+  .pt-#{$padding} { padding-top:    #{$padding+"%"}; }
+  .pr-#{$padding} { padding-right:  #{$padding+"%"}; }
+  .pb-#{$padding} { padding-bottom: #{$padding+"%"}; }
+  .pl-#{$padding} { padding-left:   #{$padding+"%"}; }
 }
 // }}}
