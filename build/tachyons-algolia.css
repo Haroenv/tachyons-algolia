@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! tachyons-algolia.css v0.3.8 | MIT License | github.com/algolia/tachyons-algolia */
+/*! tachyons-algolia.css v0.3.9 | MIT License | github.com/algolia/tachyons-algolia */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -14577,7 +14577,7 @@ code, .code {
  *   .fln First box
  *   .fla Second box, takes all the available space
  *   .fln Third box
- *  .fla.flc My vertically and horizontall centered text
+ *  .fla.flc My verticaly and horizontaly centered text
  **/
 /**
  * .flex-(row/column)-(wrap/nowrap) / .fl(r/c)(w/nw)
@@ -14672,7 +14672,7 @@ code, .code {
  * Note that you should use the .flex-row-center-* classes only on
  * .flex-row-* elements and the .flex-column-center-* classes only on
  * .flex-column-* elements. If you apply the wrong class on the element, the
- * items will not be correctly aligned (it might event do the opposition of what
+ * items will not be correctly aligned (it might event do the opposite of what
  * you're trying to achieve).
  *
  *
