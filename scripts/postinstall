@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
 # Tachyons
+rm -rf ./src/vendors/tachyons
 mkdir -p ./src/vendors/tachyons
 cp \
   -r \
@@ -9,6 +10,7 @@ cp \
  ./src/vendors/tachyons
 
 # FontAwesome
+rm -rf ./src/vendors/font-awesome
 mkdir -p ./src/vendors/font-awesome
 cp \
   -r \
