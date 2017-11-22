@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! tachyons-algolia.css v0.3.11 | MIT License | github.com/algolia/tachyons-algolia */
+/*! tachyons-algolia.css v0.3.12 | MIT License | github.com/algolia/tachyons-algolia */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -7656,23 +7656,23 @@ code, .code {
  *    Examples: .koromiko, .royal-blue, .algolia-blue
  *
  * 2. The opacity can be added as suffix, with a value from 0 to 100, by
- *    increments of 5
- *    Examples: .koromiko-50, .royal-blue-75
+ *    increments of 10
+ *    Examples: .koromiko-50, .royal-blue-70
  *
  * 3. The changes can be applied only on hover by adding hover- as a prefix
- *    Examples: .hover-koromiko, .hover-royal-blue-75
+ *    Examples: .hover-koromiko, .hover-royal-blue-70
  *
  * 4. The color can be applied to the background instead of the text by adding
  *    bg- before the color name
- *    Examples: .bg-koromiko, .hover-bg-royal-blue-75
+ *    Examples: .bg-koromiko, .hover-bg-royal-blue-70
  *
  * 5. The color can be applied to the borders instead of the text by adding b--
  *    before the color name (similar to bg-)
- *    Examples: .b--koromiko, .hover-b--royal-blue-75
+ *    Examples: .b--koromiko, .hover-b--royal-blue-70
 
  * 6. All those modifications can be applied to any .child element on hover by
  *    adding both the .hover- prefix and -child suffix
- *    Examples: .hover-koromiko-child, .hover-royal-blue-75.child
+ *    Examples: .hover-koromiko-child, .hover-royal-blue-70.child
  **/
 .algolia-blue {
   color: #00aeff; }
@@ -14526,6 +14526,9 @@ code, .code {
 .bullet-trust:before {
   content: "> ";
   color: #00aeff; }
+
+.transparent {
+  color: transparent; }
 
 /**
  * When we need to show code in action, we often need to show screenshots or
