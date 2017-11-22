@@ -1,3 +1,4 @@
 scripts
 yarn.lock
 .npmignore
+.sass-cache
