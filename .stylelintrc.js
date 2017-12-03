@@ -1,6 +1,6 @@
 /* eslint-disable import/no-commonjs */
 module.exports = {
-  plugins: ['stylelint-scss'],
+  plugins: [],
   rules: {
     'block-no-empty': true,
     'color-no-invalid-hex': true,
