@@ -12,7 +12,7 @@ $gradients: (
   orange      256deg  $koromiko      $bittersweet,
   purple      269deg  #8e43e6        #b84592,
   light-blue  269deg  $algolia-blue  $java,
-  dark        283deg  $deep-cove     $bunting
+  dark        256deg  $deep-cove     $bunting
 );
 
 @each $gradient in $gradients {
