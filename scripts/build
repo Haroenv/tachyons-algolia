@@ -2,19 +2,20 @@
 /* eslint-disable import/no-commonjs, no-console */
 const fs = require('fs');
 const postcss = require('postcss');
-const atImport = require('postcss-import');
-const rmComments = require('postcss-discard-comments');
+const postcssImport = require('postcss-import');
+const postcssDiscardComment = require('postcss-discard-comments');
 
 const input = './src/main.css';
 
 const css = fs.readFileSync(input, 'utf8');
-const plugins = [atImport(), rmComments()];
+const plugins = [postcssImport(), postcssDiscardComment()];
 
 postcss(plugins)
   .process(css, {
     from: input,
   })
   .then(result => {
+    console.info('Writing to build/tachyons-algolia.css');
     fs.writeFileSync('build/tachyons-algolia.css', result.css);
   });
 // console.info(css);

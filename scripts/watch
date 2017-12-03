@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+set -e
+
+onchange './src/**/*.css' -- yarn run build
