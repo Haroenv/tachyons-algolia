@@ -27,12 +27,6 @@ const plugins = [
       ],
     }),
   }),
-  // postcssEachVariables, // Transform objects in arrays in loop
-  // postcssEach, // Allow iterating on arrays
-  // postcssAdvancedVariables(),
-  // precss(),
-  // postcssCssVariables(),
-  // postcssCalc(),
 ];
 
 if (shouldMinify) {
