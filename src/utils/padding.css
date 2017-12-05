@@ -1,0 +1,9 @@
+/**
+ * Allowing to add padding on every side in relative increments.
+ **/
+@mixin eachPercent 5, "
+  .pt-{percent} { padding-top: {percent}%; }
+  .pr-{percent} { padding-right: {percent}%; }
+  .pb-{percent} { padding-bottom: {percent}%; }
+  .pl-{percent} { padding-left: {percent}%; }
+";

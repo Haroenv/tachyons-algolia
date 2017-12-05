@@ -1,0 +1,75 @@
+/**
+ * Default tachyons coordinates only allow placing elements on a [-2, 2] range.
+ * We expand it to [-5, 5]
+ **/
+@mixin render "
+  .top--5 { top: -{spacing-extra-extra-extra-large}; }
+  .top--4 { top: -{spacing-extra-extra-large}; }
+  .top--3 { top: -{spacing-extra-large}; }
+  .top-3 { top: {spacing-extra-large}; }
+  .top-4 { top: {spacing-extra-extra-large}; }
+  .top-5 { top: {spacing-extra-extra-extra-large}; }
+  .right--5 { right: -{spacing-extra-extra-extra-large}; }
+  .right--4 { right: -{spacing-extra-extra-large}; }
+  .right--3 { right: -{spacing-extra-large}; }
+  .right-3 { right: {spacing-extra-large}; }
+  .right-4 { right: {spacing-extra-extra-large}; }
+  .right-5 { right: {spacing-extra-extra-extra-large}; }
+  .bottom--5 { bottom: -{spacing-extra-extra-extra-large}; }
+  .bottom--4 { bottom: -{spacing-extra-extra-large}; }
+  .bottom--3 { bottom: -{spacing-extra-large}; }
+  .bottom-3 { bottom: {spacing-extra-large}; }
+  .bottom-4 { bottom: {spacing-extra-extra-large}; }
+  .bottom-5 { bottom: {spacing-extra-extra-extra-large}; }
+  .left--5 { left: -{spacing-extra-extra-extra-large}; }
+  .left--4 { left: -{spacing-extra-extra-large}; }
+  .left--3 { left: -{spacing-extra-large}; }
+  .left-3 { left: {spacing-extra-large}; }
+  .left-4 { left: {spacing-extra-extra-large}; }
+  .left-5 { left: {spacing-extra-extra-extra-large}; }
+";
+
+/**
+ * Positionning by increment of 5%
+ **/
+@mixin eachPercent 5, ".top-{percent} { top: {percent}%; }";
+@mixin eachPercent 5, ".right-{percent} { right: {percent}%; }";
+@mixin eachPercent 5, ".bottom-{percent} { bottom: {percent}%; }";
+@mixin eachPercent 5, ".left-{percent} { left: {percent}%; }";
+@mixin eachPercent 5, ".top--{percent} { top: -{percent}%; }";
+@mixin eachPercent 5, ".right--{percent} { right: -{percent}%; }";
+@mixin eachPercent 5, ".bottom--{percent} { bottom: -{percent}%; }";
+@mixin eachPercent 5, ".left--{percent} { left: -{percent}%; }";
+
+/**
+ * Forces an element to take the whole width and height available
+ **/
+.absolute-0 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/**
+ * Vertically or horizontally position an element that has position:absolute
+ * Note: We are using `transform` to perform a translate, so it only works if
+ * you're not also adding another transform to the same element
+ **/
+.absolute-center-horizontal {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.absolute-center-vertical {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}

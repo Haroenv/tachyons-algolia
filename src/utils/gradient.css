@@ -1,0 +1,31 @@
+/**
+ * We have a few pre-defined gradient that we use more often than others. They
+ * each have their own start and end color as well as an angle.
+ *
+ * For ease of use, we'll refer to them using the name of their predominant
+ * color (like .bg-gradient-green or .bg-gradient-purple).
+ **/
+@mixin eachGradient "
+.bg-gradient-{gradientName} { 
+  background-image: linear-gradient({gradientAngle}, {gradientStart}, {gradientEnd});
+}
+.bg-gradient-{gradientName}-inverted {
+  background-image: linear-gradient({gradientAngle}, {gradientEnd}, {gradientStart});
+}
+";
+@mixin eachGradientAndPercent 10, "
+.bg-gradient-{gradientName}-{percent} { 
+  background-image: linear-gradient(
+    {gradientAngle}, 
+    rgba({gradientStart}, 0.{percent}), 
+    rgba({gradientEnd}, 0.{percent})
+  );
+}
+.bg-gradient-{gradientName}-inverted-{percent} { 
+  background-image: linear-gradient(
+    {gradientAngle}, 
+    rgba({gradientEnd}, 0.{percent}), 
+    rgba({gradientStart}, 0.{percent})
+  );
+}
+";

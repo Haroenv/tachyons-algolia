@@ -1,0 +1,62 @@
+/**
+ * Adding Algolia colors in addition to basic tachyons colors. It includes text,
+ * background and border colors. They all include various opacity levels and the
+ * :hover modifier.
+ **/
+
+/**
+ * 1. The color can be used as the class name and will apply to the text color
+ *    Examples: .koromiko, .royal-blue, .algolia-blue
+ **/
+@mixin eachColor ".{colorName} { color: {colorValue} }";
+
+/**
+ * 2. The opacity can be added as suffix, with a value from 0 to 100, by
+ *    increments of 10
+ *    Examples: .koromiko-50, .royal-blue-70
+ **/
+@mixin eachColorAndPercent 10, ".{colorName}-{percent} { color: rgba({colorValue}, 0.{percent}) }";
+
+/**
+ * 3. The changes can be applied only on hover by adding hover- as a prefix
+ *    Examples: .hover-koromiko, .hover-royal-blue-70
+ **/
+@mixin eachColor ".hover-{colorName}:hover { color: {colorValue} }";
+@mixin eachColorAndPercent 10, ".hover-{colorName}-{percent}:hover { color: rgba({colorValue}, 0.{percent}) }";
+
+/**
+ *
+ * 4. The color can be applied to the background instead of the text by adding
+ *    bg- before the color name
+ *    Examples: .bg-koromiko, .hover-bg-royal-blue-70
+ **/
+@mixin eachColor ".bg-{colorName} { background-color: {colorValue} }";
+@mixin eachColorAndPercent 10, ".bg-{colorName}-{percent} { background-color: rgba({colorValue}, 0.{percent}) }";
+@mixin eachColor ".hover-bg-{colorName}:hover { background-color: {colorValue} }";
+@mixin eachColorAndPercent 10, ".hover-bg-{colorName}-{percent}:hover { background-color: rgba({colorValue}, 0.{percent}) }";
+
+/**
+ *
+ * 5. The color can be applied to the borders instead of the text by adding b--
+ *    before the color name (similar to bg-)
+ *    Examples: .b--koromiko, .hover-b--royal-blue-70
+ **/
+@mixin eachColor ".b--{colorName} { border-color: {colorValue} }";
+@mixin eachColorAndPercent 10, ".b--{colorName}-{percent} { border-color: rgba({colorValue}, 0.{percent}) }";
+@mixin eachColor ".hover-b--{colorName}:hover { border-color: {colorValue} }";
+@mixin eachColorAndPercent 10, ".hover-b--{colorName}-{percent}:hover { border-color: rgba({colorValue}, 0.{percent}) }";
+
+/**
+ * 6. All those modifications can be applied to any .child element on hover by
+ *    adding both the .hover- prefix and -child suffix
+ *    Examples: .hover-koromiko-child, .hover-royal-blue-70.child
+ **/
+@mixin eachColor ".hover-{colorName}-child:hover .child { color: {colorValue} }";
+@mixin eachColorAndPercent 10, ".hover-{colorName}-{percent}-child:hover .child { color: rgba({colorValue}, 0.{percent}); }";
+@mixin eachColor ".hover-bg-{colorName}-child:hover .child { background-color: {colorValue} }";
+@mixin eachColorAndPercent 10, ".hover-bg-{colorName}-{percent}-child:hover .child { background-color: rgba({colorValue}, 0.{percent}); }";
+@mixin eachColor ".hover-b--{colorName}-child:hover .child { border-color: {colorValue} }";
+@mixin eachColorAndPercent 10, ".hover-b--{colorName}-{percent}-child:hover .child { border-color: rgba({colorValue}, 0.{percent}); }";
+
+// Transparent text
+.transparent { color: transparent }

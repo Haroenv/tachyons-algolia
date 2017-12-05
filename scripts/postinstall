@@ -5,15 +5,12 @@ rm -rf ./src/vendors/tachyons
 mkdir -p ./src/vendors/tachyons
 cp \
   -r \
- ./node_modules/tachyons-sass/tachyons.scss \
- ./node_modules/tachyons-sass/scss/ \
+ ./node_modules/tachyons/src/* \
  ./src/vendors/tachyons
 
 # FontAwesome
-rm -rf ./src/vendors/font-awesome
-mkdir -p ./src/vendors/font-awesome
 cp \
-  -r \
- ./node_modules/font-awesome/scss/* \
- ./src/vendors/font-awesome
+  -rf \
+ ./node_modules/font-awesome/fonts/* \
+ ./src/fonts
 

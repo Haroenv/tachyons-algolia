@@ -1,0 +1,112 @@
+/**
+ * Code sample background, should replicate a code editor as much as possible
+ **/
+.code { 
+  font-family: "DejaVu", "Lucida Console", "Courier New", monospace;
+  display: inline;
+  @mixin render "color: {bittersweet}";
+  @mixin render "background-color: {deep-cove}";
+  padding: .25rem;
+}
+
+/**
+ * Prism.js highlighting
+
+ * Note: This is following the naming convention of prism.js. It does not follow
+ * any specific known colorscheme (like Monokai or Solarized) but is based on
+ * Oroshi, a custom theme initially for vim
+ * https://github.com/pixelastic/oroshi/blob/master/config/vim/colors/oroshi.vim
+ *
+ * Note: Those classes are special in that you should not have to add them
+ * manually as they will be added by prism.js. They also follow some classical
+ * inheritance CSS properties
+ **/
+.token {
+  &.punctuation {
+    @mixin render "color: {code-white}";
+  }
+  &.comment {
+    @mixin render "color: {code-gray}";
+  }
+  &.string {
+    @mixin render "color: {code-blue}";
+  }
+  &.number {
+    @mixin render "color: {code-blue}";
+    font-weight: bold;
+  }
+}
+.language-html {
+  @mixin render "color: {code-white}";
+  .token {
+    &.tag,
+    &.punctuation {
+      @mixin render "color: {code-dark-green}";
+    }
+    &.attr-name {
+       @mixin render "color: {code-red}";
+    }
+    &.attr-value {
+      @mixin render "color: {code-blue}";
+      .punctuation ~ .punctuation {
+        @mixin render "color: {code-blue}";
+      }
+    }
+  }
+}
+.language-scss {
+  // Value don't have a specific class, so we set it as the default value
+  @mixin render "color: {code-orange}"; 
+  .token {
+    &.selector {
+      @mixin render "color: {code-green}";
+    }
+    &.property {
+      @mixin render "color: {code-red}";
+    }
+  }
+}
+.language-js {
+  @mixin render "color: {code-white}";
+  .token {
+    &.keyword {
+      @mixin render "color: {code-red}";
+    }
+    &.function {
+      @mixin render "color: {code-green}";
+    }
+  }
+}
+.language-ruby {
+
+  @mixin render "color: {code-orange}";
+  .token {
+    &.constant {
+      @mixin render "color: {code-gold}";
+    }
+    &.builtin {
+      @mixin render "color: {code-gold}";
+    }
+    &.keyword {
+      @mixin render "color: {code-green}";
+    }
+    &.function {
+      @mixin render "color: {code-white}";
+    }
+    &.operator {
+      @mixin render "color: {code-white}";
+    }
+  }
+}
+// This one does not really exists in Prism.js. We used it to display directory
+// listings, but one have to manually add the classes
+.language-shell {
+  @mixin render "color: {code-white}";
+  line-height: 1.2;
+  .shell-directory {
+    @mixin render "color: {code-green}";
+  }
+  .shell-file {
+    @mixin render "color: {code-purple}";
+  }
+}

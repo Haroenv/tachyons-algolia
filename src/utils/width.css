@@ -1,0 +1,31 @@
+// Forcing a height of 0, useful for hiding an element
+.w0 { width: 0; }
+
+// Adding a new step of width
+@mixin render ".w6 { width: {spacing-extra-extra-extra-extra-large}; }";
+
+// Adding width as percentages, per 5% increment
+@mixin eachPercent 5, ".w-{percent} { width: {percent}%; }";
+
+// Adding min-width, both on scale steps and percentages
+@mixin render ".miw1 { min-width: {spacing-medium}; }";
+@mixin render ".miw2 { min-width: {spacing-large}; }";
+@mixin render ".miw3 { min-width: {spacing-extra-large}; }";
+@mixin render ".miw4 { min-width: {spacing-extra-extra-large}; }";
+@mixin render ".miw5 { min-width: {spacing-extra-extra-extra-large}; }";
+@mixin render ".miw6 { min-width: {spacing-extra-extra-extra-extra-large}; }";
+@mixin eachPercent 5, ".miw-{percent} { min-width: {percent}%; }";
+
+// Adding max-width, both on scale steps and percentages
+@mixin render ".maw1 { max-width: {spacing-medium}; }";
+@mixin render ".maw2 { max-width: {spacing-large}; }";
+@mixin render ".maw3 { max-width: {spacing-extra-large}; }";
+@mixin render ".maw4 { max-width: {spacing-extra-extra-large}; }";
+@mixin render ".maw5 { max-width: {spacing-extra-extra-extra-large}; }";
+@mixin render ".maw6 { max-width: {spacing-extra-extra-extra-extra-large}; }";
+@mixin eachPercent 5, ".maw-{percent} { max-width: {percent}%; }";
+
+
+// Adding 1/3 and 2/3 to max-width
+.maw-third      { max-width: calc(100% / 3); }
+.maw-two-thirds { max-width: calc(100% / 1.5); }

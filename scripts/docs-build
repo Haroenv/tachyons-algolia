@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+set -e
+
+# Get the latest version of the lib
+yarn run build
+
+cd ./docs
+
+# Build the HTML
+pug \
+  ./src/pug/index.pug \
+  --out ./public
+
+# Add the CSS
+ln -fs ../../build/tachyons-algolia.css ./public
