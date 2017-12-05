@@ -6,6 +6,7 @@ const postcssClean = require('postcss-clean');
 const postcssImport = require('postcss-import');
 const postcssNested = require('postcss-nested');
 const postcssMixins = require('postcss-mixins');
+const postcssDiscardComments = require('postcss-discard-comments');
 const postcssScssSyntax = require('postcss-scss');
 const postcss = require('postcss');
 
@@ -18,6 +19,7 @@ if (shouldMinify) {
 
 const plugins = [
   postcssImport(), // Import @import files inline
+  postcssDiscardComments,
   postcssNested,
   postcssMixins({
     mixins: mixins.init({
