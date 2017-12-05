@@ -1,0 +1,2 @@
+/* Borders in aerial are ALWAYS 6px rounded */
+.br6 { border-radius: 6px; }

@@ -2,6 +2,8 @@
  * Changing placeholder color based on the input color
  **/
 ::-webkit-input-placeholder { color: inherit; }
-@for $opacity from 1 through 10 {
-  .placeholder-#{$opacity}0::-webkit-input-placeholder { opacity: $opacity / 10; }
+@mixin eachPercent 10, "
+.placeholder-{percent}::-webkit-input-placeholder { 
+  opacity: 0.{percent}; 
 }
+";

@@ -1,32 +1,54 @@
 #!/usr/bin/env node
 /* eslint-disable import/no-commonjs, no-console */
 const fs = require('fs');
-const postcss = require('postcss');
+const mixins = require('../src/mixins.js');
+const postcssClean = require('postcss-clean');
 const postcssImport = require('postcss-import');
-const postcssDiscardComment = require('postcss-discard-comments');
+const postcssNested = require('postcss-nested');
+const postcssMixins = require('postcss-mixins');
+const postcssScssSyntax = require('postcss-scss');
+const postcss = require('postcss');
 
+const shouldMinify = process.argv.includes('--minify');
 const input = './src/main.css';
+let output = './build/tachyons-algolia.css';
+if (shouldMinify) {
+  output = './build/tachyons-algolia.min.css';
+}
+
+const plugins = [
+  postcssImport(), // Import @import files inline
+  postcssNested,
+  postcssMixins({
+    mixins: mixins.init({
+      filesWithVars: [
+        './src/vendors/tachyons/_spacing.css',
+        './src/vendors/tachyons/_colors.css',
+      ],
+    }),
+  }),
+  // postcssEachVariables, // Transform objects in arrays in loop
+  // postcssEach, // Allow iterating on arrays
+  // postcssAdvancedVariables(),
+  // precss(),
+  // postcssCssVariables(),
+  // postcssCalc(),
+];
+
+if (shouldMinify) {
+  plugins.push(postcssClean());
+}
 
 const css = fs.readFileSync(input, 'utf8');
-const plugins = [postcssImport(), postcssDiscardComment()];
-
 postcss(plugins)
   .process(css, {
     from: input,
+    syntax: postcssScssSyntax,
   })
   .then(result => {
-    console.info('Writing to build/tachyons-algolia.css');
-    fs.writeFileSync('build/tachyons-algolia.css', result.css);
+    console.info(`Writing to ${output}`);
+    if (!shouldMinify) {
+      console.info(result.css);
+    }
+    fs.writeFileSync(output, result.css);
   });
-// console.info(css);
-
-// # mkdir -p ./build
-// #
-// # # Building normal version
-// # # node-sass ./src/main.scss ./build/tachyons-algolia.css
-// #
-// # # Building compressed version
-// # cleancss \
-// #   -O1 \
-// #   -o ./build/tachyons-algolia.min.css \
-// #   ./build/tachyons-algolia.css

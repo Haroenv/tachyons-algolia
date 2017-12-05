@@ -3,8 +3,9 @@
  * only allow line-height for typography, but being able to set it along the
  * arbitrary scale can help in centering text.
  **/
-.lh1 { line-height: $spacing-medium; }
-.lh2 { line-height: $spacing-large; }
-.lh3 { line-height: $spacing-extra-large; }
-.lh4 { line-height: $spacing-extra-extra-large; }
-.lh5 { line-height: $spacing-extra-extra-extra-large; }
+@mixin render ".lh1 { line-height: {spacing-medium}; }";
+@mixin render ".lh2 { line-height: {spacing-large}; }";
+@mixin render ".lh3 { line-height: {spacing-extra-large}; }";
+@mixin render ".lh4 { line-height: {spacing-extra-extra-large}; }";
+@mixin render ".lh5 { line-height: {spacing-extra-extra-extra-large}; }";
+@mixin render ".lh6 { line-height: {spacing-extra-extra-extra-extra-large}; }";

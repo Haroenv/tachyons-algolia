@@ -48,12 +48,8 @@
  * Let one define the font to use on a specific element. Montserrat is our font
  * of choice, but we might sometimes want to use others
  **/
-.montserrat {
-  font-family: Montserrat;
-}
-.dejavu {
-  font-family: DejaVu;
-}
+.montserrat { font-family: Montserrat; }
+.dejavu { font-family: DejaVu; } 
 
 /**
  * Allow setting the font-size to 0. Can be useful when dealing with

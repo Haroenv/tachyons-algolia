@@ -1,0 +1,29 @@
+/**
+ * We're using FontAwesome, but by prefixing our icons with `icon-` instead of
+ * `fa-`.
+ **/
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('./fonts/fontawesome-webfont.eot');
+  src: url('./fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/fontawesome-webfont.woff2') format('woff2'),
+    url('./fonts/fontawesome-webfont.woff') format('woff'),
+    url('./fonts/fontawesome-webfont.ttf') format('truetype'),
+    url('./fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+//  src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*=" icon-"],
+[class^=icon-] {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome; // shortening font declaration
+  font-size: inherit; // can't have font-size inherit on line above, so need to override
+  text-rendering: auto; // optimizelegibility throws things off #1094
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin eachFontAwesome ".icon-{iconName}:before { content: '{iconCode}' }";
+

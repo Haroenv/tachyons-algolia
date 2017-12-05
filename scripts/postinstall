@@ -8,11 +8,9 @@ cp \
  ./node_modules/tachyons/src/* \
  ./src/vendors/tachyons
 
-# # FontAwesome
-# rm -rf ./src/vendors/font-awesome
-# mkdir -p ./src/vendors/font-awesome
-# cp \
-#   -r \
-#  ./node_modules/font-awesome/scss/* \
-#  ./src/vendors/font-awesome
+# FontAwesome
+cp \
+  -rf \
+ ./node_modules/font-awesome/fonts/* \
+ ./src/fonts
 
