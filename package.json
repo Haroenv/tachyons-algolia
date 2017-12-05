@@ -8,8 +8,8 @@
   "author": "Pixelastic <tim@pixelastic.com>",
   "license": "MIT",
   "scripts": {
-    "build": "clear && ./scripts/build --minify",
-    "build:dev": "clear && ./scripts/build",
+    "build": "./scripts/build --minify",
+    "build:dev": "./scripts/build",
     "watch": "./scripts/watch",
     "lint": "./scripts/lint",
     "serve": "./scripts/serve",
