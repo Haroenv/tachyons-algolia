@@ -30,16 +30,16 @@
 ";
 
 /**
- * Positionning by increment of 5%
+ * Positionning by increment of 10%
  **/
-@mixin eachPercent 5, ".top-{percent} { top: {percent}%; }";
-@mixin eachPercent 5, ".right-{percent} { right: {percent}%; }";
-@mixin eachPercent 5, ".bottom-{percent} { bottom: {percent}%; }";
-@mixin eachPercent 5, ".left-{percent} { left: {percent}%; }";
-@mixin eachPercent 5, ".top--{percent} { top: -{percent}%; }";
-@mixin eachPercent 5, ".right--{percent} { right: -{percent}%; }";
-@mixin eachPercent 5, ".bottom--{percent} { bottom: -{percent}%; }";
-@mixin eachPercent 5, ".left--{percent} { left: -{percent}%; }";
+@mixin eachPercent 10, ".top-{percent} { top: {percent}%; }";
+@mixin eachPercent 10, ".right-{percent} { right: {percent}%; }";
+@mixin eachPercent 10, ".bottom-{percent} { bottom: {percent}%; }";
+@mixin eachPercent 10, ".left-{percent} { left: {percent}%; }";
+@mixin eachPercent 10, ".top--{percent} { top: -{percent}%; }";
+@mixin eachPercent 10, ".right--{percent} { right: -{percent}%; }";
+@mixin eachPercent 10, ".bottom--{percent} { bottom: -{percent}%; }";
+@mixin eachPercent 10, ".left--{percent} { left: -{percent}%; }";
 
 /**
  * Forces an element to take the whole width and height available

@@ -4,9 +4,6 @@
 // Adding a new step of height
 @mixin render ".h6 { height: {spacing-extra-extra-extra-extra-large}; }";
 
-// Adding height as percentages, per 5% increment
-@mixin eachPercent 5, ".h-{percent} { height: {percent}%; }";
-
 // Adding min-height, both on scale steps and percentages
 @mixin render ".mih1 { min-height: {spacing-medium}; }";
 @mixin render ".mih2 { min-height: {spacing-large}; }";
@@ -14,7 +11,7 @@
 @mixin render ".mih4 { min-height: {spacing-extra-extra-large}; }";
 @mixin render ".mih5 { min-height: {spacing-extra-extra-extra-large}; }";
 @mixin render ".mih6 { min-height: {spacing-extra-extra-extra-extra-large}; }";
-@mixin eachPercent 5, ".mih-{percent} { min-height: {percent}%; }";
+@mixin eachPercent 10, ".mih-{percent} { min-height: {percent}%; }";
 
 // Adding max-height, both on scale steps and percentages
 @mixin render ".mah1 { max-height: {spacing-medium}; }";
@@ -23,4 +20,4 @@
 @mixin render ".mah4 { max-height: {spacing-extra-extra-large}; }";
 @mixin render ".mah5 { max-height: {spacing-extra-extra-extra-large}; }";
 @mixin render ".mah6 { max-height: {spacing-extra-extra-extra-extra-large}; }";
-@mixin eachPercent 5, ".mah-{percent} { max-height: {percent}%; }";
+@mixin eachPercent 10, ".mah-{percent} { max-height: {percent}%; }";
