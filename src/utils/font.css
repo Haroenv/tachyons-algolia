@@ -49,7 +49,7 @@
  * of choice, but we might sometimes want to use others
  **/
 .montserrat { font-family: Montserrat, sans-serif; }
-.dejavu { font-family: DejaVu, sans-serif; }
+.dejavu { font-family: DejaVu, monospace; }
 
 /**
  * Allow setting the font-size to 0. Can be useful when dealing with
