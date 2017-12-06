@@ -4,6 +4,8 @@ CSS framework to build Algolia-branded projects.
 
 __⚠ This is primarily made for Algolia employees__
 
+> note by @haroenv: publish `/build`
+
 ## Why do I need it?
 
 tachyons.css is a set of CSS classes that each do one thing and one thing only.
