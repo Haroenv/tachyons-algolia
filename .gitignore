@@ -1,3 +1,5 @@
 node_modules
 yarn-error.log
 .sass-cache
+build/
+!package.json

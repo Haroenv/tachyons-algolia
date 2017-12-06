@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /* eslint-disable import/no-commonjs, no-console */
-const fs = require('fs');
+const fs = require('fs-extra');
 const mixins = require('../src/mixins.js');
 const postcssClean = require('postcss-clean');
 const postcssImport = require('postcss-import');
@@ -47,4 +47,8 @@ postcss(plugins)
       console.info(result.css);
     }
     fs.writeFileSync(output, result.css);
+  })
+  .then(() => {
+    console.info(`adding fonts`);
+    fs.copySync('./src/fonts', './build/fonts');
   });
