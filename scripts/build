@@ -6,6 +6,7 @@ const postcssClean = require('postcss-clean');
 const postcssImport = require('postcss-import');
 const postcssNested = require('postcss-nested');
 const postcssMixins = require('postcss-mixins');
+const postcssCustomMedia = require('postcss-custom-media');
 const postcssDiscardComments = require('postcss-discard-comments');
 const postcssScssSyntax = require('postcss-scss');
 const postcss = require('postcss');
@@ -21,6 +22,7 @@ const plugins = [
   postcssImport(), // Import @import files inline
   postcssDiscardComments,
   postcssNested,
+  postcssCustomMedia,
   postcssMixins({
     mixins: mixins.init({
       filesWithVars: [
